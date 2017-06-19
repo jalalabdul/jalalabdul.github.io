@@ -302,13 +302,21 @@ pre {
 .post-header {
   margin-bottom: 30px; }
 
+.post-list img {
+    width: 100%;
+    float: left;
+}
 
   @media screen and (min-width: 800px) {
     .post-list img {
+      display: none;
       position: absolute;
       right: 30px;
       bottom: 30px;
+      max-width: 600px;
     }
+    ul.post-list>li:hover>a>img.work {
+    display: block;}
   }
 
 .post-title {
