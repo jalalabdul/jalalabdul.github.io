@@ -11,7 +11,7 @@ layout: default
       <li>
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
 <a class="post-link" href="{{ post.url | relative_url }}"><img src="img/{{ post.img }}" class="work" alt="{{ post.alt }}"></a>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }} - {{ post.categories | escape }}</a>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }} — {{ post.categories | escape }}</a>
       </li>
     {% endfor %}
   </ul>
