@@ -13,6 +13,7 @@ dl, dd, ol, ul, figure {
 body {
   font-family: "Graphik", Helvetica, Arial, sans-serif;
   font-size: 16px;
+  line-height: 26px;
   color: #666;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
@@ -275,6 +276,7 @@ pre {
  * Page content
  */
 .page-content {
+  max-width: 800px;
   padding: 30px 0; }
 
 .page-heading {
@@ -292,7 +294,7 @@ pre {
 
 .post-link {
   display: block;
-  font-size: 21px; }
+  font-size: 16px; }
 
 /**
  * Posts
@@ -300,9 +302,14 @@ pre {
 .post-header {
   margin-bottom: 30px; }
 
-.post-list img {
-  display: none;
-}
+
+  @media screen and (min-width: 800px) {
+    .post-list img {
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+    }
+  }
 
 .post-title {
   font-size: 42px;
