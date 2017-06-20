@@ -1,15 +1,10 @@
 ---
 layout: page
-title: About Me
+title: About
 permalink: /about/
 ---
 
 My name is Jalal, and I’m a graphic designer with a penchant for branding, web design, and 3D. Currently, I’m working as a graphic designer in a studio based in Bali, Kesato & Co.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+However, I'm available for freelance work. Feel free to shoot me an email at [{{ site.email }}](mailto:{{ site.email }})
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
