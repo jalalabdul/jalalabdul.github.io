@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 thumbnail: pure/pure_01.png
 categories: Branding
 ---

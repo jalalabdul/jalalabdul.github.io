@@ -326,6 +326,10 @@ pre {
   line-height: 1; }
 }
 
+.post img {
+  margin: 10px 0;
+}
+
 /**
  * Posts
  */
