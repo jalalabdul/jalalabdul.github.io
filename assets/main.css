@@ -24,6 +24,16 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal; }
 
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: #A5BAC3;
+}
+
+::selection {
+    color: #fff; 
+    background: #A5BAC3;
+}
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -69,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #A5BAC3;
+  color: #666;
   text-decoration: none; }
   a:visited {
     color: #666; }
@@ -80,6 +90,15 @@ a {
     text-decoration: none; }
     .social-media-list a:hover .username {
       text-decoration: underline; }
+
+p a {
+  border-bottom: 1px solid #A5BAC3;
+}
+
+p a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #666;
+}
 
 /**
  * Blockquotes
@@ -321,14 +340,18 @@ pre {
 
   @media screen and (min-width: 800px) {
     .post-list img {
-      display: none;
+      opacity: 0;
       position: absolute;
       right: 50px;
       bottom: 50px;
       max-width: 720px;
+      transition: all 1000ms cubic-bezier(.19,1,.22,1) 0ms;
+      transform: translate3d(0, 100%, 0);
     }
     ul.post-list>li:hover>a>img.work {
-    display: block;}
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+    transform: none;}
   }
 
 .post-title {
@@ -497,14 +520,3 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
-
-
-::-moz-selection { /* Code for Firefox */
-    color: #fff;
-    background: #A5BAC3;
-}
-
-::selection {
-    color: #fff; 
-    background: #A5BAC3;
-}

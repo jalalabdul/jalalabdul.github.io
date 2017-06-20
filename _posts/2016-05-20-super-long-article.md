@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: branding
+categories: Branding
 thumbnail: pure/pure_02.png
 ---
 
