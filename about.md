@@ -1,10 +1,10 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+My name is Jalal, and I’m a graphic designer with a penchant for branding, web design, and 3D. Currently, I’m working as a graphic designer in a studio based in Bali, Kesato & Co.
 
 You can find the source code for the Jekyll new theme at:
 {% include icon-github.html username="jekyll" %} /
