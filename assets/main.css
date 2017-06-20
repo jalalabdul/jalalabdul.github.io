@@ -276,7 +276,7 @@ pre {
  */
 .page-content {
   max-width: 800px;
-  padding: 30px 0; }
+  padding: 100px 0 30px 0;}
 
 .page-heading {
   font-size: 20px; }
@@ -318,7 +318,7 @@ pre {
       position: absolute;
       right: 50px;
       bottom: 50px;
-      max-width: 600px;
+      max-width: 720px;
     }
     ul.post-list>li:hover>a>img.work {
     display: block;}
