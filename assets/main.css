@@ -176,6 +176,12 @@ pre {
 /**
  * Site header
  */
+@media screen and (min-width: 800px) {
+ label[for="nav-trigger"] {
+  display: none;
+}
+}
+
 .site-header {
   padding: 20px 0;
   position: relative; }
@@ -201,11 +207,11 @@ pre {
   @media screen and (max-width: 600px) {
     .site-nav {
       position: fixed;
-      top: 9px;
-      right: 15px;
-      background-color: #fdfdfd;
-      border: 1px solid #e8e8e8;
-      border-radius: 5px;
+      height: 100%;
+      top: 0;
+      right: 0;
+      color: #fff;
+      background: #fdfdfd;
       text-align: right; }
       .site-nav label[for="nav-trigger"] {
         display: block;
@@ -244,6 +250,11 @@ pre {
   position: fixed;
   bottom: 0;
   padding: 0; }
+
+@media screen and (max-width: 600px) {
+  .site-footer {
+    display: none; }
+}  
 
 .footer-heading {
   font-size: 18px;
