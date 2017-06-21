@@ -34,6 +34,17 @@ body {
     background: #A5BAC3;
 }
 
+.site-wrap {
+  min-height: 100%;
+  min-width: 100%;
+  background: #fff;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
+}
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -192,6 +203,8 @@ label[for="nav-trigger"] {
   display: none;
 }
 
+
+
 .site-header {
   padding: 20px 0;
   position: relative; }
@@ -218,11 +231,15 @@ label[for="nav-trigger"] {
     .site-nav {
       position: fixed;
       height: 100%;
+      width: 200px;
       top: 0;
       right: 0;
       color: #fff;
-      background: #fdfdfd;
+      background: #A5BAC3;
       text-align: right; }
+      .page-link {
+        color: #fff !important;
+      }
       .site-nav label[for="nav-trigger"] {
         display: block;
         float: right;
@@ -240,12 +257,6 @@ label[for="nav-trigger"] {
         text-align: center; }
         .site-nav .menu-icon > svg path {
           fill: #424242; }
-      .site-nav input ~ .trigger {
-        clear: both;
-        display: none; }
-      .site-nav input:checked ~ .trigger {
-        display: block;
-        padding-bottom: 5px; }
       .site-nav .page-link {
         display: block;
         padding: 5px 10px;
@@ -253,10 +264,7 @@ label[for="nav-trigger"] {
         .site-nav .page-link:not(:last-child) {
           margin-right: 0; } 
 
-.nav-trigger:checked ~ .sitewrapper {
-  left: 200px;
-  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
-}
+
 }
 
 /**
