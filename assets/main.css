@@ -182,6 +182,16 @@ pre {
 }
 }
 
+label[for="nav-trigger"] {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.nav-trigger {
+  display: none;
+}
+
 .site-header {
   padding: 20px 0;
   position: relative; }
@@ -241,7 +251,13 @@ pre {
         padding: 5px 10px;
         margin-left: 20px; }
         .site-nav .page-link:not(:last-child) {
-          margin-right: 0; } }
+          margin-right: 0; } 
+
+.nav-trigger:checked ~ .sitewrapper {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+}
 
 /**
  * Site footer
