@@ -259,11 +259,13 @@ label[for="nav-trigger"] {
         .site-nav .page-link:not(:last-child) {
           margin-right: 0; } 
 
-.nav-trigger:checked ~ .site-nav {
-  right: 0;
-  box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
-}
-
+      .nav-trigger:checked ~ .site-nav {
+        right: 0;
+        box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+      }
+      .nav-trigger:checked ~ .page-content {
+        filter: blur(45px);
+      }
 }
 
 /**
