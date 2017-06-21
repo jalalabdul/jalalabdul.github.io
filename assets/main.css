@@ -15,8 +15,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
-  color: #4D4D4D;
-  background-color: #fff;
+  color: #666;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -32,17 +31,6 @@ body {
 ::selection {
     color: #fff; 
     background: #A5BAC3;
-}
-
-.site-wrap {
-  min-height: 100%;
-  min-width: 100%;
-  background: #fff;
-  position: relative;
-  top: 0;
-  bottom: 100%;
-  right: 0;
-  z-index: 1;
 }
 
 /**
@@ -197,12 +185,12 @@ label[for="nav-trigger"] {
   position: absolute;
   right: 20px;
   top: 20px;
+  z-index: 3;
 }
 
 .nav-trigger {
   display: none;
 }
-
 
 
 .site-header {
@@ -223,29 +211,33 @@ label[for="nav-trigger"] {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: #666;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
   @media screen and (max-width: 600px) {
+    label[for="nav-trigger"] {
+  position: fixed;
+}
     .site-nav {
       position: fixed;
+      z-index: 1;
       height: 100%;
       width: 200px;
       top: 0;
-      right: 0;
-      color: #fff;
+      right: -200px;
+      padding-top: 100px;
+      font-size: 20px;
       background: #A5BAC3;
-      text-align: right; }
-      .page-link {
-        color: #fff !important;
-      }
+      text-align: left; 
+transition: all 1000ms cubic-bezier(.19,1,.22,1) 0ms;
+    }
       .site-nav label[for="nav-trigger"] {
         display: block;
         float: right;
         width: 36px;
         height: 36px;
-        z-index: 2;
+        z-index: 3;
         cursor: pointer; }
       .site-nav .menu-icon {
         display: block;
@@ -259,11 +251,14 @@ label[for="nav-trigger"] {
           fill: #424242; }
       .site-nav .page-link {
         display: block;
-        padding: 5px 10px;
-        margin-left: 20px; }
+        padding: 10px 40px;}
         .site-nav .page-link:not(:last-child) {
           margin-right: 0; } 
 
+.nav-trigger:checked ~ .site-nav {
+  right: 0;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+}
 
 }
 
@@ -385,7 +380,7 @@ label[for="nav-trigger"] {
   @media screen and (min-width: 800px) {
     .post-list img {
       opacity: 0;
-      position: absolute;
+      position: fixed;
       right: 50px;
       bottom: 50px;
       max-width: 720px;

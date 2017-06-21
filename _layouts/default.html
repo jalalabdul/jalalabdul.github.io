@@ -2,7 +2,6 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {% include head.html %}
   <body>
-  <div class="site-wrap">
     {% include header.html %}
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -12,6 +11,5 @@
     {% if page.url == '/' %}
        {% include footer.html %}
    {% endif %}
-   </div>
   </body>
 </html>
