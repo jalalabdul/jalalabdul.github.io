@@ -9,19 +9,14 @@
     <input type="checkbox" id="nav-trigger" class="nav-trigger" />
       <label for="nav-trigger">
         <span class="menu-icon">
-
-<svg width="25px" height="6px" viewBox="177 71 25 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs>
-        <path d="M177,71 L202,71 L202,73 L177,73 L177,71 Z M184,75 L202,75 L202,77 L184,77 L184,75 Z" id="path-1"></path>
-        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="25" height="6" fill="white">
-            <use xlink:href="#path-1"></use>
-        </mask>
-    </defs>
-    <use id="Combined-Shape" stroke="#222222" mask="url(#mask-2)" stroke-width="2" fill="none" xlink:href="#path-1"></use>
-</svg>
+          <svg width="25px" height="6px" viewBox="177 71 25 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs></defs>
+              <path d="M177,71 L202,71 L202,73 L177,73 L177,71 Z M184,75 L202,75 L202,77 L184,77 L184,75 Z" id="Combined-Shape" stroke="none" fill="#222222" fill-rule="evenodd"></path>
+          </svg>
         </span>
       </label>
       <nav class="site-nav">
+      <div class="page-link-container">
         <a class="page-link" href="{{ "/" | relative_url }}">Project</a>
         {% if site.resume %}
             <a class="page-link" href="{{ site.resume }}">Resume</a>
@@ -32,7 +27,11 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {% endif %}
           {% endfor %}
+          <span class="copyright page-link">&copy; 20{{ site.time | date: '%y' }} {{ site.author }}, unless otherwise noted.</span>
+
+
       </nav>
+      </div>
     {% endif %}
   </div>
 </header>
