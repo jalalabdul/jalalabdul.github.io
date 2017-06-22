@@ -17,10 +17,14 @@ layout: default
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
-        <img src="{{ page.image-1 }}">
-  </div>
 
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
+  {% for file in site.static_files %}
+  {% assign pageurl = page.image-dir %}
+  {% if file.path contains pageurl %}
+    {% if file.extname == '.png' or file.extname == '.jpeg' or file.extname == '.JPG' or file.extname == '.JPEG' %}
+    <img src="{{ file.path }}" />
+    {% endif %}
   {% endif %}
+{% endfor %}
+
 </article>

@@ -1,11 +1,6 @@
 ---
 layout: project
-thumbnail: pure/pure_01.png
-image-1: /img/pure/pure_01.png
-image-2: /img/pure/pure_01.png
-image-3: /img/pure/pure_01.png
-image-4:
-image-5:
+image-dir: affan
 categories: Branding
 ---
 
