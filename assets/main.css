@@ -61,6 +61,7 @@ ul, ol, dl, figure,
  * Images
  */
 img {
+  background: #eaeaea;
   max-width: 100%;
   vertical-align: middle; }
 
@@ -123,7 +124,7 @@ blockquote {
   padding-left: 15px;
   font-size: 18px;
   letter-spacing: -1px;
-  font-style: italic; }
+  font-weight: normal; }
   blockquote > :last-child {
     margin-bottom: 0; }
 
@@ -492,27 +493,27 @@ label[for="nav-trigger"] span:nth-last-child(2) {
     background: #eef; }
   .highlight .c {
     color: #998;
-    font-style: italic; }
+    font-weight: normal; }
   .highlight .err {
     color: #a61717;
     background-color: #e3d2d2; }
   .highlight .k {
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .o {
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .cm {
     color: #998;
-    font-style: italic; }
+    font-weight: normal; }
   .highlight .cp {
     color: #999;
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .c1 {
     color: #998;
-    font-style: italic; }
+    font-weight: normal; }
   .highlight .cs {
     color: #999;
-    font-weight: bold;
-    font-style: italic; }
+    font-weight: normal;
+    font-weight: normal; }
   .highlight .gd {
     color: #000;
     background-color: #fdd; }
@@ -520,7 +521,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
     color: #000;
     background-color: #faa; }
   .highlight .ge {
-    font-style: italic; }
+    font-weight: normal; }
   .highlight .gr {
     color: #a00; }
   .highlight .gh {
@@ -536,22 +537,22 @@ label[for="nav-trigger"] span:nth-last-child(2) {
   .highlight .gp {
     color: #555; }
   .highlight .gs {
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .gu {
     color: #aaa; }
   .highlight .gt {
     color: #a00; }
   .highlight .kc {
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .kd {
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .kp {
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .kr {
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .kt {
     color: #458;
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .m {
     color: #099; }
   .highlight .s {
@@ -562,17 +563,17 @@ label[for="nav-trigger"] span:nth-last-child(2) {
     color: #0086B3; }
   .highlight .nc {
     color: #458;
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .no {
     color: #008080; }
   .highlight .ni {
     color: #800080; }
   .highlight .ne {
     color: #900;
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .nf {
     color: #900;
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .nn {
     color: #555; }
   .highlight .nt {
@@ -580,7 +581,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
   .highlight .nv {
     color: #008080; }
   .highlight .ow {
-    font-weight: bold; }
+    font-weight: normal; }
   .highlight .w {
     color: #bbb; }
   .highlight .mf {

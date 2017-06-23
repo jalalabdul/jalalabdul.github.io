@@ -21,7 +21,7 @@ layout: default
   {% for file in site.static_files %}
   {% assign pageurl = page.image-dir %}
   {% if file.path contains pageurl %}
-    {% if file.extname == '.png' or file.extname == '.jpeg' or file.extname == '.JPG' or file.extname == '.JPEG' %}
+    {% if file.extname == '.png' %}
     <img src="{{ file.path }}" />
     {% endif %}
   {% endif %}
