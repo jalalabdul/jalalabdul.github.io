@@ -2,20 +2,10 @@
 
 @font-face {
 	font-family: 'Graphik Web';
-	src: url('GraphikWeb-Regular.eot');
-	src: url('GraphikWeb-Regular.eot?#iefix') format('embedded-opentype'),
-		url('GraphikWeb-Regular.woff') format('woff'),
-		url('GraphikWeb-Regular.ttf') format('truetype');
+	src: url('/assets/fonts/GraphikWeb-Regular.eot');
+	src: url('/assets/fonts/GraphikWeb-Regular.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/GraphikWeb-Regular.woff') format('woff'),
+		url('/assets/fonts/GraphikWeb-Regular.ttf') format('truetype');
 	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Graphik Web';
-	src: url('GraphikWeb-Light.eot');
-	src: url('GraphikWeb-Light.eot?#iefix') format('embedded-opentype'),
-		url('GraphikWeb-Light.woff') format('woff'),
-		url('GraphikWeb-Light.ttf') format('truetype');
-	font-weight: 300;
 	font-style: normal;
 }
