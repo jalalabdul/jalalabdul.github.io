@@ -2,11 +2,11 @@
  * Font
  */
  @font-face {
-  font-family: 'Graphik Web';
-  src: url('/assets/fonts/GraphikWeb-Regular.eot');
-  src: url('/assets/fonts/GraphikWeb-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/GraphikWeb-Regular.woff') format('woff'),
-    url('/assets/fonts/GraphikWeb-Regular.ttf') format('truetype');
+  font-family: 'Font';
+  src: url('/assets/fonts/Font-Regular.eot');
+  src: url('/assets/fonts/Font-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/Font-Regular.woff') format('woff'),
+    url('/assets/fonts/Font-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,7 +25,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: "Graphik Web", Helvetica, Arial, sans-serif;
+  font-family: "Font", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
