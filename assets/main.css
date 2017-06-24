@@ -175,20 +175,6 @@ pre {
   clear: both; }
 
 /**
- * Icons
- */
-.icon > svg {
-  display: inline-block;
-  vertical-align: middle; }
-  .icon > svg path {
-    fill: #828282; }
-
-.social-media-list .icon {
-  padding-right: 5px; }
-.social-media-list li + li {
-  padding-top: 5px; }
-
-/**
  * Site header
  */
 @media screen and (min-width: 800px) {
@@ -240,8 +226,6 @@ label[for="nav-trigger"] span:nth-last-child(2) {
   font-size: 16px;
   margin-bottom: 0;
   float: left; }
-  .site-title, .site-title:visited {
-    color: #424242; }
 
 .site-nav {
   float: right;}
@@ -328,7 +312,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 .copyright {
     color: #fff !important;
     font-size: 10px;
-    position: absolute;
+    position: fixed;
     bottom: 20px;
 }
 
