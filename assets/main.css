@@ -312,7 +312,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 .copyright {
     color: #fff !important;
     font-size: 10px;
-    position: fixed;
+    position: absolute;
     bottom: 20px;
 }
 
