@@ -9,6 +9,8 @@ portfolio:
 twitter_username: jalalabdulaziz
 github_username:  jalalabdul
 
+google_analytics: UA-101729051-1
+
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
