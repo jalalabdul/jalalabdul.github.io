@@ -433,7 +433,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
       position: fixed;
       right: 50px;
       bottom: 50px;
-      max-width: 720px;
+      max-width: 960px;
       transform: translate3d(0, 100%, 0);
       -webkit-transition: all 0.4s ease;
       -moz-transition: all 0.4s ease;
