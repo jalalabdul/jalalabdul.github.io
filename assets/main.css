@@ -433,7 +433,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
       position: fixed;
       right: 50px;
       bottom: 50px;
-      max-width: 960px;
+      max-width: 860px;
       transform: translate3d(0, 100%, 0);
       -webkit-transition: all 0.4s ease;
       -moz-transition: all 0.4s ease;
@@ -445,6 +445,11 @@ label[for="nav-trigger"] span:nth-last-child(2) {
     opacity: 1;
     transform: translate3d(-100%, 0, 0);
     transform: none;}
+  }
+
+  @media screen and (max-width: 1366px) {
+    .post-list img {
+      max-width: 720px;
   }
 
 .post-title {
