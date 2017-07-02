@@ -36,7 +36,17 @@ body {
   -o-font-feature-settings: "kern" 1;
   -webkit-font-smoothing: antialiased;
   font-feature-settings: "kern" 1;
-  font-kerning: normal; }
+  font-kerning: normal; 
+  animation: fadeInAnimation .3s;}
+
+@keyframe fadeInAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes fadeInAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 
 ::-moz-selection { /* Code for Firefox */
     color: #fff;
