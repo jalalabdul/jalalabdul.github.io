@@ -12,7 +12,6 @@ layout: default
         <p class="post-meta">
       <span>Project: </span><span class="post-meta-dark">{{ page.categories }}</span>{% if page.creative-director %}<span>Creative director: </span><span class="post-meta-dark">{{ page.creative-director }}</span>{% endif %}
       </p>
- </div>
   {% for file in site.static_files %}
   {% assign pageurl = page.image-dir %}
   {% if file.path contains pageurl %}
@@ -21,5 +20,5 @@ layout: default
     {% endif %}
   {% endif %}
 {% endfor %}
-
+ </div>
 </article>

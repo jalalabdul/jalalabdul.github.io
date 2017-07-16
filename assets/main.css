@@ -466,10 +466,17 @@ label[for="nav-trigger"] span:nth-last-child(2) {
     transform: none;}
   }
 
-  @media screen and (max-width: 1366px) {
+  @media screen and (min-width: 1366px) {
     .post-list img {
-      max-width: 720px;
+      max-width: 960px;
   }
+}
+
+  @media screen and (min-width: 1980px) {
+    .post-list img {
+      max-width: 1200px;
+  }
+}
 
 .post-title {
   font-size: 42px;
@@ -500,6 +507,14 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 @media screen and (min-width: 800px) {
 .page {
   width: 500px;
+  max-width: 500px;
+}
+}
+
+@media screen and (min-width: 800px) {
+.page {
+  width: 500px;
+  max-width: 500px;
 }
 }
 
