@@ -229,7 +229,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 
 
 .site-header {
-  padding: 30px 0;
+  padding: 50px 0;
   position: relative; }
 
 .site-header a {
@@ -332,7 +332,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
     color: #fff !important;
     font-size: 10px;
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
 }
 
 .footer-heading {
@@ -351,7 +351,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 
 .footer-col {
   float: left;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   padding-left: 15px; }
 
 .footer-col-1 {
