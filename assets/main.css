@@ -11,6 +11,39 @@
   font-style: normal;
 }
 
+@font-face {
+	font-family: 'Graphik';
+	src: url('/assets/fonts/Graphik-Regular.eot');
+	src: url('/assets/fonts/Graphik-Regular.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/Graphik-Regular.woff') format('woff'),
+		url('/assets/fonts/Graphik-Regular.ttf') format('truetype'),
+		url('/assets/fonts/Graphik-Regular.svg#Graphik-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Larish Alte';
+	src: url('/assets/fonts/LarishAlte-SemiBold.eot');
+	src: url('/assets/fonts/LarishAlte-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/LarishAlte-SemiBold.woff') format('woff'),
+		url('/assets/fonts/LarishAlte-SemiBold.ttf') format('truetype'),
+		url('/assets/fonts/LarishAlte-SemiBold.svg#LarishAlte-SemiBold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Apercu Pro';
+	src: url('/assets/fonts/ApercuPro-Mono.eot');
+	src: url('/assets/fonts/ApercuPro-Mono.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/ApercuPro-Mono.woff') format('woff'),
+		url('/assets/fonts/ApercuPro-Mono.ttf') format('truetype'),
+		url('/assets/fonts/ApercuPro-Mono.svg#ApercuPro-Mono') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 
 /**
  * Reset some basic elements
@@ -25,7 +58,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: "Font", Helvetica, Arial, sans-serif;
+  font-family: "Graphik", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 23px;
@@ -50,12 +83,11 @@ body {
 
 ::-moz-selection { /* Code for Firefox */
     color: #fff;
-    background: #A5BAC3;
+    background: #c9dae2;
 }
 
 ::selection {
-    color: #fff; 
-    background: #A5BAC3;
+    background: #c9dae2;
 }
 
 /**
@@ -74,6 +106,22 @@ img {
   background: #EEF2F4;
   max-width: 100%;
   vertical-align: middle; }
+
+/*  */
+
+#screenshot {
+	position: absolute;
+	display:none;
+	color: #FFF;
+  text-align: center;
+  width: 600px;
+  z-index:-100;
+}
+
+.post-link-img {
+  display: none;
+}
+
 
 /**
  * Figures
@@ -117,7 +165,7 @@ a {
       text-decoration: underline; }
 
 p a {
-  border-bottom: 1px solid #A5BAC3;
+  border-bottom: 1px solid #c9dae2;
 }
 
 p a:hover {
@@ -163,8 +211,7 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(100% - (50px * 2));
-  max-width: calc(100% - (50px * 2));
+  max-width: 1030px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
@@ -230,7 +277,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 
 .site-header {
   width: 100vw;
-  padding: 50px 0;
+  padding: 70px 0;
   position: fixed; }
 
 .site-header a {
@@ -243,12 +290,11 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 }
 
 .site-title {
+  float: left;
   font-size: 16px;
   margin-bottom: 0;
-  float: left; }
+  margin-right: 100px;}
 
-.site-nav {
-  float: right;}
   .site-nav .nav-trigger {
     display: none; }
   .site-nav .menu-icon {
@@ -257,7 +303,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
     color: #222;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
-      margin-right: 20px; }
+      margin-right: 50px; }
   @media screen and (max-width: 600px) {
     label[for="nav-trigger"] {
   position: fixed;
@@ -270,7 +316,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
       top: 0;
       right: -220px;
       font-size: 20px;
-      background: #A5BAC3;
+      background: #c9dae2;
       text-align: left; 
       -webkit-transition: all 0.4s ease;
       -moz-transition: all 0.4s ease;
@@ -316,10 +362,9 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 /**
  * Site footer
  */
-.site-footer {
-  position: fixed;
-  bottom: 0;
-  padding: 0; }
+.site-footer a {
+  font-size: 14px;
+}
 
 @media screen and (max-width: 600px) {
   .site-footer {
@@ -385,8 +430,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
  * Page content
  */
 .page-content {
-  max-width: 960px;
-  padding: 200px 0 30px 0;}
+  padding: 200px 0 200px 0;}
 
 @media screen and (max-width: 600px) {
   .page-content {
@@ -415,13 +459,18 @@ label[for="nav-trigger"] span:nth-last-child(2) {
   margin-right: 20px;
 }
 
-.post-link {
+.post-link, .post-title {
+  font-family: "Larish Alte";
   display: block;
   font-size: 16px; }
+
+.post-link:hover {
+  text-decoration: line-through;
+}
   
 @media screen and (min-width: 800px) {
   .post-link {
-  font-size: 42px;
+  font-size: 48px;
   letter-spacing: -1px;
   line-height: 1; }
 }
@@ -480,7 +529,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 }
 
 .post-title {
-  font-size: 42px;
+  font-size: 48px;
   letter-spacing: -1px;
   line-height: 1; }
   @media screen and (max-width: 800px) {
