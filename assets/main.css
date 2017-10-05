@@ -173,7 +173,7 @@ blockquote {
   color: #828282;
   border-left: 4px solid #e8e8e8;
   padding-left: 15px;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: -1px;
   font-weight: normal; }
   blockquote > :last-child {
@@ -248,7 +248,7 @@ label[for="nav-trigger"] {
 label[for="nav-trigger"] span {
   float: right;
   display: block;
-  width: 18px;
+  width: 16px;
   height: 2px;
   margin-bottom: 2px;
   background: #222;
@@ -274,7 +274,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
   position: fixed; }
 
 .site-header a {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 600px) {
@@ -349,7 +349,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
         width: 25px;
       }
       .nav-trigger:checked ~ label[for="nav-trigger"] .bar-1 {
-        width: 18px;
+        width: 16px;
       }
 }
 
@@ -376,7 +376,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 }
 
 .footer-heading {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 15px; }
 
 .contact-list,
@@ -546,7 +546,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
     font-size: 20px; }
     @media screen and (max-width: 800px) {
       .post-content h4 {
-        font-size: 18px; } }
+        font-size: 16px; } }
 
 @media screen and (min-width: 800px) {
 .page {

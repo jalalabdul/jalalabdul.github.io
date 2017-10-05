@@ -5,6 +5,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: default
+title: "Jalal Abdul Aziz"
 ---
 
 # I'm a graphic designer
