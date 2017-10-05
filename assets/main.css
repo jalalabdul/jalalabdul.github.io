@@ -1,15 +1,6 @@
 /**
  * Font
  */
- @font-face {
-  font-family: 'Font';
-  src: url('/assets/fonts/Font-Regular.eot');
-  src: url('/assets/fonts/Font-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/Font-Regular.woff') format('woff'),
-    url('/assets/fonts/Font-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
 	font-family: 'Graphik';
@@ -69,17 +60,7 @@ body {
   -o-font-feature-settings: "kern" 1;
   -webkit-font-smoothing: antialiased;
   font-feature-settings: "kern" 1;
-  font-kerning: normal; 
-  animation: fadeInAnimation .3s;}
-
-@keyframe fadeInAnimation {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-@-webkit-keyframes fadeInAnimation {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
+  font-kerning: normal;}
 
 ::-moz-selection { /* Code for Firefox */
     color: #fff;
@@ -99,6 +80,16 @@ ul, ol, dl, figure,
 .highlight {
   margin-bottom: 15px; }
 
+h1 {
+  font-size: 48px;
+  font-family: "Larish Alte";
+  line-height: 1;
+}
+
+h1 a:hover {
+  text-decoration: line-through; 
+}
+
 /**
  * Images
  */
@@ -114,12 +105,14 @@ img {
 	display:none;
 	color: #FFF;
   text-align: center;
-  width: 600px;
+  width: 512px;
   z-index:-100;
 }
 
+@media screen and (min-width: 800px) {
 .post-link-img {
   display: none;
+}
 }
 
 
@@ -286,7 +279,8 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 
 @media screen and (max-width: 600px) {
 .site-header {
-  padding: 20px 0; }
+  padding: 20px 0; 
+  background: #FFF;}
 }
 
 .site-title {
@@ -310,7 +304,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 }
     .site-nav {
       position: fixed;
-      z-index: 1;
+      z-index: 1; 
       height: 100%;
       width: 220px;
       top: 0;
@@ -362,8 +356,8 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 /**
  * Site footer
  */
-.site-footer a {
-  font-size: 14px;
+.site-footer p {
+  font-size: 13px;
 }
 
 @media screen and (max-width: 600px) {
@@ -430,7 +424,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
  * Page content
  */
 .page-content {
-  padding: 200px 0 200px 0;}
+  padding: 200px 0 100px 0;}
 
 @media screen and (max-width: 600px) {
   .page-content {

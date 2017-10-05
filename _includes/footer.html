@@ -1,12 +1,10 @@
 <footer class="site-footer">
   <div class="wrapper">
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">@ Mail</a></li>
-            {% endif %}
-        </ul>
+      <div class="footer-col">
+        <section class="footer-copyright">
+            <p>&copy; 20{{ site.time | date: '%y' }} {{ site.author }}, unless otherwise noted.</p>
+        </section>
       </div>
     </div>
   </div>
