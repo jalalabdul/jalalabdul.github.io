@@ -24,17 +24,6 @@
 	font-style: normal;
 }
 
-@font-face {
-	font-family: 'Apercu Pro';
-	src: url('/assets/fonts/ApercuPro-Mono.eot');
-	src: url('/assets/fonts/ApercuPro-Mono.eot?#iefix') format('embedded-opentype'),
-		url('/assets/fonts/ApercuPro-Mono.woff') format('woff'),
-		url('/assets/fonts/ApercuPro-Mono.ttf') format('truetype'),
-		url('/assets/fonts/ApercuPro-Mono.svg#ApercuPro-Mono') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
 
 /**
  * Reset some basic elements
@@ -278,18 +267,26 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 .site-header {
   width: 100%;
   padding: 70px 0;
-  position: fixed; 
-  line-height: 2.5;
 }
 
 .site-header a {
   font-size: 16px;
 }
 
+.site-header a:hover {
+  text-decoration: none;
+  border-bottom: solid 1px #000;
+  padding-bottom: 5px;
+}
+
 @media screen and (max-width: 600px) {
 .site-header {
   padding: 20px 0; 
-  background: #FFF;}
+  background: #FFF;
+  position: fixed;}
+  .site-header a:hover {
+  border: none;
+  }
 }
 
 .site-title {
@@ -303,8 +300,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #222;
-    line-height: 1.5; }
+    color: #222;}
     .site-nav .page-link:not(:last-child) {
       margin-right: 50px; }
   @media screen and (max-width: 600px) {
@@ -416,7 +412,8 @@ background-size: 36px 36px;
 .footer-col-wrapper {
   font-size: 15px;
   color: #828282;
-  margin-left: -15px; }
+  margin-left: -15px; 
+}
 
 .footer-col {
   float: left;
@@ -453,7 +450,7 @@ background-size: 36px 36px;
  * Page content
  */
 .page-content {
-  padding: 200px 0 100px 0;}
+  padding: 50px 0 100px 0;}
 
 @media screen and (max-width: 600px) {
   .page-content {

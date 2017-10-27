@@ -39,7 +39,6 @@ this.screenshotPreview = function(){
 	});			
 };
 
-
 // starting the script on page load
 $(document).ready(function(){
 	screenshotPreview();
