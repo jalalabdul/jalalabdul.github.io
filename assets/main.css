@@ -476,9 +476,24 @@ background-size: 36px 36px;
   margin-bottom: 50px;
 }
 
+ul.post-meta {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+@media screen and (min-width: 800px) {
+  ul.post-meta {
+    display: inline-block;
+  }
+  .post-meta li {
+    float: left;
+  }
+}
+
 .post-meta-dark {
   color: #222;
   margin-right: 20px;
+  list-style-type: none;
 }
 
 .post-link, .post-title {
@@ -505,7 +520,7 @@ background-size: 36px 36px;
  * Posts
  */
 .post-header {
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
 
 .post-list img {
     z-index: -9999;

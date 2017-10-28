@@ -9,9 +9,12 @@ layout: default
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
-        <p class="post-meta">
-      <span>Project: </span><span class="post-meta-dark">{{ page.categories }}</span>{% if page.creative-director %}<span>Creative director: </span><span class="post-meta-dark">{{ page.creative-director }}</span>{% endif %}
-      </p>
+        <ul class="post-meta">
+          <li><span>Project: </span><span class="post-meta-dark">{{ page.categories }}</span></li>
+          {% if page.creative-director %}
+          <li><span>Creative director: </span><span class="post-meta-dark">{{ page.creative-director }}</span></li>
+          {% endif %}
+        </ul>
   {% for file in site.static_files %}
   {% assign pageurl = page.image-dir %}
   {% if file.path contains pageurl %}
