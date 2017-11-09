@@ -24,6 +24,10 @@
 	font-style: normal;
 }
 
+.ajax {
+  opacity: 0;
+}
+
 
 /**
  * Reset some basic elements
@@ -262,7 +266,6 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 .nav-trigger {
   display: none;
 }
-
 
 .site-header {
   width: 100%;
