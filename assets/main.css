@@ -24,11 +24,6 @@
 	font-style: normal;
 }
 
-.ajax {
-  opacity: 0;
-}
-
-
 /**
  * Reset some basic elements
  */
@@ -95,7 +90,6 @@ img {
 
 #screenshot {
 	position: absolute;
-	display:none;
 	color: #FFF;
   text-align: center;
   width: 512px;

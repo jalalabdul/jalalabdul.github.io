@@ -22,7 +22,7 @@ this.screenshotPreview = function(){
 		this.t = this.title;
 		this.title = "";	
 		var c = (this.t != "") ? "<br/>" + this.t : "";
-		$("body").append("<p id='screenshot'><img src='"+ this.rel +"' alt='url preview' />"+ c +"</p>");								 
+		$(".ajax").append("<p id='screenshot'><img src='"+ this.rel +"' alt='url preview' />"+ c +"</p>");								 
 		$("#screenshot")
 			.css("top",(e.pageY - xOffset) + "px")
 			.css("left",(e.pageX + yOffset) + "px")
@@ -42,7 +42,9 @@ this.screenshotPreview = function(){
 // starting the script on page load
 $(document).ready(function(){
 	screenshotPreview();
-	$('.ajax').delay(200).animate({opacity:'1'}, 800, 'swing');
+});
+
+$(document).ready(function(){
 	$('.page-link').on('click',function(){
             $('.nav-trigger').prop('checked',false);
     });
@@ -55,7 +57,8 @@ jQuery(document).ready(function($) {
     // Make sure that all clicked links that link to your internal website
     // don't just reload the page but execute a History.pushState call
     $(document).delegate('a[href^="/"],a[href^="'+siteUrl+'"]', "click", function(e) {
-        e.preventDefault();
+		e.preventDefault();
+		$("html, body").animate({ scrollTop: 0 }, 500);
 		History.pushState({}, "", this.pathname);
 	});
 
@@ -71,11 +74,7 @@ jQuery(document).ready(function($) {
             // Replace the content of the main container (.content)
             // If you're using another div, you should change the selector
 			$('.page-content').html($(data).find('.ajax'));
-
-			$('.ajax').delay(300).animate({opacity:'1'}, 400, 'linear');
-
-            // If you're using Google analytics, make sure the pageview is registered!
-			_gaq.push(['_trackPageview', State.url]);
+			screenshotPreview();
         });
     });
 });
