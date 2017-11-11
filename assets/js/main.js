@@ -1,13 +1,4 @@
-/*
- * Url preview script 
- * powered by jQuery (http://www.jquery.com)
- * 
- * written by Alen Grakalic (http://cssglobe.com)
- * 
- * for more info visit http://cssglobe.com/post/1695/easiest-tooltip-and-image-preview-using-jquery
- *
- */
- 
+// URL preview script
 this.screenshotPreview = function(){	
 	/* CONFIG */
 		
@@ -39,19 +30,19 @@ this.screenshotPreview = function(){
 	});			
 };
 
-// starting the script on page load
+// Starting scripts on page load
 $(document).ready(function(){
-	screenshotPreview();
-});
 
-$(document).ready(function(){
+// start URL preview script
+	screenshotPreview();
+	
+// Toggle sidebar menu
 	$('.page-link').on('click',function(){
             $('.nav-trigger').prop('checked',false);
     });
-});
 
 
-jQuery(document).ready(function($) {
+// Ajax
     var siteUrl = 'http://'+(document.location.hostname||document.location.host);
 
     // Make sure that all clicked links that link to your internal website
