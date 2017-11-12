@@ -39,7 +39,15 @@ $(document).ready(function(){
 // Toggle sidebar menu
 	$('.page-link').on('click',function(){
             $('.nav-trigger').prop('checked',false);
-    });
+	});
+
+// Active menu
+if ( $(window).width() > 769) {
+	$('.site-header a').click(function(){
+		$('.site-header a').removeClass("active");
+		$(this).addClass("active");
+	});
+};
 
 
 // Ajax
@@ -60,11 +68,14 @@ $(document).ready(function(){
         // Load the new state's URL via an Ajax Call
         $.get(State.url, function(data){
             // Replace the "<title>" tag's content
-			document.title = $(data).find("title").text();
+			//document.title = $(data).find("title").text();
+			document.title = "Jalal Abdul Aziz";
 
-            // Replace the content of the main container (.content)
+            // Replace the content of the main container
             // If you're using another div, you should change the selector
 			$('.page-content').html($(data).find('.ajax'));
+
+			// Run URL preview script
 			screenshotPreview();
         });
     });
