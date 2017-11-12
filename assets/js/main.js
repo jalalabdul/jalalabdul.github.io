@@ -77,6 +77,12 @@ if ( $(window).width() > 769) {
 
 			// Run URL preview script
 			screenshotPreview();
+
+			// If you're using Google analytics, make sure the pageview is registered!
+			ga('send', 'pageview', {
+				'page': State.url,
+				'title': document.title
+			});
         });
     });
 });
