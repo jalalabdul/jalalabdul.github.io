@@ -36,7 +36,7 @@ this.screenshotPreview = function(){
 // Starting scripts on page load
 $(document).ready(function(){
 
-$(".lazyload").Lazy({effect:"fadeIn",effectTime:100});
+$(".lazyload").Lazy({effect:"fadeIn",effectTime:500});
 
 // start URL preview script
 if ( $(window).width() > 769) {
