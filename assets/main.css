@@ -339,9 +339,9 @@ label[for="nav-trigger"] span:nth-last-child(2) {
       position: fixed;
       z-index: 1; 
       height: 100%;
-      width: 220px;
+      width: 75%;
       top: 0;
-      right: -220px;
+      right: -75%;
       font-size: 20px;
       background: #c9dae2;
       text-align: left; 
@@ -493,8 +493,8 @@ background-size: 36px 36px;
 }
 
 .post-meta {
-  font-size: 12px;
-  color: #828282; 
+  font-size: 13px;
+  color: #222; 
 }
 
 ul.post-meta {
@@ -511,8 +511,7 @@ ul.post-meta {
   }
 }
 
-.post-meta-dark {
-  color: #222;
+.post-meta-grey {
   margin-right: 20px;
   list-style-type: none;
 }
@@ -523,19 +522,25 @@ ul.post-meta {
   font-size: 16px; }
 
 .post-link:hover {
-  text-decoration: line-through;
+  text-decoration: none;
 }
   
 @media screen and (min-width: 800px) {
   .post-link {
+  display: inline-block;
   font-size: 48px;
   letter-spacing: -1px;
-  line-height: 1; }
+  line-height: 1; 
+  background-size: 6px 54px;
+  background-repeat: repeat;}
 }
 
 .post img {
   margin: 5px 0;
+  display: block;
+  width: 100%;
 }
+
 
 /**
  * Posts

@@ -17,11 +17,13 @@ this.screenshotPreview = function(){
 		$("#screenshot")
 			.css("top",(e.pageY - xOffset) + "px")
 			.css("left",(e.pageX + yOffset) + "px")
-			.fadeIn("fast");						
+			.fadeIn("fast");
+		$(this).css('background-image','url(/assets/line_hover.svg)');						
     },
 	function(){
 		this.title = this.t;	
 		$("#screenshot").remove();
+		$("a.post-link").css('background-image','none');
     });	
 	$("a.post-link").mousemove(function(e){
 		$("#screenshot")
@@ -29,12 +31,17 @@ this.screenshotPreview = function(){
 			.css("left",(e.pageX + yOffset) + "px");
 	});			
 };
+		
 
 // Starting scripts on page load
 $(document).ready(function(){
 
+$(".lazyload").Lazy({effect:"fadeIn",effectTime:100});
+
 // start URL preview script
+if ( $(window).width() > 769) {
 	screenshotPreview();
+};
 	
 // Toggle sidebar menu
 	$('.page-link').on('click',function(){
@@ -77,8 +84,10 @@ if ( $(window).width() > 769) {
 
 			// Run URL preview script
 			screenshotPreview();
+			
+			$(".lazyload").Lazy({effect:"fadeIn",effectTime:500});
 
-			// If you're using Google analytics, make sure the pageview is registered!
+			// Google Analytics
 			ga('send', 'pageview', {
 				'page': State.url,
 				'title': document.title

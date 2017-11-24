@@ -10,16 +10,16 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     {{ content }}
         <ul class="post-meta">
-          <li><span>Project: </span><span class="post-meta-dark">{{ page.categories }}</span></li>
+          <li><span>Project: </span><span class="post-meta-grey">{{ page.categories }}</span></li>
           {% if page.creative-director %}
-          <li><span>Creative director: </span><span class="post-meta-dark">{{ page.creative-director }}</span></li>
+          <li><span>Creative director: </span><span class="post-meta-grey">{{ page.creative-director }}</span></li>
           {% endif %}
         </ul>
   {% for file in site.static_files %}
   {% assign pageurl = page.image-dir %}
   {% if file.path contains pageurl %}
     {% if file.extname == '.jpg' %}
-    <img src="{{ file.path }}" />
+    <img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/h8AAvMB+NzmkbcAAAAASUVORK5CYII=" data-src="{{ file.path }}">
     {% endif %}
   {% endif %}
 {% endfor %}
