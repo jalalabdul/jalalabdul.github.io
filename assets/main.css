@@ -108,7 +108,7 @@ h1 a:hover {
  * Images
  */
 img {
-  background: #EEF2F4;
+  background: #f4faf8;
   max-width: 100%;
   vertical-align: middle; }
 
@@ -116,7 +116,6 @@ img {
 
 #screenshot {
 	position: absolute;
-	color: #FFF;
   text-align: center;
   width: 512px;
   z-index:-100;
@@ -520,10 +519,6 @@ ul.post-meta {
   font-family: "Larish Alte", serif;
   display: block;
   font-size: 16px; }
-
-.post-link:hover {
-  text-decoration: none;
-}
   
 @media screen and (min-width: 800px) {
   .post-link {
@@ -532,7 +527,14 @@ ul.post-meta {
   letter-spacing: -1px;
   line-height: 1; 
   background-size: 6px 54px;
-  background-repeat: repeat;}
+  background-repeat: repeat;
+  }
+.post-link:hover {
+  text-decoration: none;
+  background-size: 6px 54px;
+  background-repeat: repeat;
+  background-image: url(/assets/line_hover.svg);
+  }
 }
 
 .post img {

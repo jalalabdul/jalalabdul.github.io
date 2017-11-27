@@ -17,13 +17,11 @@ this.screenshotPreview = function(){
 		$("#screenshot")
 			.css("top",(e.pageY - xOffset) + "px")
 			.css("left",(e.pageX + yOffset) + "px")
-			.fadeIn("fast");
-		$(this).css('background-image','url(/assets/line_hover.svg)');						
+			.fadeIn("fast");						
     },
 	function(){
 		this.title = this.t;	
 		$("#screenshot").remove();
-		$("a.post-link").css('background-image','none');
     });	
 	$("a.post-link").mousemove(function(e){
 		$("#screenshot")
