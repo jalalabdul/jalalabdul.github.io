@@ -10,7 +10,7 @@ layout: default
     {% for post in site.posts %}
       <li>
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-<a class="post-link-img" href="{{ post.url | relative_url }}"><img class="lazyload" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQQEBkSGScXFycyJh8mMi4mJiYmLj41NTU1NT5EQUFBQUFBRERERERERERERERERERERERERERERERERERERET/2wBDARUZGSAcICYYGCY2JiAmNkQ2Kys2REREQjVCRERERERERERERERERERERERERERERERERERERERERERERERERET/wAARCAAJABADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCwAEf/2Q==" data-src="/img/{{ post.image-dir }}/{{ post.image-dir }}_{{ post.thumbnail }}.jpg" class="work" alt="{{ post.alt }}"></a>
+<a class="post-link-img" href="{{ post.url | relative_url }}"><img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII=" data-src="/img/{{ post.image-dir }}/{{ post.image-dir }}_{{ post.thumbnail }}.jpg" class="work" alt="{{ post.alt }}"></a>
           <a id="big-text" class="post-link" href="{{ post.url | relative_url }}" rel="../img/{{ post.image-dir }}/{{ post.image-dir }}_{{ post.thumbnail }}.jpg">{{ post.title | escape }}</a>
       </li>
     {% endfor %}

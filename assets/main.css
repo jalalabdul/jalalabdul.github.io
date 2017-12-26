@@ -267,8 +267,8 @@ label[for="nav-trigger"] span {
   display: block;
   width: 16px;
   height: 2px;
-  margin-bottom: 2px;
-  background: #222;
+  margin-bottom: 3px;
+  background: #828282;
         -webkit-transition: all 0.4s ease;
       -moz-transition: all 0.4s ease;
       -ms-transition: all 0.4s ease;
@@ -297,7 +297,12 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 .site-header a:hover {
   text-decoration: none;
   border-bottom: solid 2px #c9dae2;
-  padding-bottom: 5px;
+}
+
+@media screen and (min-width: 800px) {
+  .site-header a:hover {
+    padding-bottom: 5px;
+  }
 }
 
 .active {
@@ -309,7 +314,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 @media screen and (max-width: 600px) {
 .site-header {
   padding: 20px 0; 
-  background: #FFF;
+  background: rgba(255,255,255,.98);
   position: fixed;}
   .site-header a:hover {
   border: none;
@@ -330,6 +335,8 @@ label[for="nav-trigger"] span:nth-last-child(2) {
     color: #222;}
     .site-nav .page-link:not(:last-child) {
       margin-right: 50px; }
+
+
   @media screen and (max-width: 600px) {
     label[for="nav-trigger"] {
   position: fixed;
@@ -369,7 +376,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
           fill: #424242; }
       .site-nav .page-link {
         display: block;
-        padding: 10px 40px;}
+        padding: 15px 50px;}
         .site-nav .page-link:not(:last-child) {
           margin-right: 0; } 
 
@@ -494,6 +501,7 @@ background-size: 36px 36px;
 .post-meta {
   font-size: 13px;
   color: #828282; 
+  margin-bottom: 35px;
 }
 
 ul.post-meta {
@@ -636,7 +644,7 @@ ul.post-meta {
 
 .back-button {
   display: block;
-  margin-top: 15px;
+  margin-top: 35px;
 }
 
 .back-button:hover {
