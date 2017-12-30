@@ -221,11 +221,11 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: 1030px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px; }
+  padding-right: 50px;
+  padding-left: 50px; }
   @media screen and (max-width: 800px) {
     .wrapper {
       max-width: -webkit-calc(800px - (30px));
@@ -296,7 +296,6 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 
 .site-header a:hover {
   text-decoration: none;
-  border-bottom: solid 2px #c9dae2;
 }
 
 @media screen and (min-width: 800px) {
@@ -307,7 +306,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 
 .active {
   text-decoration: none;
-  border-bottom: solid 2px #c9dae2;
+  border-bottom: solid 1px #c9dae2;
   padding-bottom: 5px;
 }
 

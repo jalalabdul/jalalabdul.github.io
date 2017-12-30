@@ -8,5 +8,5 @@ layout: default
 title: "Jalal Abdul Aziz"
 ---
 
-# I'm a graphic designer
+# Jalal is a graphic designer
 # who do branding and 3D.
