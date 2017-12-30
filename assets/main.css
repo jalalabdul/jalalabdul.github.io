@@ -117,7 +117,7 @@ img {
 #screenshot {
 	position: absolute;
   text-align: center;
-  width: 512px;
+  width: 550px;
   z-index:-100;
 }
 
@@ -221,7 +221,7 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: 1200px;
+  max-width: 1170px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 50px;
@@ -298,16 +298,10 @@ label[for="nav-trigger"] span:nth-last-child(2) {
   text-decoration: none;
 }
 
-@media screen and (min-width: 800px) {
-  .site-header a:hover {
-    padding-bottom: 5px;
-  }
-}
-
 .active {
   text-decoration: none;
   border-bottom: solid 1px #c9dae2;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
 }
 
 @media screen and (max-width: 600px) {
