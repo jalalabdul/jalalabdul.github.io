@@ -187,7 +187,7 @@ p a:hover {
  * Blockquotes
  */
 blockquote {
-  color: #828282;
+  color: #999;
   border-left: 4px solid #e8e8e8;
   padding-left: 15px;
   font-size: 16px;
@@ -268,7 +268,7 @@ label[for="nav-trigger"] span {
   width: 16px;
   height: 2px;
   margin-bottom: 3px;
-  background: #828282;
+  background: #999;
         -webkit-transition: all 0.4s ease;
       -moz-transition: all 0.4s ease;
       -ms-transition: all 0.4s ease;
@@ -277,7 +277,7 @@ label[for="nav-trigger"] span {
 }
 
 label[for="nav-trigger"] span:nth-last-child(2) {
-  width: 25px;
+  width: 24px;
 }
 
 .nav-trigger {
@@ -378,10 +378,12 @@ label[for="nav-trigger"] span:nth-last-child(2) {
         box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
       }
       .nav-trigger:checked ~ label[for="nav-trigger"] .bar-2 {
-        width: 25px;
+        width: 24px;
+        background: #93a4ac;
       }
       .nav-trigger:checked ~ label[for="nav-trigger"] .bar-1 {
         width: 16px;
+        background: #93a4ac;
       }
 }
 
@@ -432,7 +434,7 @@ background-size: 36px 36px;
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: #828282;
+  color: #999;
   margin-left: -15px; 
 }
 
@@ -493,7 +495,7 @@ background-size: 36px 36px;
 
 .post-meta {
   font-size: 13px;
-  color: #828282; 
+  color: #999; 
   margin-bottom: 35px;
 }
 
