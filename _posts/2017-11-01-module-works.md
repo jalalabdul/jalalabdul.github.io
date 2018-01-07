@@ -2,6 +2,6 @@
 layout: project
 image-dir: mworks
 categories: Branding
-thumbnail: "01"
+thumbnail: "03"
 ---
 Soon.
