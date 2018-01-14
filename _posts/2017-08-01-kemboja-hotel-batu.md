@@ -4,4 +4,5 @@ image-dir: kemboja
 categories: Branding
 thumbnail: "07"
 ---
-Hotel Kemboja, sebuah boutique hotel yang hanya memiliki 8 kamar eksklusif yang dibangun dengan perpaduan gaya kolonial belanda dan jawa tradisional. Anda akan merasakan sensasi alam lewat desain kamar yang natural serta taman yang indah, yang sengaja didesain untuk menghilangkan penat aktivitas keseharian dalam sebuah liburan bersama keluarga.
+
+Kemboja is an eight-room boutique hotel built with a mix of traditional javanese and a bit of dutch colonial architecture. In line with the javanese theme, the logo is inspired by symbol of Majapahit, the most powerful empire to ever rule in the history of indonesia.
