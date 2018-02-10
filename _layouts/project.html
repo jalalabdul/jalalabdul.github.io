@@ -21,7 +21,7 @@ layout: default
   {% unless file.path contains 'small' %}
     {% if file.extname == '.jpg' or '.gif'%}
     <div class="post-img">
-    <img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII=" data-srcset="{{ file.path }} 1024w, {{ file.path | replace: ".jpg", "_small.jpg" }} 480w,">
+    <img class="lazyload" data-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII=" data-srcset="{{ file.path }} 1280w, {{ file.path | replace: ".jpg", "_small.jpg" }} 640w, {{ file.path | replace: ".jpg", "_small.jpg" }} 320w">
     </div>
     {% endif %}
     {% endunless %}
