@@ -18,11 +18,13 @@ layout: default
   {% for file in site.static_files %}
   {% assign pageurl = page.image-dir %}
   {% if file.path contains pageurl %}
-    {% if file.extname == '.jpg' %}
+  {% unless file.path contains 'small' %}
+    {% if file.extname == '.jpg' or '.gif'%}
     <div class="post-img">
-    <img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII=" data-src="{{ file.path }}">
+    <img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII=" data-srcset="{{ file.path }} 1024w, {{ file.path | replace: ".jpg", "_small.jpg" }} 480w,">
     </div>
     {% endif %}
+    {% endunless %}
   {% endif %}
 {% endfor %}
 <a class="back-button" href="{{ "/projects" | relative_url }}">&larr; Back to projects</a>

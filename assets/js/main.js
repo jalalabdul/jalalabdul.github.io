@@ -13,7 +13,7 @@ this.screenshotPreview = function(){
 		this.t = this.title;
 		this.title = "";	
 		var c = (this.t != "") ? "<br/>" + this.t : "";
-		$(".ajax").append("<p id='screenshot'><img src='"+ this.rel +"' alt='url preview' />"+ c +"</p>");								 
+		$(".ajax").append("<p id='screenshot' class='lazyload'><img src='"+ this.rel +"' alt='url preview' />"+ c +"</p>");								 
 		$("#screenshot")
 			.css("top",(e.pageY - xOffset) + "px")
 			.css("left",(e.pageX + yOffset) + "px")
