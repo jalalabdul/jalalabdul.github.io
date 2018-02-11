@@ -2,7 +2,7 @@
 layout: project
 image-dir: kemboja
 categories: Branding
-thumbnail: "07"
+thumbnail: "08"
 creative-director: Fattah Setiawan
 ---
 
