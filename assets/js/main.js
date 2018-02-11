@@ -83,7 +83,7 @@ if ( $(window).width() > 769) {
 			// Run URL preview script
 			screenshotPreview();
 			
-			$(".lazyload").Lazy({effect:"fadeIn",effectTime:500});
+			$(".lazyload").Lazy({effect:"fadeIn",effectTime:400});
 
 			// Google Analytics
 			ga('send', 'pageview', {
