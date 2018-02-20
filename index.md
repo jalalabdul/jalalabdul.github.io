@@ -9,4 +9,4 @@ title: "Jalal Abdul Aziz"
 ---
 
 # Jalal is a graphic designer
-# who do branding and 3D.
+# who does branding and 3D.
