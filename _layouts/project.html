@@ -27,6 +27,8 @@ layout: default
     {% endunless %}
   {% endif %}
 {% endfor %}
-<a class="back-button" href="{{ "/projects" | relative_url }}">&larr; Back to projects</a>
+<a class="back-button" href="{{ "/projects" | relative_url }}">
+  <svg class="arrow-left" viewBox="0 0 15 10"><g><path d="M5,0l0.706,0.706L1.914,4.5H15v1H1.914l3.792,3.792L5,10L0,4.999L5,0z"/></g></svg>
+  Back to projects</a>
  </div>
 </article>

@@ -1,0 +1,19 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <section class="page-content" id="ajax">
+      <div class="ajax wrapper">
+        {{ content }}
+        <a href="/projects" class="project-link">See Projects
+          <svg class="arrow-right" viewBox="0 0 15 10"><g><path d="M10,0,9.294.706,13.086,4.5H0v1H13.086L9.294,9.292,10,10l5-5Z"/></g></svg></a>
+      </div>
+    </section>
+       {% include footer.html %}
+  </body>
+</html>

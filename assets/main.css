@@ -200,6 +200,33 @@ p a:hover {
   border-bottom: 1px solid #222;
 }
 
+.project-link {
+  display: none;
+  margin-top: 35px;
+}
+
+.project-link:hover {
+  text-decoration: none;
+}
+
+.arrow-right {
+  display: inline-block;
+  height: 10px;
+  margin: 0 0 0 10px;
+}
+
+.arrow-left {
+  display: inline-block;
+  height: 10px;
+  margin: 0 10px 0 0;
+}
+
+@media screen and (max-width: 600px) {
+  .project-link {
+    display: inline-block;
+  }
+}
+
 /**
  * Blockquotes
  */
@@ -565,7 +592,7 @@ ul.post-meta {
 }
 
 .post-img {
-  margin: 0 auto 10px auto;
+  margin: 0 auto 25px auto;
 }
 
 
