@@ -140,7 +140,7 @@ img {
 
 @media screen and (max-width: 600px) {
   #screenshot {
-    display: none;
+    display: none !important;
   }
 }
 
