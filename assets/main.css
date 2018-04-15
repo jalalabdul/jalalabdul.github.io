@@ -423,11 +423,9 @@ label[for="nav-trigger"] span:nth-last-child(2) {
       }
       .nav-trigger:checked ~ label[for="nav-trigger"] .bar-2 {
         width: 24px;
-        background: #93a4ac;
       }
       .nav-trigger:checked ~ label[for="nav-trigger"] .bar-1 {
         width: 16px;
-        background: #93a4ac;
       }
 }
 
