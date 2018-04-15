@@ -312,7 +312,7 @@ label[for="nav-trigger"] span {
   width: 16px;
   height: 1px;
   margin-bottom: 3px;
-  background: #999;
+  background: #222;
         -webkit-transition: all 0.4s ease;
       -moz-transition: all 0.4s ease;
       -ms-transition: all 0.4s ease;
@@ -455,17 +455,10 @@ background-size: 36px 36px;
  * Site footer
  */
 
- 
-.site-footer p {
-  font-size: 13px;
-}
 
 @media screen and (max-width: 600px) {
   .page-link-container {
       padding-top: 100px; 
-  }
-  .site-footer p {
-    font-size: 10px;
   }
 }  
 
@@ -480,7 +473,6 @@ background-size: 36px 36px;
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: #999;
   margin-left: -15px; 
 }
 
@@ -577,13 +569,43 @@ ul.post-meta {
   line-height: 1; 
   background-size: 6px 54px;
   background-repeat: repeat;
+  position: relative;
   }
-.post-link:hover {
+
+  .post-list a:hover {
+    text-decoration: none;
+  }
+
+  .post-list a:before {
+    content: "";
+    width: 0%;
+    height: .3rem;
+    background: #222;
+    position: absolute;
+    top: 60%;
+    left: -2%;
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    z-index: 99;
+    -webkit-transition: width 0.3s ease;
+    -moz-transition: width 0.3s ease;
+    -ms-transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+  }
+
+  .post-list a:hover:before {
+    width: 104%;
+  } 
+
+/* .post-link:hover {
   text-decoration: none;
   background-size: 6px 54px;
   background-repeat: repeat;
   background-image: url(/assets/line_hover.svg);
-  }
+  } */
 }
 
 .post img {
@@ -606,7 +628,11 @@ ul.post-meta {
  * Posts
  */
 .post-header {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  letter-spacing: -1px;}
+  @media screen and (min-width: 800px) {
+    .post-header {
+      margin-bottom: 50px; } }
 
 .post-list img {
     z-index: -9999;
@@ -626,7 +652,6 @@ ul.post-meta {
       right: 50px;
       bottom: 50px;
       max-width: 720px;
-      transform: translate3d(0, 100%, 0);
       -webkit-transition: all 0.4s ease;
       -moz-transition: all 0.4s ease;
       -ms-transition: all 0.4s ease;
@@ -653,8 +678,7 @@ ul.post-meta {
 
 .post-title {
   font-size: 48px;
-  letter-spacing: -1px;
-  line-height: 1; }
+  letter-spacing: -1px;}
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
