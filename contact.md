@@ -9,4 +9,4 @@ weight: 2
 # Badung 80361
 # Bali
 <br>
-# [@ Mail](mailto:{{ site.email }})
+# [@email](mailto:{{ site.email }})

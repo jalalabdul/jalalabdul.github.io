@@ -3,6 +3,8 @@ author: Jalal
 email: jalalabdulaziz@gmail.com
 description: Graphic design works by Jalal.
 
+permalink: /:title
+
 twitter_username: jalalabdulaziz
 github_username:  jalalabdul
 

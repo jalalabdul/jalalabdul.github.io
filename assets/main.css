@@ -335,7 +335,6 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 
 .site-header a {
   font-size: 16px;
-  line-height: 1;
 }
 
 .site-header a:hover {
@@ -530,7 +529,6 @@ background-size: 36px 36px;
 }
 
 .post-meta {
-  font-size: 13px;
   color: #999; 
   margin-bottom: 35px;
 }
@@ -612,7 +610,7 @@ ul.post-meta {
 }
 
 .post-img {
-  margin: 0 auto 25px auto;
+  margin: 0 auto 30px auto;
 }
 
 @media screen and (max-width: 600px) {
