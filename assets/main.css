@@ -26,7 +26,7 @@
 
 /**
  * Reset some basic elements
- */
+*/
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -114,7 +114,7 @@ ul, ol, dl, figure,
 
 h1 {
   font-size: 48px;
-  font-family: "Larish Alte", serif;
+  font-family: "Larish Alte", Georgia, serif;
   line-height: 1;
 }
 
@@ -135,7 +135,18 @@ img {
 	position: absolute;
   text-align: center;
   width: 550px;
-  z-index:-100;
+  z-index:200;
+  -webkit-animation: reveal .3s ease;
+  animation: reveal .3s ease;
+}
+
+@-webkit-keyframes reveal {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes reveal {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @media screen and (max-width: 600px) {
@@ -180,16 +191,17 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
   color: #222;
-  text-decoration: none; }
-  a:visited {
-    color: #222; }
-  a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+    color: #222; 
+}
+
+a:hover {
     color: #222;
-    text-decoration: underline; }
-  .social-media-list a:hover {
-    text-decoration: none; }
-    .social-media-list a:hover .username {
-      text-decoration: underline; }
+    text-decoration: underline; 
+}
 
 p a {
   border-bottom: 1px solid #c9dae2;
@@ -313,11 +325,11 @@ label[for="nav-trigger"] span {
   height: 1px;
   margin-bottom: 3px;
   background: #222;
-        -webkit-transition: all 0.4s ease;
-      -moz-transition: all 0.4s ease;
-      -ms-transition: all 0.4s ease;
-      -o-transition: all 0.4s ease;
-      transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 label[for="nav-trigger"] span:nth-last-child(2) {
@@ -533,6 +545,10 @@ background-size: 36px 36px;
   margin-bottom: 35px;
 }
 
+.post-meta-dark {
+  color: #222;
+}
+
 ul.post-meta {
   list-style-type: none;
   margin-left: 0;
@@ -553,7 +569,7 @@ ul.post-meta {
 }
 
 .post-link, .post-title {
-  font-family: "Larish Alte", serif;
+  font-family: "Larish Alte", Georgia, serif;
   display: block;
   font-size: 16px; }
   
@@ -566,6 +582,10 @@ ul.post-meta {
   background-size: 6px 54px;
   background-repeat: repeat;
   position: relative;
+  }
+
+  .post-link:hover {
+    z-index: 400;
   }
 
   .post-list a:hover {

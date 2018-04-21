@@ -2,8 +2,8 @@
 this.screenshotPreview = function(){	
 	/* CONFIG */
 		
-		xOffset = 75;
-		yOffset = -75;
+		xOffset = 95;
+		yOffset = -95;
 		
 		// these 2 variable determine popup's distance from the cursor
 		// you might want to adjust to get the right result
@@ -13,7 +13,7 @@ this.screenshotPreview = function(){
 		this.t = this.title;
 		this.title = "";	
 		var c = (this.t != "") ? "<br/>" + this.t : "";
-		$(".ajax").append("<p id='screenshot' class='lazyload'><img src='"+ this.rel +"' alt='url preview' />"+ c +"</p>");								 
+		$(".ajax").prepend("<p id='screenshot' class='lazyload'><img src='"+ this.rel +"' alt='url preview' />"+ c +"</p>");								 
 		$("#screenshot")
 			.css("top",(e.pageY - xOffset) + "px")
 			.css("left",(e.pageX + yOffset) + "px")
