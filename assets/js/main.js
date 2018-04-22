@@ -46,16 +46,6 @@ if ( $(window).width() > 769) {
             $('.nav-trigger').prop('checked',false);
 	});
 
-// Active menu	
-function setactiveMenu() {
-	if ( $(window).width() > 769) {
-		$('.site-nav a').removeClass('active');
-		$('.site-nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
-	};
-};
-
-setactiveMenu();
-
 // Ajax
     var siteUrl = 'http://'+(document.location.hostname||document.location.host);
 
@@ -83,8 +73,6 @@ setactiveMenu();
 
 			// Run URL preview script
 			screenshotPreview();
-
-			setactiveMenu();
 			
 			$(".lazyload").Lazy({effect:"fadeIn",effectTime:400});
 
