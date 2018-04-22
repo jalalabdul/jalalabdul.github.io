@@ -31,7 +31,9 @@ body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
+
 
 /**
  * Basic styling
@@ -42,13 +44,7 @@ body {
   font-size: 16px;
   line-height: 23px;
   color: #222;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
   -webkit-font-smoothing: antialiased;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal;
   overflow-y: scroll;
 }
 
@@ -60,21 +56,22 @@ body {
 ::-webkit-scrollbar
 {
 	width: 6px;
-	background-color: #F5F5F5;
+	background-color: #fff;
 }
 
 ::-webkit-scrollbar-thumb
 {
-	background-color: #000;
+	background-color: #222;
 }
 
 ::-moz-selection { /* Code for Firefox */
     color: #fff;
-    background: #c9dae2;
+    background: #222;
 }
 
 ::selection {
-    background: #c9dae2;
+    color: #fff;
+    background: #222;
 }
 
 /**
@@ -162,15 +159,6 @@ img {
 }
 
 /**
- * Figures
- */
-figure > img {
-  display: block; }
-
-figcaption {
-  font-size: 14px; }
-
-/**
  * Lists
  */
 ul, ol {
@@ -238,40 +226,6 @@ p a:hover {
     display: inline-block;
   }
 }
-
-/**
- * Blockquotes
- */
-blockquote {
-  color: #999;
-  border-left: 4px solid #e8e8e8;
-  padding-left: 15px;
-  font-size: 16px;
-  letter-spacing: -1px;
-  font-weight: normal; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
-
-/**
- * Code formatting
- */
-pre,
-code {
-  font-size: 15px;
-  border: 1px solid #e8e8e8;
-  border-radius: 3px;
-  background-color: #eef; }
-
-code {
-  padding: 1px 5px; }
-
-pre {
-  padding: 8px 12px;
-  overflow-x: auto; }
-  pre > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0; }
 
 /**
  * Wrapper
@@ -345,12 +299,21 @@ label[for="nav-trigger"] span:nth-last-child(2) {
   padding: 70px 0;
 }
 
-.site-header a {
-  font-size: 16px;
-}
-
 .site-header a:hover {
   text-decoration: none;
+  
+}
+
+@media screen and (min-width: 800px) {
+  .site-header a:hover {
+    text-decoration: none;
+    color: #999;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
 }
 
 .active {
@@ -371,7 +334,6 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 
 .site-title {
   float: left;
-  font-size: 16px;
   margin-bottom: 0;
   margin-right: 150px;}
 
@@ -396,7 +358,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
       width: 75%;
       top: 0;
       right: -75%;
-      font-size: 20px;
+      font-size: 18px;
       background: #c9dae2;
       text-align: left; 
       -webkit-transition: all 0.4s ease;
@@ -451,8 +413,8 @@ background-size: 36px 36px;
 }
 
 @media screen and (max-width: 600px) {
-  #logo {
-    display: none;
+  .logo-container {
+    display: none !important;
   }
 }
 
@@ -463,25 +425,13 @@ background-size: 36px 36px;
 /**
  * Site footer
  */
-
-
 @media screen and (max-width: 600px) {
   .page-link-container {
       padding-top: 100px; 
   }
 }  
 
-.footer-heading {
-  font-size: 16px;
-  margin-bottom: 15px; }
-
-.contact-list,
-.social-media-list {
-  list-style: none;
-  margin-left: 0; }
-
 .footer-col-wrapper {
-  font-size: 15px;
   margin-left: -15px; 
 }
 
@@ -490,32 +440,6 @@ background-size: 36px 36px;
   margin-bottom: 25px;
   padding-left: 15px; }
 
-.footer-col-1 {
-  width: -webkit-calc(35% - (30px / 2));
-  width: calc(35% - (30px / 2)); }
-
-.footer-col-2 {
-  width: -webkit-calc(20% - (30px / 2));
-  width: calc(20% - (30px / 2)); }
-
-.footer-col-3 {
-  width: -webkit-calc(45% - (30px / 2));
-  width: calc(45% - (30px / 2)); }
-
-@media screen and (max-width: 800px) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: -webkit-calc(50% - (30px / 2));
-    width: calc(50% - (30px / 2)); }
-
-  .footer-col-3 {
-    width: -webkit-calc(100% - (30px / 2));
-    width: calc(100% - (30px / 2)); } }
-@media screen and (max-width: 600px) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (30px / 2));
-    width: calc(100% - (30px / 2)); } }
 /**
  * Page content
  */
