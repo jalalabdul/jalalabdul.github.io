@@ -7,17 +7,12 @@ layout: compress
   {% include head.html %}
   <body>
     {% include header.html %}
-    <section class="page-content" id="ajax">
-      <div class="ajax wrapper">
+    <section class="page-content" id="barba-wrapper">
+      <div class="barba-container wrapper">
         {{ content }}
       </div>
     </section>
        {% include footer.html %}
-       <script src="{{ "assets/js/jquery.min.js" | relative_url }}" type="text/javascript"></script>
-       <script src="{{ "assets/js/jquery.history.js" | relative_url }}" type="text/javascript"></script>
-       <script src="{{ "assets/js/jquery.lazy.min.js" | relative_url }}" type="text/javascript"></script>
-       <script src="{{ "assets/js/pace.min.js" | relative_url }}" type="text/javascript"></script>
-       <script src="{{ "assets/js/main.js" | relative_url }}" type="text/javascript"></script>
   </body>
 </html>
 

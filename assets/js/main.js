@@ -13,7 +13,7 @@ this.screenshotPreview = function(){
 		this.t = this.title;
 		this.title = "";	
 		var c = (this.t != "") ? "<br/>" + this.t : "";
-		$(".ajax").prepend("<p id='screenshot' class='lazyload'><img src='"+ this.rel +"' alt='url preview' />"+ c +"</p>");								 
+		$(".barba-container").prepend("<p id='screenshot' class='lazyload'><img src='"+ this.rel +"' alt='url preview' />"+ c +"</p>");								 
 		$("#screenshot")
 			.css("top",(e.pageY - xOffset) + "px")
 			.css("left",(e.pageX + yOffset) + "px")
@@ -29,58 +29,26 @@ this.screenshotPreview = function(){
 			.css("left",(e.pageX + yOffset) + "px");
 	});			
 };
-		
 
-// Starting scripts on page load
-$(document).ready(function(){
-
-$(".lazyload").Lazy({effect:"fadeIn",effectTime:500});
-
-// start URL preview script
-if ( $(window).width() > 769) {
-	screenshotPreview();
-};
-	
-// Toggle sidebar menu
-	$('.page-link').on('click',function(){
-            $('.nav-trigger').prop('checked',false);
-	});
-
-// Ajax
-    var siteUrl = 'http://'+(document.location.hostname||document.location.host);
-
-    // Make sure that all clicked links that link to your internal website
-    // don't just reload the page but execute a History.pushState call
-    $(document).delegate('a[href^="/"],a[href^="'+siteUrl+'"]', "click", function(e) {
-		e.preventDefault();
-		$("html, body").animate({ scrollTop: 0 }, 500);
-		History.pushState({}, "", this.pathname);
-	});
-
-    // Catch all History stateChange events
-    History.Adapter.bind(window, 'statechange', function(){
-        var State = History.getState();
-
-        // Load the new state's URL via an Ajax Call
-        $.get(State.url, function(data){
-            // Replace the "<title>" tag's content
-			//document.title = $(data).find("title").text();
-			document.title = "Jalal Abdul Aziz";
-
-            // Replace the content of the main container
-            // If you're using another div, you should change the selector
-			$('.page-content').html($(data).find('.ajax'));
-
-			// Run URL preview script
-			screenshotPreview();
-			
-			$(".lazyload").Lazy({effect:"fadeIn",effectTime:400});
-
-			// Google Analytics
-			ga('send', 'pageview', {
-				'page': State.url,
-				'title': document.title
-			});
-        });
-    });
+document.addEventListener("DOMContentLoaded", function() {
+	Barba.Pjax.init();
 });
+
+Barba.Dispatcher.on('newPageReady', function(e) {
+	$("html, body").animate({ scrollTop: 0 }, 500);
+	$(".lazyload").Lazy({effect:"fadeIn",effectTime:400});
+	// Start screenshotPreview
+	if ( $(window).width() > 769) {
+		screenshotPreview();
+	};
+	// Toggle sidebar menu
+	$('.page-link').on('click',function(){
+		$('.nav-trigger').prop('checked',false);
+	});
+});
+
+Barba.Dispatcher.on('initStateChange', function() {
+	if (typeof ga === 'function') {
+	  ga('send', 'pageview', location.pathname);
+	}
+  });
