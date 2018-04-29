@@ -1,14 +1,9 @@
 // URL preview script
 this.screenshotPreview = function(){	
-	/* CONFIG */
 		
 		xOffset = 95;
 		yOffset = -95;
 		
-		// these 2 variable determine popup's distance from the cursor
-		// you might want to adjust to get the right result
-		
-	/* END CONFIG */
 	$("a.post-link").hover(function(e){
 		this.t = this.title;
 		this.title = "";	
@@ -35,8 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 Barba.Dispatcher.on('newPageReady', function(e) {
-	$("html, body").animate({ scrollTop: 0 }, 500);
-	$(".lazyload").Lazy({effect:"fadeIn",effectTime:400});
+	window.lazySizes.init();
 	// Start screenshotPreview
 	if ( $(window).width() > 769) {
 		screenshotPreview();
