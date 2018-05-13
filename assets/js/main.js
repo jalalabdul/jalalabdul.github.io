@@ -4,22 +4,18 @@ this.screenshotPreview = function(){
 		xOffset = 95;
 		yOffset = -95;
 		
-	$("a.post-link").hover(function(e){
-		this.t = this.title;
-		this.title = "";	
-		var c = (this.t != "") ? "<br/>" + this.t : "";
-		$(".barba-container").prepend("<p id='screenshot' class='lazyload'><img src='"+ this.rel +"' alt='url preview' />"+ c +"</p>");								 
-		$("#screenshot")
+	$("a.post-link").hover(function(e){						 
+		$(this).siblings('.post-link-img')
 			.css("top",(e.pageY - xOffset) + "px")
 			.css("left",(e.pageX + yOffset) + "px")
 			.fadeIn("fast");						
     },
 	function(){
-		this.title = this.t;	
-		$("#screenshot").remove();
+		$(".post-link-img")
+		.css("display","none")
     });	
 	$("a.post-link").mousemove(function(e){
-		$("#screenshot")
+		$(this).siblings('.post-link-img')
 			.css("top",(e.pageY - xOffset) + "px")
 			.css("left",(e.pageX + yOffset) + "px");
 	});			

@@ -11,7 +11,7 @@ layout: default
       <li>
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
           <a class="post-link-img" href="{{ post.url | relative_url }}"><img class="lazyload work" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII=" data-srcset="/img/{{ post.image-dir }}/{{ post.image-dir }}_{{ post.thumbnail }}.jpg 1280w, /img/{{ post.image-dir }}/{{ post.image-dir }}_{{ post.thumbnail }}_small.jpg 640w, /img/{{ post.image-dir }}/{{ post.image-dir }}_{{ post.thumbnail }}_small.jpg 320w" data-sizes="100vw"></a>
-          <a id="big-text" class="post-link" href="{{ post.url | relative_url }}" rel="../img/{{ post.image-dir }}/{{ post.image-dir }}_{{ post.thumbnail }}.jpg">{{ post.title | escape }}</a>
+          <a id="big-text" class="post-link" href="{{ post.url | relative_url }}" rel="../img/{{ post.image-dir }}/{{ post.image-dir }}_{{ post.thumbnail }}_small.jpg">{{ post.title | escape }}</a>
       </li>
     {% endfor %}
   </ul>
