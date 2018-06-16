@@ -5,7 +5,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: homepage
-title: "Graphic design by Jalal"
+title: "Jalal Abdul Aziz"
 ---
 
 # Jalal is a graphic designer
