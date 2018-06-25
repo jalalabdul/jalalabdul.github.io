@@ -1,7 +1,6 @@
 /**
  * Font
  */
-
 @font-face {
 	font-family: 'webfont_1';
 	src: url('/assets/fonts/webfont_1.eot');
@@ -34,7 +33,6 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-
 /**
  * Basic styling
  */
@@ -48,23 +46,20 @@ body {
   overflow-y: scroll;
 }
 
-::-webkit-scrollbar-track
-{
+::-webkit-scrollbar-track {
 	background-color: #fff;
 }
 
-::-webkit-scrollbar
-{
+::-webkit-scrollbar {
 	width: 6px;
 	background-color: #fff;
 }
 
-::-webkit-scrollbar-thumb
-{
+::-webkit-scrollbar-thumb {
 	background-color: #222;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
     color: #222;
     background: #999;
 }
@@ -124,9 +119,9 @@ h1 a:hover {
  */
 img {
   max-width: 100%;
-  vertical-align: middle; }
-
-/*  */
+  width: 100%;
+  vertical-align: middle;
+}
 
 @media screen and (min-width: 800px) {
 .post-link-img {
@@ -146,22 +141,6 @@ img {
   0%   { opacity: 0; }
   100% { opacity: 1; }
 }
-
-/* @media screen and (min-width: 800px) {
-.post-link-img {
-  display: none;
-}
-} */
-
-/**
- * Lists
- */
-ul, ol {
-  margin-left: 30px; }
-
-li > ul,
-li > ol {
-  margin-bottom: 0; }
 
 /**
  * Headings
@@ -230,13 +209,17 @@ p a:hover {
   margin-right: auto;
   margin-left: auto;
   padding-right: 50px;
-  padding-left: 50px; }
-  @media screen and (max-width: 800px) {
-    .wrapper {
-      max-width: -webkit-calc(800px - (30px));
-      max-width: calc(800px - (30px));
-      padding-right: 20px;
-      padding-left: 20px; } }
+  padding-left: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    max-width: -webkit-calc(800px - (30px));
+    max-width: calc(800px - (30px));
+    padding-right: 20px;
+    padding-left: 20px;
+  } 
+}
 
 /**
  * Clearfix
@@ -330,86 +313,114 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 .site-title {
   float: left;
   margin-bottom: 0;
-  margin-right: 150px;}
-
-  .site-nav .nav-trigger {
-    display: none; }
-  .site-nav .menu-icon {
-    display: none; }
-  .site-nav .page-link {
-    color: #222;}
-    .site-nav .page-link:not(:last-child) {
-      margin-right: 50px; }
-
-
-  @media screen and (max-width: 600px) {
-    label[for="nav-trigger"] {
-  position: fixed;
+  margin-right: 150px;
 }
-    .site-nav {
-      position: fixed;
-      z-index: 1; 
-      height: 100%;
-      width: 75%;
-      top: 0;
-      right: -75%;
-      font-size: 18px;
-      background: #c9dae2;
-      text-align: left; 
-      -webkit-transition: all 0.4s ease;
-      -moz-transition: all 0.4s ease;
-      -ms-transition: all 0.4s ease;
-      -o-transition: all 0.4s ease;
-      transition: all 0.4s ease;
-    }
-      .site-nav label[for="nav-trigger"] {
-        display: block;
-        float: right;
-        width: 36px;
-        height: 36px;
-        z-index: 3;
-        cursor: pointer; }
-      .site-nav .menu-icon {
-        display: block;
-        float: right;
-        width: 36px;
-        height: 26px;
-        line-height: 0;
-        padding-top: 10px;
-        text-align: center; }
-        .site-nav .menu-icon > svg path {
-          fill: #424242; }
-      .site-nav .page-link {
-        display: block;
-        padding: 15px 50px;}
-        .site-nav .page-link:not(:last-child) {
-          margin-right: 0; } 
 
-      .nav-trigger:checked ~ .site-nav {
-        right: 0;
-        box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
-      }
-      .nav-trigger:checked ~ label[for="nav-trigger"] .bar-2 {
-        width: 24px;
-      }
-      .nav-trigger:checked ~ label[for="nav-trigger"] .bar-1 {
-        width: 16px;
-      }
+.site-nav .nav-trigger {
+  display: none;
+}
+
+.site-nav .menu-icon {
+  display: none;
+}
+
+.site-nav .page-link {
+  color: #222;
+}
+
+.site-nav .page-link:not(:last-child) {
+  margin-right: 50px;
+}
+
+
+@media screen and (max-width: 600px) {
+  label[for="nav-trigger"] {
+    position: fixed;
+  }
+  .site-nav {
+    position: fixed;
+    z-index: 1; 
+    height: 100%;
+    width: 75%;
+    top: 0;
+    right: -75%;
+    font-size: 18px;
+    background: #c9dae2;
+    text-align: left; 
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+
+  .site-nav label[for="nav-trigger"] {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 36px;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .site-nav .menu-icon {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 26px;
+    line-height: 0;
+    padding-top: 10px;
+    text-align: center; 
+  }
+
+  .site-nav .menu-icon > svg path {
+    fill: #424242;
+  }
+
+  .site-nav .page-link:not(:last-child) {
+    display: block;
+    padding: 15px 50px;
+  }
+
+  .site-nav .page-link:not(:last-child) {
+    margin-right: 0;
+  } 
+
+  .nav-trigger:checked ~ .site-nav {
+    right: 0;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.1);
+  }
+
+  .nav-trigger:checked ~ label[for="nav-trigger"] .bar-2 {
+    width: 24px;
+  }
+
+  .nav-trigger:checked ~ label[for="nav-trigger"] .bar-1 {
+    width: 16px;
+  }
 }
 
 #logo {
-float: right;
-width: 36px;
-height: 36px;
-background-image: url(/assets/logo.svg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: 36px 36px;
+  float: right;
+  width: 36px;
+  height: 36px;
+  background-image: url(/assets/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 36px 36px;
 }
 
 @media screen and (max-width: 600px) {
   .logo-container {
-    display: none !important;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+  }
+
+  #logo {
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
   }
 }
 
@@ -433,7 +444,8 @@ background-size: 36px 36px;
 .footer-col {
   float: left;
   margin-bottom: 25px;
-  padding-left: 15px; }
+  padding-left: 15px;
+}
 
 /**
  * Page content
