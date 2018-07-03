@@ -340,7 +340,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
   .site-nav {
     position: fixed;
     z-index: 1; 
-    height: 100%;
+    height: 100vh;
     width: 75%;
     top: 0;
     right: -75%;
