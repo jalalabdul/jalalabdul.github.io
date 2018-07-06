@@ -1,5 +1,6 @@
 ---
 layout: homepage
+title:
 ---
 
 # Jalal is a graphic designer
