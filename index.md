@@ -5,8 +5,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: homepage
-title: "Jalal Abdul Aziz"
 ---
 
 # Jalal is a graphic designer
-# who does branding and 3D.
+# working and living in Bali.
