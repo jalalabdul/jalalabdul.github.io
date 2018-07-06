@@ -1,6 +1,6 @@
 ---
 layout: homepage
-title:
+title: null
 ---
 
 # Jalal is a graphic designer
