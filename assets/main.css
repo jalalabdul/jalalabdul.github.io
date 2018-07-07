@@ -101,7 +101,7 @@ body {
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1:not(.post-link), h2, h3, h4, h5, h6,
+h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 .highlight {
@@ -503,6 +503,7 @@ ul.post-meta {
   letter-spacing: -1px;
   line-height: 1; 
   position: relative;
+  margin: 0;
   }
 
   .post-link:hover {
@@ -550,6 +551,9 @@ ul.post-meta {
 @media screen and (max-width: 600px) {
   .post-img {
     margin: 0 auto 10px auto;
+  }
+  .post-list a:hover {
+    text-decoration: none;
   }
 }
 
