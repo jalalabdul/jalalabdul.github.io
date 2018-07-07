@@ -1,6 +1,6 @@
 ---
 layout: homepage
-title: null
+title: colophone
 ---
 
 # Jalal is a graphic designer
