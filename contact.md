@@ -5,8 +5,8 @@ permalink: /contact/
 weight: 2
 ---
 
-# Kuta Utara
-# Badung 80361
-# Bali
+# Denpasar Barat
+# 80119 - Bali
+<br>
 <br>
 # [@email](mailto:{{ site.email }})

@@ -4,7 +4,9 @@
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
   {% if page_paths %}
-  <a class="site-title" href="{{ "/" | relative_url }}">Jalal Abdul Aziz</a>
+  <div class="site-title-container">
+    <a class="site-title" href="{{ "/" | relative_url }}">Jalal Abdul Aziz</a>
+  </div>
     <input type="checkbox" id="nav-trigger" class="nav-trigger" />
       <label for="nav-trigger">
         <span class="bar-1"></span>
