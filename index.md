@@ -4,4 +4,4 @@ title: colophone
 ---
 
 # Jalal is a graphic designer
-# working and living in Bali.
+# working & living in Bali.

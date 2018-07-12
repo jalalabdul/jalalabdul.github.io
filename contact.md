@@ -9,4 +9,4 @@ weight: 2
 # 80119 - Bali
 <br>
 <br>
-# [@email](mailto:{{ site.email }})
+# [@ Mail](mailto:{{ site.email }})
