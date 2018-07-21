@@ -277,8 +277,8 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 
 @media screen and (min-width: 800px) {
   .site-header a:hover {
-    border-bottom: 1px solid #222;
-    padding-bottom: 3px;
+    border-bottom: 1px solid #c9c9c9;
+    padding-bottom: 5px;
   }
 }
 
