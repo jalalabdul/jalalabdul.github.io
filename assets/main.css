@@ -7,7 +7,8 @@
 	src: url('/assets/fonts/webfont_1.eot?#iefix') format('embedded-opentype'),
 		url('/assets/fonts/webfont_1.woff') format('woff'),
 		url('/assets/fonts/webfont_1.ttf') format('truetype'),
-		url('/assets/fonts/webfont_1.svg#webfont_1') format('svg');
+    url('/assets/fonts/webfont_1.svg#webfont_1') format('svg');
+  font-display: fallback;
 	font-weight: normal;
 	font-style: normal;
 }
@@ -222,9 +223,10 @@ p a:hover {
 }
 
 label[for="nav-trigger"]  {
+  padding: 5px;
   width: 25px;
   position: absolute;
-  right: 20px;
+  right: 15px;
   top: 20px;
   z-index: 3;
   padding-top: 5px;
@@ -268,15 +270,9 @@ label[for="nav-trigger"] span:nth-last-child(2) {
   }
 }
 
-a.logo-container:hover {
+logo-container a:hover {
   border-bottom: none;
   padding-bottom: 0;
-}
-
-.active {
-  text-decoration: none;
-  border-bottom: solid 1px #000;
-  padding-bottom: 7px;
 }
 
 @media screen and (max-width: 600px) {
@@ -291,10 +287,6 @@ a.logo-container:hover {
 
 .site-title-container {
   float: left;
-}
-
-.site-title {
-  margin-right: 150px;
 }
 
 .site-nav .nav-trigger {
@@ -320,6 +312,10 @@ a.logo-container:hover {
     left: 0;
     margin-right: 5px;
   }
+
+  .site-title {
+    margin-right: 150px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -329,7 +325,7 @@ a.logo-container:hover {
     height: 100vh;
     width: 70%;
     top: 0;
-    right: -70%;
+    right: -72%;
     background: #000;
     text-align: left; 
     -webkit-transition: all 0.4s ease;
@@ -370,12 +366,12 @@ a.logo-container:hover {
     background: #fff;
   }
 
-  .site-nav .page-link:not(:last-child) {
+  .site-nav .page-link {
     display: block;
     padding: 15px 50px;
   }
 
-  .site-nav .page-link:not(:last-child) {
+  .site-nav .page-link {
     margin-right: 0;
   } 
 
@@ -393,19 +389,30 @@ a.logo-container:hover {
   }
 }
 
-.logo-container {
+.logo {
   float: right;
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
+}
+
+.logo:hover {
+  border: none !important;
+  padding: 0 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-top: -10px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .logo-container {
+  .logo {
     position: absolute;
-    bottom: 30px;
-    right: 30px;
+    bottom: 25px;
+    right: 20px;
   }
-  .logo-container svg {
+  .logo svg {
     fill: #fff;
   }
 }
@@ -434,7 +441,7 @@ a.logo-container:hover {
 }
 
 .site-footer {
-  color: #c9c9c9;
+  color: #9b9b9b;
 }
 
 /**
@@ -580,7 +587,7 @@ ul.post-meta {
     .post-header {
       margin-bottom: 50px; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .post-list img {
   margin-bottom: 10px; }
   .post-meta-grey {
