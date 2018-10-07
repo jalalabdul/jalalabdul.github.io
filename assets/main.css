@@ -98,7 +98,7 @@ ul, ol, dl, figure,
   margin-bottom: 15px; }
 
 h1 {
-  font-size: 48px;
+  font-size: 42px;
   font-family: "webfont_1", serif;
   line-height: 1;
 }
@@ -504,7 +504,7 @@ ul.post-meta {
 @media screen and (min-width: 800px) {
   .post-link {
   display: inline-block;
-  font-size: 48px;
+  font-size: 42px;
   letter-spacing: -1px;
   line-height: 1; 
   position: relative;
@@ -585,7 +585,7 @@ ul.post-meta {
   letter-spacing: -1px;}
   @media screen and (min-width: 800px) {
     .post-header {
-      margin-bottom: 50px; } }
+      margin-bottom: 30px; } }
 
 @media screen and (max-width: 768px) {
   .post-list img {
@@ -608,7 +608,7 @@ ul.post-meta {
 }
 
 .post-title {
-  font-size: 48px;
+  font-size: 42px;
   letter-spacing: -1px;}
   @media screen and (max-width: 800px) {
     .post-title {
