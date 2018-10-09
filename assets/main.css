@@ -123,6 +123,8 @@ img {
   opacity: 0;
   z-index: 200;
   pointer-events: none;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 }
 
@@ -279,7 +281,8 @@ logo-container a:hover {
 .site-header {
   padding: 20px 0; 
   background: rgba(255,255,255,.98);
-  position: fixed;}
+  position: fixed;
+}
   .site-header a:hover {
   border: none;
   }
@@ -377,7 +380,8 @@ logo-container a:hover {
 
   .nav-trigger:checked ~ .site-nav {
     right: 0;
-    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   }
 
   .nav-trigger:checked ~ label[for="nav-trigger"] .bar-2 {
@@ -567,7 +571,7 @@ ul.post-meta {
 }
 
 .lazyloading {
-	opacity: 1;
+	opacity: 1; 
 	transition: opacity 300ms;
 	background: #000 no-repeat center;
 }
