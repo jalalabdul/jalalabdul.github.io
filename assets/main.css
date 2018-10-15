@@ -123,8 +123,6 @@ img {
   opacity: 0;
   z-index: 200;
   pointer-events: none;
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 }
 
@@ -267,7 +265,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 
 @media screen and (min-width: 800px) {
   .site-header a:hover {
-    border-bottom: 1px solid #c9c9c9;
+    border-bottom: 1px solid #000;
     padding-bottom: 5px;
   }
 }
@@ -573,7 +571,6 @@ ul.post-meta {
 .lazyloading {
 	opacity: 1; 
 	transition: opacity 300ms;
-	background: #000 no-repeat center;
 }
 
 .lazyloaded {
