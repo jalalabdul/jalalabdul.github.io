@@ -265,7 +265,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 
 @media screen and (min-width: 800px) {
   .site-header a:hover {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #9b9b9b;
     padding-bottom: 5px;
   }
 }
@@ -473,6 +473,7 @@ logo-container a:hover {
 .post-meta {
   margin-bottom: 35px;
   margin-top: 20px;
+  color: #9b9b9b;
 }
 
 .post-meta-dark {
