@@ -13,6 +13,18 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'webfont_2';
+	src: url('/assets/fonts/webfont_2.eot');
+	src: url('/assets/fonts/webfont_2.eot?#iefix') format('embedded-opentype'),
+		url('/assets/fonts/webfont_2.woff') format('woff'),
+		url('/assets/fonts/webfont_2.ttf') format('truetype'),
+    url('/assets/fonts/webfont_2.svg#webfont_1') format('svg');
+  font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+
 /**
  * Reset some basic elements
 */
@@ -99,7 +111,7 @@ ul, ol, dl, figure,
 
 h1 {
   font-size: 42px;
-  font-family: "webfont_1", serif;
+  font-family: "webfont_1", sans-serif;
   line-height: 1;
 }
 
@@ -200,8 +212,8 @@ p a:hover {
   .wrapper {
     max-width: -webkit-calc(800px - (30px));
     max-width: calc(800px - (30px));
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
   } 
 }
 
@@ -248,6 +260,7 @@ label[for="nav-trigger"] span {
 
 label[for="nav-trigger"] span:nth-last-child(2) {
   width: 24px;
+  margin-top: 4px;
 }
 
 .nav-trigger {
@@ -324,16 +337,13 @@ logo-container a:hover {
     position: fixed;
     z-index: 1; 
     height: 100vh;
-    width: 70%;
+    width: 80%;
     top: 0;
-    right: -72%;
+    right: -82%;
     background: #000;
     text-align: left; 
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .site-nav label[for="nav-trigger"] {
@@ -420,7 +430,13 @@ logo-container a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  h1 {margin: 0;line-height: 1.1;}
+  h1 {
+    margin: 0;
+    line-height: 1.1;
+  }
+  .homepage h1 {
+    font-size: 9vh !important;
+  }
 }
 
 /**
@@ -467,10 +483,13 @@ logo-container a:hover {
 
 @media screen and (max-width: 600px) {
   .post-list > li {
-    margin-bottom: 30px; }
+    margin-bottom: 35px; }
 }
 
 .post-meta {
+  font-family: "webfont_2", serif;
+  font-size: 13px;
+  letter-spacing: .03em;
   margin-bottom: 35px;
   margin-top: 20px;
   color: #9b9b9b;
@@ -500,7 +519,7 @@ ul.post-meta {
 }
 
 .post-link, .post-title {
-  font-family: "webfont_1", serif;
+  font-family: "webfont_1", sans-serif;
   display: block;
   font-size: 16px; }
   
@@ -591,7 +610,7 @@ ul.post-meta {
 
 @media screen and (max-width: 768px) {
   .post-list img {
-  margin-bottom: 10px; }
+  margin-bottom: 15px; }
   .post-meta-grey {
     margin-right: 0;
   }
