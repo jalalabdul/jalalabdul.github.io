@@ -434,8 +434,8 @@ logo-container a:hover {
     margin: 0;
     line-height: 1.1;
   }
-  .homepage h1 {
-    font-size: 9vh !important;
+  .big-text h1 {
+    font-size: 8.25vh !important;
   }
 }
 
