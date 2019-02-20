@@ -5,10 +5,10 @@
   <title>{% if page.layout == 'homepage' %}{{ site.title | escape }} &#47; Graphic Design{% else %}{{ site.title | escape }} &#47; {{ page.title | escape }} {% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <meta name="google-site-verification" content="WuGIIXpTPq0HSAiG0RQWcyWlUrcjWyjs919f1WoZh9I" />
-  <link rel="stylesheet" href="{{ "/assets/main.css" | absolute_url }}">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | absolute_url }}">
-  <script src="{{ "assets/js/vendor.js" | absolute_url }}" type="text/javascript"></script>
-  <script src="{{ "assets/js/main.js" | absolute_url }}" type="text/javascript"></script>
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <script src="{{ "assets/js/vendor.js" | relative_url }}" type="text/javascript"></script>
+  <script src="{{ "assets/js/main.js" | relative_url }}" type="text/javascript"></script>
   {% include google-analytics.html %}
 </head>
