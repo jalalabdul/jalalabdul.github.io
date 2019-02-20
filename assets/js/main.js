@@ -21,6 +21,21 @@ this.screenshotPreview = function(){
 
 document.addEventListener("DOMContentLoaded", function() {
 	Barba.Pjax.init();
+  Barba.Prefetch.init();
+
+	var links = document.querySelectorAll('a[href]');
+		var cbk = function(e) {
+		 if(e.currentTarget.href === window.location.href) {
+		   e.preventDefault();
+		   e.stopPropagation();
+		 }
+	};
+
+	for(var i = 0; i < links.length; i++) {
+		links[i].addEventListener('click', cbk);
+	}
+
+  Barba.Pjax.start();
 });
 
 Barba.Dispatcher.on('newPageReady', function(e) {
