@@ -6,6 +6,6 @@
 #
 layout: projects-list
 title: Projects
-permalink: /projects/
+permalink: /projects
 weight: 1
 ---
