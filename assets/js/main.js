@@ -23,17 +23,24 @@ document.addEventListener("DOMContentLoaded", function() {
 	Barba.Pjax.init();
   Barba.Prefetch.init();
 
-	var links = document.querySelectorAll('a[href]');
-		var cbk = function(e) {
-		 if(e.currentTarget.href === window.location.href) {
-		   e.preventDefault();
-		   e.stopPropagation();
-		 }
-	};
-
-	for(var i = 0; i < links.length; i++) {
-		links[i].addEventListener('click', cbk);
-	}
+	var transEffect = Barba.BaseTransition.extend({
+		start: function(){
+			this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
+		},
+		fadeInNewcontent: function(nc) {
+			nc.hide();
+			var _this = this;
+			$(this.oldContainer).fadeOut(300).promise().done(() => {
+				nc.css('visibility','visible');
+				nc.fadeIn(300, function(){
+					_this.done();
+				})
+			});
+		}
+});
+Barba.Pjax.getTransition = function() {
+	return transEffect;
+}
 
   Barba.Pjax.start();
 });
