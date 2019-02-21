@@ -1,20 +1,4 @@
-title: Jalal
-author: Jalal
-email: jalalabdulaziz@gmail.com
-description: Jalal is a graphic designer working and living in Bali.
-
-baseurl: ""
-url: "https://jalal.id"
-
-permalink: /projects/:title
-
-twitter_username: jalalabdulaziz
-github_username:  jalalabdul
-
-google_analytics: UA-101729051-1
-
-markdown: kramdown
-theme: minima
-exclude:
-  - Gemfile
-  - Gemfile.lock
+url: http://localhost:3000
+host: localhost
+port: 4000
+permalink: /projects/:title.html
