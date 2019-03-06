@@ -591,12 +591,8 @@ ul.post-meta {
   }
 }
 
-.lazyload {
-	opacity: 0;
-}
-
-.lazyloading {
-	opacity: 1; 
+.lazyload, .lazyloading {
+	opacity: 0; 
 	transition: opacity 300ms;
 }
 
