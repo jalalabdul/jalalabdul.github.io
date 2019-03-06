@@ -25,15 +25,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	var transEffect = Barba.BaseTransition.extend({
 		start: function(){
-			$(window).scrollTop(0);
 			this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
 		},
 		fadeInNewcontent: function(nc) {
+			$(window).scrollTop(0);
 			nc.hide();
 			var _this = this;
-			$(this.oldContainer).fadeOut(300).promise().done(() => {
+			$(this.oldContainer).fadeOut(100).promise().done(() => {
 				nc.css('visibility','visible');
-				nc.fadeIn(300, function(){
+				nc.fadeIn(200, function(){
 					_this.done();
 				})
 			});
