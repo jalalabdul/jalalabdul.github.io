@@ -442,7 +442,7 @@ logo-container a:hover {
     line-height: 1.1;
   }
   .big-text h1 {
-    font-size: 8.25vh !important;
+    font-size: calc(42px + 2vh) !important;
   }
 }
 
