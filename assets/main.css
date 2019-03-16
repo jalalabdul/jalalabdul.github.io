@@ -544,6 +544,10 @@ ul.post-meta {
     z-index: 400;
   }
 
+  .post-link:hover:after {
+    opacity: 0;
+  }
+
   .post-list a:hover {
     text-decoration: none;
   }
@@ -551,7 +555,7 @@ ul.post-meta {
   .post-link:before {
     content: "";
     width: 0%;
-    height: .275rem;
+    height: .175rem;
     background: #000;
     position: absolute;
     top: 55%;
@@ -560,17 +564,24 @@ ul.post-meta {
     -ms-transform: translate(0, -50%);
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
-    z-index: 99;
-    -webkit-transition: width 0.3s ease;
-    -moz-transition: width 0.3s ease;
-    -ms-transition: width 0.3s ease;
-    -o-transition: width 0.3s ease;
-    transition: width 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .post-link:after {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   .post-link:hover:before {
     width: 104%;
-  } 
+  }
 }
 
 .post img {
@@ -622,7 +633,34 @@ ul.post-meta {
   @media screen and (min-width: 1400px) {
     .post-list img {
       max-width: 960px;
-  }
+    }
+    .post-list-container {
+      max-width: 75% !important;
+    }
+    ul.post-list {
+      margin-bottom: 0 !important;
+    }
+    .post-list li {
+      /* position: relative; */
+      float: left;
+      margin-right: 40px;
+    }
+    .post-link:after {
+      content: "";
+      width: 24px;
+      height: 24px;
+      border-bottom: 1px solid #9b9b9b;
+      -webkit-transform: rotate(112deg);
+      transform: rotate(112deg);
+      position: absolute;
+      left: 100%;
+      top: 15px;
+      margin-left: 20px;
+      z-index: -999;
+    }
+    .post-list li:last-child h1:after {
+      display: none;
+    }
 }
 
   @media screen and (min-width: 1980px) {
