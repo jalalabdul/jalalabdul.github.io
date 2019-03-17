@@ -120,6 +120,7 @@ h1 {
   font-size: 42px;
   font-family: "webfont_1", sans-serif;
   line-height: 1;
+  letter-spacing: -0.01em;
 }
 
 h1 a:hover {
@@ -442,7 +443,7 @@ logo-container a:hover {
     line-height: 1.1;
   }
   .big-text h1 {
-    font-size: calc(42px + 2vh) !important;
+    font-size: calc(42px + 2.5vw) !important;
   }
 }
 
@@ -474,6 +475,13 @@ logo-container a:hover {
  */
 .page-content {
   padding: 50px 0 100px 0;}
+
+
+  .big-text p {
+    font-family: "webfont_2", serif;
+    letter-spacing: .03em;
+    color: #9b9b9b;
+  }
 
 @media screen and (max-width: 600px) {
   .page-content {
@@ -572,11 +580,11 @@ ul.post-meta {
   }
 
   .post-link:after {
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
 
   .post-link:hover:before {
