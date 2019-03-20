@@ -19,6 +19,13 @@ this.screenshotPreview = function(){
 	});			
 };
 
+// Dark mode function
+function toggleDarkLight() {
+	var body = document.getElementById("body");
+	var currentClass = body.className;
+	body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+};
+
 document.addEventListener("DOMContentLoaded", function() {
 	Barba.Pjax.init();
   Barba.Prefetch.init();
@@ -56,6 +63,11 @@ Barba.Dispatcher.on('newPageReady', function(e) {
 	$('.page-link').on('click',function(){
 		$('.nav-trigger').prop('checked',false);
 	});
+	if ( $(window).width() < 769) {
+		$('.logo').on('click',function(){
+			$('.nav-trigger').prop('checked',false);
+		});
+	};
 });
 
 Barba.Dispatcher.on('initStateChange', function() {

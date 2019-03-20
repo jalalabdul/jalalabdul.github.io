@@ -17,7 +17,12 @@
             <a class="page-link" href="{{ site.url }}/projects">Projects</a>
             <a class="page-link" href="{{ site.url }}/contact">Contact</a>
             <a class="page-link external" href="https://www.behance.net/jalalabdul" target="_blank">Behance</a>
-            <a class="logo" href="{{ site.url }}"><svg id="Layer_1" data-name="Layer 1" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 42 42"><defs></defs><title>Untitled-1</title><path class="cls-1" d="M25,45A21,21,0,1,1,46,24,21.024,21.024,0,0,1,25,45ZM25,4A20,20,0,1,0,45,24,20.023,20.023,0,0,0,25,4Zm8,15H31L27,29h2Zm-4,0H27L23,29h2Zm-4,0H23L19,29h2Zm-8.8,7L15,29h2l1.2-3Z" transform="translate(-4 -3)"/></svg></a>
+            <div class="button-container">
+              <button onclick="toggleDarkLight()" class="logo" title="Dark Mode">
+                <svg class="logo-dark" data-name="Layer 1" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-2{fill:#000;}</style></defs><title>logo_new</title><path class="cls-1" transform="translate(-4 -3)" d="M25,3A21,21,0,1,0,46,24,21.023,21.023,0,0,0,25,3ZM17,29H15l1.2-3h2Zm2,0,4-10h2L21,29Zm6,0H23l4-10h2Zm4,0H27l4-10h2Z"/></svg>
+                <svg class="logo-light" data-name="Layer 1" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 42 42"><defs></defs><path class="cls-1" d="M25,45A21,21,0,1,1,46,24,21.024,21.024,0,0,1,25,45ZM25,4A20,20,0,1,0,45,24,20.023,20.023,0,0,0,25,4Zm8,15H31L27,29h2Zm-4,0H27L23,29h2Zm-4,0H23L19,29h2Zm-8.8,7L15,29h2l1.2-3Z" transform="translate(-4 -3)"/></svg>
+              </button>
+            </div>
       </div>
       </nav>
     {% endif %}

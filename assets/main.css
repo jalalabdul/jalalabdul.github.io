@@ -35,6 +35,10 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+} 
+
 /**
  * Smooth scrolling
  */
@@ -45,20 +49,97 @@ html {
 /**
  * Basic styling
  */
-body {
+
+body, body.light-mode {
   font-family: "webfont_1", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 23px;
   background: #fff;
   -webkit-font-smoothing: antialiased;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
+  color: #000;
 }
+
+.light-mode {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+/**
+ * Dark mode
+ */
+
+.dark-mode {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+body.dark-mode {
+  color: #fff !important;
+  background: #000 !important;
+}
+
+.dark-mode .pace .pace-progress {
+  background: #fff !important;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
+.dark-mode a, .dark-mode a:visited, .dark-mode a:hover, .dark-mode .site-nav .page-link {
+  color: #fff;
+}
+
+.dark-mode .logo svg, .dark-mode .back-button svg, .dark-mode .project-link svg {
+  fill: #fff;
+}
+
+.dark-mode .post-link:before {
+  background: #fff;
+}
+
+body.dark-mode ::selection {
+  color: #000 !important;
+  background: #fff !important;
+}
+
+/**
+ * Dark mode (Mobile)
+ */
+ @media screen and (max-width: 600px) {
+  .dark-mode .site-nav {
+    background: #fff !important;
+  }
+  .dark-mode .site-nav .page-link {
+    color: #000 !important;
+  }
+  .dark-mode .logo svg {
+    fill: #000;
+  }
+  .dark-mode .site-header {
+    background: rgba(0,0,0,.98) !important;
+  }
+  .dark-mode .nav-trigger:checked ~ label[for="nav-trigger"] span {
+    background: #000 !important;
+  }
+}
+
+
 
 /**
  * Scrollbar
  */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
 	background-color: #fff;
 }
 
@@ -79,7 +160,7 @@ body {
 ::selection {
     color: #000;
     background: #999;
-}
+} */
 
 /**
  * Pace.js
@@ -349,9 +430,9 @@ logo-container a:hover {
     top: 0;
     right: -82%;
     background: #000;
-    text-align: left; 
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    text-align: left;
+    -webkit-transition: all .3s ease !important;
+    transition: all .3s ease !important;
   }
 
   .site-nav label[for="nav-trigger"] {
@@ -409,10 +490,39 @@ logo-container a:hover {
   }
 }
 
-.logo {
-  float: right;
+button {
+  display: inline-block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  background: none;
+  color: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:focus {
+  outline:0;
+}
+
+.button-container {
   width: 42px;
   height: 42px;
+  float: right;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  position: relative;
+}
+
+.logo .logo-dark {
+  opacity: 0;
+  position: absolute;
 }
 
 .logo:hover {
@@ -420,14 +530,30 @@ logo-container a:hover {
   padding: 0 !important;
 }
 
+.logo:hover .logo-light, .logo:active .logo-light {
+  opacity: 0;
+}
+
+.logo:hover .logo-dark, .logo:active .logo-dark {
+  opacity: 1;
+}
+
+.logo-light, .logo-dark {
+  -webkit-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  -ms-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
 @media screen and (min-width: 768px) {
-  .logo {
+  .button-container {
     margin-top: -10px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .logo {
+  .button-container {
     position: absolute;
     bottom: 25px;
     right: 20px;
@@ -458,11 +584,11 @@ logo-container a:hover {
 
 .footer-col-wrapper {
   margin-left: -15px; 
+  padding-bottom: 55px;
 }
 
 .footer-col {
   float: left;
-  margin-bottom: 25px;
   padding-left: 15px;
 }
 
@@ -498,7 +624,11 @@ logo-container a:hover {
 
 @media screen and (max-width: 600px) {
   .post-list > li {
-    margin-bottom: 35px; }
+    margin-bottom: 35px;
+  }
+  .footer-col-wrapper {
+    padding-bottom: 0;
+  }    
 }
 
 .post-meta {
@@ -508,10 +638,6 @@ logo-container a:hover {
   margin-bottom: 35px;
   margin-top: 20px;
   color: #9b9b9b;
-}
-
-.post-meta-dark {
-  color: #000;
 }
 
 ul.post-meta {
