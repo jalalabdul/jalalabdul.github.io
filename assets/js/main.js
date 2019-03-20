@@ -64,7 +64,7 @@ Barba.Dispatcher.on('newPageReady', function(e) {
 		$('.nav-trigger').prop('checked',false);
 	});
 	if ( $(window).width() < 769) {
-		$('.logo').on('click',function(){
+		$('button.logo').on('click',function(){
 			$('.nav-trigger').prop('checked',false);
 		});
 	};

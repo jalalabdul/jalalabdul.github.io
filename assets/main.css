@@ -120,15 +120,23 @@ body.dark-mode ::selection {
   .dark-mode .site-nav {
     background: #fff !important;
   }
+
   .dark-mode .site-nav .page-link {
     color: #000 !important;
   }
+
   .dark-mode .logo svg {
     fill: #000;
   }
+
   .dark-mode .site-header {
     background: rgba(0,0,0,.98) !important;
   }
+
+  .dark-mode label[for="nav-trigger"] span {
+    background: #fff !important;
+  }
+
   .dark-mode .nav-trigger:checked ~ label[for="nav-trigger"] span {
     background: #000 !important;
   }
