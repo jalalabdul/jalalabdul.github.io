@@ -651,7 +651,7 @@ ul.post-meta {
     .post-list li {
       /* position: relative; */
       float: left;
-      margin-right: 40px;
+      margin-right: 30px;
     }
     .post-link:after {
       content: "";
@@ -663,7 +663,7 @@ ul.post-meta {
       position: absolute;
       left: 100%;
       top: 15px;
-      margin-left: 20px;
+      margin-left: 15px;
       z-index: -999;
     }
     .post-list li:last-child h1:after {
