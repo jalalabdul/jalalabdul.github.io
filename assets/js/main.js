@@ -20,7 +20,7 @@ this.screenshotPreview = function(){
 };
 
 // Dark mode function
-function toggleDarkLight() {
+this.toggleDarkLight = function(){
 	var body = document.getElementById("body");
 	var currentClass = body.className;
 	body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
