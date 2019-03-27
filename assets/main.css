@@ -735,23 +735,26 @@ ul.post-meta {
   margin: 0 auto 30px auto;
 }
 
-@media screen and (max-width: 600px) {
-  .post-img {
-    margin: 0 auto 10px auto;
-  }
-  .post-list a:hover {
-    text-decoration: none;
-  }
+.post-img .lazyload, .post-img .lazyloading {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 15%, 0);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
-.lazyload, .lazyloading {
-	opacity: 0; 
-	transition: opacity 300ms;
-}
-
-.lazyloaded {
-	opacity: 1;
-  transition: opacity 300ms;
+.post-img .lazyloaded {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 /**
