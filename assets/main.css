@@ -230,8 +230,8 @@ img {
 	position: absolute;
   width: 480px;
   opacity: 0;
-  z-index: 200;
   pointer-events: none;
+  z-index: 200;
 }
 }
 
@@ -251,11 +251,12 @@ a {
 
 a:visited {
     color: #000; 
+    text-decoration: none;
 }
 
 a:hover {
     color: #000;
-    text-decoration: underline; 
+    text-decoration: none; 
 }
 
 p a {
@@ -390,6 +391,7 @@ logo-container a:hover {
   padding: 20px 0; 
   background: rgba(255,255,255,.98);
   position: fixed;
+  z-index: 9999;
 }
   .site-header a:hover {
   border: none;
@@ -432,8 +434,8 @@ logo-container a:hover {
 @media screen and (max-width: 600px) {
   .site-nav {
     position: fixed;
-    z-index: 1; 
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 80%;
     top: 0;
     right: -82%;
@@ -611,11 +613,11 @@ button:focus {
   padding: 50px 0 100px 0;}
 
 
-  .big-text p {
-    font-family: "webfont_2", serif;
-    letter-spacing: .03em;
-    color: #9b9b9b;
-  }
+.big-text p {
+  font-family: "webfont_2", serif;
+  letter-spacing: .03em;
+  color: #9b9b9b;
+}
 
 @media screen and (max-width: 600px) {
   .page-content {
@@ -762,16 +764,26 @@ ul.post-meta {
  */
 .post-header {
   margin-bottom: 20px;
-  letter-spacing: -1px;}
-  @media screen and (min-width: 800px) {
-    .post-header {
-      margin-bottom: 30px; } }
+  letter-spacing: -1px;
+}
+
+@media screen and (min-width: 800px) {
+  .post-header {
+    margin-bottom: 30px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .post-list img {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  }
+
   .post-meta-grey {
     margin-right: 0;
+  }
+
+  .post-img {
+    margin: 0 auto 15px auto;
   }
 }
 
@@ -779,17 +791,21 @@ ul.post-meta {
     .post-list img {
       max-width: 960px;
     }
+
     .post-list-container {
       max-width: 75% !important;
     }
+
     ul.post-list {
       margin-bottom: 0 !important;
     }
+
     .post-list li {
       /* position: relative; */
       float: left;
       margin-right: 30px;
     }
+
     .post-link:after {
       content: "";
       width: 24px;
@@ -803,14 +819,15 @@ ul.post-meta {
       margin-left: 15px;
       z-index: -999;
     }
+
     .post-list li:last-child h1:after {
       display: none;
     }
 }
 
-  @media screen and (min-width: 1980px) {
-    .post-list img {
-      max-width: 1200px;
+@media screen and (min-width: 1980px) {
+  .post-list img {
+    max-width: 1200px;
   }
 }
 
