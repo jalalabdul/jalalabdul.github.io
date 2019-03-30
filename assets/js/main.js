@@ -33,9 +33,8 @@ window.addEventListener('resize', () => {
 
 // Dark mode function
 this.toggleDarkLight = function(){
-	var body = document.getElementById("body");
-	var currentClass = body.className;
-	body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+  var $body = $("body");
+  $body.toggleClass("dark-mode light-mode")
 };
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -61,7 +60,6 @@ document.addEventListener("DOMContentLoaded", function() {
 Barba.Pjax.getTransition = function() {
 	return transEffect;
 }
-
   Barba.Pjax.start();
 });
 
