@@ -624,7 +624,7 @@ button:focus {
     line-height: 1.1;
   }
   .big-text h1 {
-    font-size: calc((var(--vh, 1vh) * 9)) !important;
+    font-size: calc((var(--vh, 1vh) * 10)) !important;
   }
 }
 
