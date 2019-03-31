@@ -2,11 +2,9 @@
 layout: default
 ---
 <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
-
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
   </header>
-
   <div class="post-content" itemprop="articleBody">
   <div class="post-description">{{ content }}</div>
   <ul class="post-meta">
@@ -27,8 +25,11 @@ layout: default
     {% endunless %}
   {% endif %}
 {% endfor %}
-<a class="back-button" href="{{ site.url }}/projects">
-  <svg class="arrow-left" viewBox="0 0 15 10"><g><path d="M5,0l0.706,0.706L1.914,4.5H15v1H1.914l3.792,3.792L5,10L0,4.999L5,0z"/></g></svg>
-  All projects</a>
- </div>
+  <div class="post-navigation">
+    <a class="back-button" href="{{ site.url }}/projects">
+    <svg class="arrow-left" viewBox="0 0 15 10"><g><path d="M5,0l0.706,0.706L1.914,4.5H15v1H1.914l3.792,3.792L5,10L0,4.999L5,0z"/></g></svg>Projects</a>
+    <a class="top-button">Top
+    <svg class="arrow-top" viewBox="0 0 15 10"><g><path d="M315.45,407.958l4.432,4.432-.627.626-3.361-3.362v9.3h-.887v-9.3l-3.363,3.362-.626-.626Z" transform="translate(-311.018 -407.958)"/></g></svg></a>
+  </div>
+</div> 
 </article>

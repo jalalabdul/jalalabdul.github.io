@@ -69,6 +69,9 @@ Barba.Dispatcher.on('newPageReady', function(e) {
 	if ( $(window).width() > 769) {
 		screenshotPreview();
 	};
+	$('.top-button').on('click',function(){
+		$(window).scrollTop(0);
+	});
 	// Toggle sidebar menu
 	$('.page-link').on('click',function(){
 		$('.nav-trigger').prop('checked',false);
