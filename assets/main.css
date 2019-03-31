@@ -294,7 +294,7 @@ p a:hover {
  */
 
 .post-navigation {
-  display: block;
+  padding-top: 20px;
 }
 
 .back-button, .top-button {
@@ -338,7 +338,7 @@ p a:hover {
 .arrow-top {
   display: inline-block;
   height: 12px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 5px;
 }
 
 /**
@@ -624,7 +624,7 @@ button:focus {
     line-height: 1.1;
   }
   .big-text h1 {
-    font-size: calc(42px + 2.5vw) !important;
+    font-size: calc((var(--vh, 1vh) * 9)) !important;
   }
 }
 
