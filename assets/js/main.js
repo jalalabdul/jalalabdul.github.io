@@ -1,9 +1,7 @@
 // URL preview script
 this.screenshotPreview = function(){	
-		
 		xOffset = 95;
 		yOffset = -95;
-		
 	$(".post-link").hover(function(e){						 
 		$(this).siblings()
 			.css("opacity","1");
@@ -33,8 +31,7 @@ window.addEventListener('resize', () => {
 
 // Dark mode function
 this.toggleDarkLight = function(){
-  var $body = $("body");
-  $body.toggleClass("dark-mode light-mode")
+  $("body").toggleClass("dark-mode light-mode");
 };
 
 document.addEventListener("DOMContentLoaded", function() {

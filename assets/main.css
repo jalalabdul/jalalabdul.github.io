@@ -87,7 +87,7 @@ body.dark-mode {
 .dark-mode .pace .pace-progress {
   background: #fff !important;
   position: fixed;
-  z-index: 2000;
+  z-index: 9999;
   top: 0;
   right: 100%;
   width: 100%;
@@ -191,7 +191,7 @@ body.light-mode::-moz-selection {
 .pace .pace-progress {
   background: #000;
   position: fixed;
-  z-index: 2000;
+  z-index: 9999;
   top: 0;
   right: 100%;
   width: 100%;
@@ -351,10 +351,10 @@ p a:hover {
 
 @media screen and (max-width: 800px) {
   .wrapper {
-    max-width: -webkit-calc(800px - (30px));
-    max-width: calc(800px - (30px));
-    padding-right: 15px;
-    padding-left: 15px;
+    max-width: -webkit-calc(800px - (40px));
+    max-width: calc(800px - (40px));
+    padding-right: 20px;
+    padding-left: 20px;
   } 
 }
 
@@ -435,7 +435,7 @@ logo-container a:hover {
   padding: 20px 0; 
   background: rgba(255,255,255,.98);
   position: fixed;
-  z-index: 9999;
+  z-index: 8888;
   }
 
   .site-header a:hover {
@@ -859,7 +859,7 @@ ul.post-meta {
       left: 100%;
       top: 15px;
       margin-left: 15px;
-      z-index: -999;
+      z-index: -9999;
     }
 
     .post-list li:last-child h1:after {
