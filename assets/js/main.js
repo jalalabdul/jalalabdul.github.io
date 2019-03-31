@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
 		},
 		fadeInNewcontent: function(nc) {
-			$(window).scrollTop(0);
+			$("html, body").animate({ scrollTop: 0 }, 600);
 			nc.hide();
 			var _this = this;
 			$(this.oldContainer).fadeOut(100).promise().done(() => {
@@ -70,7 +70,7 @@ Barba.Dispatcher.on('newPageReady', function(e) {
 		screenshotPreview();
 	};
 	$('.top-button').on('click',function(){
-		$(window).scrollTop(0);
+		$("html, body").animate({ scrollTop: 0 }, 600);
 	});
 	// Toggle sidebar menu
 	$('.page-link').on('click',function(){
