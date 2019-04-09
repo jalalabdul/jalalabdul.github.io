@@ -8,7 +8,7 @@ layout: default
   <div class="post-content" itemprop="articleBody">
   <div class="post-description">{{ content }}</div>
   <ul class="post-meta">
-          <li><span>Tags: </span><span class="post-meta-grey">{{ page.tags }}</span></li>
+          <li><span>Tags: </span><span class="post-meta-grey">{{ page.tags | join: ', ' }}</span></li>
           {% if page.creative-director %}
           <li><span>Creative director: </span><span class="post-meta-grey">{{ page.creative-director }}</span></li>
           {% endif %}
