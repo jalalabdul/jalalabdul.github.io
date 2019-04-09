@@ -2,7 +2,7 @@
 layout: project
 image-dir: kemboja
 categories: Branding
-produced: Identity, Prints, Website
+tags: "Identity / Prints / Website"
 creative-director: Fattah Setiawan
 thumbnail: "06"
 ---
