@@ -40,24 +40,22 @@ dl, dd, ol, ul, figure {
 } 
 
 /**
- * Smooth scrolling
- */
-/* html {
-  scroll-behavior: smooth;
-} */
-
-/**
  * Basic styling
  */
 body, body.light-mode {
   font-family: "webfont_1", sans-serif;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 23px;
   background: #fff;
   -webkit-font-smoothing: geometricPrecision !important;
   overflow-y: scroll;
   color: #000;
+}
+
+
+::selection {
+  background: transparent;
 }
 
 .light-mode {
@@ -168,11 +166,6 @@ body.light-mode::-moz-selection {
     color: #000;
     background: #999;
 }
-
-/* ::selection {
-    background: #000;
-    color: #fff;
-} */
 
 /**
  * Pace.js
@@ -415,14 +408,29 @@ label[for="nav-trigger"] span:nth-last-child(2) {
   padding: 70px 0;
 }
 
+.site-header a {
+  display: inline-block;
+}
+
 .site-header a:hover {
   text-decoration: none;
 }
 
 @media screen and (min-width: 800px) {
-  .site-header a:hover {
-    border-bottom: 1px solid #9b9b9b;
-    padding-bottom: 5px;
+  .site-header a:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    background-color: #9b9b9b;
+  }
+  .site-header a:hover:after {
+    width: 100%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
 }
 
@@ -562,14 +570,14 @@ button:focus {
 }
 
 .button-container {
-  width: 42px;
-  height: 42px;
+  width: 32px;
+  height: 32px;
   float: right;
 }
 
 .logo {
-  width: 42px;
-  height: 42px;
+  width: 32px;
+  height: 32px;
   position: relative;
 }
 
@@ -717,7 +725,7 @@ ul.post-meta {
 .post-link, .post-title {
   font-family: "webfont_1", sans-serif;
   display: block;
-  font-size: 16px; }
+  font-size: 14px; }
   
 @media screen and (min-width: 800px) {
   .post-link {
@@ -895,7 +903,7 @@ ul.post-meta {
     font-size: 20px; }
     @media screen and (max-width: 800px) {
       .post-content h4 {
-        font-size: 16px; } }
+        font-size: 14px; } }
 
 @media screen and (min-width: 800px) {
 .page {
