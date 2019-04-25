@@ -1,11 +1,11 @@
 ---
 layout: project
-image-dir: crossfit
-categories: Branding
+image-dir: mano
+categories: Digital
 tags: 
-    - Identity
-    - Prints
+    - Digital
+    - Website
 creative-director: Pierre Jacquet
 thumbnail: "01"
 ---
-Visual Identity for Crossfit Seminyak.
+Web design for Mano Beach House.
