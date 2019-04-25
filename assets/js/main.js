@@ -36,8 +36,6 @@ this.toggleDarkLight = function(){
 
 document.addEventListener("DOMContentLoaded", function() {
 	Barba.Pjax.init();
-  Barba.Prefetch.init();
-
 	var transEffect = Barba.BaseTransition.extend({
 		start: function(){
 			this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
