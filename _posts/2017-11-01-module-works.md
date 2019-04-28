@@ -1,7 +1,7 @@
 ---
 layout: project
 image-dir: mworks
-categories: Branding
+categories: Identity
 tags:
     - Identity
     - Prints
