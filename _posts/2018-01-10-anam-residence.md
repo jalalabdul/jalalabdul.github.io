@@ -1,7 +1,7 @@
 ---
 layout: project
 image-dir: anam
-categories: Branding
+categories: Identity
 tags:
     - Identity
     - Prints
