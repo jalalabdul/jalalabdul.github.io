@@ -13,7 +13,7 @@ this.screenshotPreview = function(){
 			.css("opacity","0");
     });	
 	$(".post-link").mousemove(function(e){
-		$(".post-link-img-container")
+		$(this).prev()
 			.css("top",(e.pageY - xOffset) + "px")
 			.css("left",(e.pageX + yOffset) + "px");
 	});			
