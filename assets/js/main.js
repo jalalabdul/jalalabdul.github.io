@@ -1,21 +1,20 @@
 // URL preview script
 this.screenshotPreview = function(){	
-		xOffset = 95;
-		yOffset = -95;
+		xOffset = 70;
+		yOffset = -70;
 	$(".post-link").hover(function(e){
 		$(".post-link").addClass("hover");
 		$(this).siblings()
-			.css("opacity","1");
+			.css("display","block");
     },
 	function(){
 		$(".post-link").removeClass("hover");
 		$(this).siblings()
-			.css("opacity","0");
+			.css("display","none");
     });	
 	$(".post-link").mousemove(function(e){
 		$(this).prev()
-			.css("top",(e.pageY - xOffset) + "px")
-			.css("left",(e.pageX + yOffset) + "px");
+			.css({'webkit-transform': 'translateX(' + (e.pageX - xOffset) + 'px) translateY(' + (e.pageY - xOffset) + 'px)', 'transform': 'translateX(' + (e.pageX - xOffset) + 'px) translateY(' + (e.pageY - xOffset) + 'px)'});
 	});			
 };
 
