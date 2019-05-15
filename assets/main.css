@@ -224,14 +224,19 @@ img {
 @media screen and (min-width: 800px) {
   .post-link-img-container {
     display: none;
-    top: 0;
-    left: 0;
     position: absolute;
     width: 480px;
     pointer-events: none;
     z-index: 200;
     backface-visibility: hidden;
   }
+}
+
+#screenshot {
+	position:absolute;
+	background:#fbfcfd;
+	display:none;
+  width: 480px;
 }
 
 /**
@@ -699,11 +704,11 @@ button:focus {
 
 .post-meta {
   font-family: "webfont_2", serif;
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: .03em;
   margin-bottom: 35px;
   margin-top: 20px;
-  color: #9b9b9b;
+  /* color: #9b9b9b; */
 }
 
 ul.post-meta {
@@ -721,7 +726,7 @@ ul.post-meta {
 }
 
 .post-meta-grey {
-  margin-right: 50px;
+  margin-right: 30px;
   list-style-type: none;
 }
 
@@ -736,6 +741,11 @@ ul.post-meta {
   font-size: 42px;
   position: relative;
   margin: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   }
 
   .post-link:hover {

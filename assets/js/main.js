@@ -1,22 +1,36 @@
 // URL preview script
-this.screenshotPreview = function(){	
-		xOffset = 70;
-		yOffset = -70;
-	$(".post-link").hover(function(e){
+// this.screenshotPreview = function(){	
+// 		xOffset = 70;
+// 		yOffset = -70;
+// 	$(".post-link").hover(function(e){
+// 		$(".post-link").addClass("hover");
+// 		$(this).siblings()
+// 			.css("display","block");
+//     },
+// 	function(){
+// 		$(".post-link").removeClass("hover");
+// 		$(this).siblings()
+// 			.css("display","none");
+//     });	
+// 	$(".post-link").mousemove(function(e){
+// 		$(this).prev()
+// 			.css({'webkit-transform': 'translateX(' + (e.pageX - xOffset) + 'px) translateY(' + (e.pageY - xOffset) + 'px)', 'transform': 'translateX(' + (e.pageX - xOffset) + 'px) translateY(' + (e.pageY - xOffset) + 'px)'});
+// 	});			
+// };
+
+this.screenshotPreview=function(){
+	xOffset=70;
+	yOffset=-70;
+	$(".post-links").hover(function(e){
 		$(".post-link").addClass("hover");
-		$(this).siblings()
-			.css("display","block");
-    },
-	function(){
+		$(".barba-container").append("<div id='screenshot'><img src='"+this.rel+"' alt='' /></div>");
+		$("#screenshot").css("top",(e.pageY-xOffset)+"px").css("left",(e.pageX+yOffset)+"px").stop().fadeIn("fast")},
+		function(){
 		$(".post-link").removeClass("hover");
-		$(this).siblings()
-			.css("display","none");
-    });	
-	$(".post-link").mousemove(function(e){
-		$(this).prev()
-			.css({'webkit-transform': 'translateX(' + (e.pageX - xOffset) + 'px) translateY(' + (e.pageY - xOffset) + 'px)', 'transform': 'translateX(' + (e.pageX - xOffset) + 'px) translateY(' + (e.pageY - xOffset) + 'px)'});
-	});			
-};
+		$("#screenshot").remove()});
+	$(".post-link").mousemove(function(e){$("#screenshot")
+		.css("top",(e.pageY-xOffset)+"px").css("left",(e.pageX+yOffset)+"px")})
+	};
 
 // Viewport sizing fix
 let vh = window.innerHeight * 0.01;
