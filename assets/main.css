@@ -430,7 +430,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
     display: block;
     height: 1px;
     width: 0;
-    background-color: #9b9b9b;
+    background-color: #b8b9b4;
   }
   .site-header a:hover:after {
     width: 100%;
@@ -662,7 +662,7 @@ button:focus {
 }
 
 .site-footer {
-  color: #9b9b9b;
+  color: #b8b9b4;
   text-align: left;
 }
 
@@ -676,7 +676,7 @@ button:focus {
 .big-text p {
   font-family: "webfont_2", serif;
   letter-spacing: .03em;
-  color: #9b9b9b;
+  color: #b8b9b4;
 }
 
 @media screen and (max-width: 600px) {
@@ -705,10 +705,11 @@ button:focus {
 .post-meta {
   font-family: "webfont_2", serif;
   font-size: 12px;
+  line-height: 18px;
   letter-spacing: .03em;
   margin-bottom: 35px;
   margin-top: 20px;
-  /* color: #9b9b9b; */
+  /* color: #b8b9b4; */
 }
 
 ul.post-meta {
@@ -913,7 +914,7 @@ ul.post-meta {
       content: "";
       width: 24px;
       height: 24px;
-      border-bottom: 1px solid #9b9b9b;
+      border-bottom: 1px solid #b8b9b4;
       -webkit-transform: rotate(112deg);
       transform: rotate(112deg);
       position: absolute;

@@ -2,7 +2,10 @@
 layout: project
 image-dir: sambu
 categories: Branding
-produced: Logo, Prints
+year: 2017
+tags:
+    - Logo
+    - Prints
 thumbnail: "01"
 ---
 
