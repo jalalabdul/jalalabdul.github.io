@@ -50,7 +50,7 @@ body, body.light-mode {
   background: #fff;
   -webkit-font-smoothing: geometricPrecision !important;
   overflow-y: scroll;
-  color: #1c191b;
+  color: #1e1b1c;
 }
 
 
@@ -79,7 +79,7 @@ body, body.light-mode {
 
 body.dark-mode {
   color: #fff !important;
-  background: #1c191b !important;
+  background: #1e1b1c !important;
 }
 
 .dark-mode .pace .pace-progress {
@@ -92,7 +92,7 @@ body.dark-mode {
   height: 2px;
 }
 
-.dark-mode a, .dark-mode a:visited, .dark-mode a:hover, .dark-mode .site-nav .page-link {
+.dark-mode a, .dark-mode a:visited, .dark-mode a:hover, .dark-mode {
   color: #fff;
 }
 
@@ -105,12 +105,12 @@ body.dark-mode {
 } */
 
 body.dark-mode::-webkit-scrollbar-track {
-	background-color: #1c191b;
+	background-color: #1e1b1c;
 }
 
 body.dark-mode::-webkit-scrollbar {
 	width: 6px;
-	background-color: #1c191b;
+	background-color: #1e1b1c;
 }
 
 body.dark-mode::-webkit-scrollbar-thumb {
@@ -121,20 +121,16 @@ body.dark-mode::-webkit-scrollbar-thumb {
  * Dark mode (Mobile)
  */
 @media screen and (max-width: 600px) {
-  .dark-mode .site-nav {
-    background: #fff !important;
-  }
-
   .dark-mode .site-nav .page-link {
-    color: #1c191b !important;
+    color: #1e1b1c !important;
   }
 
   .dark-mode .logo svg {
-    fill: #1c191b;
+    fill: #1e1b1c;
   }
 
   .dark-mode .site-header {
-    background: rgba(0,0,0,.98) !important;
+    background: #1e1b1c !important;
   }
 
   .dark-mode label[for="nav-trigger"] span {
@@ -142,7 +138,7 @@ body.dark-mode::-webkit-scrollbar-thumb {
   }
 
   .dark-mode .nav-trigger:checked ~ label[for="nav-trigger"] span {
-    background: #1c191b !important;
+    background: #1e1b1c !important;
   }
 }
 
@@ -159,11 +155,11 @@ body.light-mode::-webkit-scrollbar {
 }
 
 body.light-mode::-webkit-scrollbar-thumb {
-	background-color: #1c191b;
+	background-color: #1e1b1c;
 }
 
 body.light-mode::-moz-selection {
-    color: #1c191b;
+    color: #1e1b1c;
     background: #999;
 }
 
@@ -183,7 +179,7 @@ body.light-mode::-moz-selection {
 }
 
 .pace .pace-progress {
-  background: #1c191b;
+  background: #1e1b1c;
   position: fixed;
   z-index: 9999;
   top: 0;
@@ -250,17 +246,17 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #1c191b;
+  color: #1e1b1c;
   text-decoration: none;
 }
 
 a:visited {
-  color: #1c191b; 
+  color: #1e1b1c; 
   text-decoration: none;
 }
 
 a:hover {
-  color: #1c191b;
+  color: #1e1b1c;
   text-decoration: none; 
 }
 
@@ -270,7 +266,7 @@ p a {
 
 p a:hover {
   text-decoration: none;
-  border-bottom: 1px solid #1c191b;
+  border-bottom: 1px solid #1e1b1c;
 }
 
 .project-link {
@@ -394,7 +390,7 @@ label[for="nav-trigger"] span {
   width: 16px;
   height: 1px;
   margin-bottom: 3px;
-  background: #1c191b;
+  background: #1e1b1c;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
@@ -473,7 +469,7 @@ logo-container a:hover {
 }
 
 .site-nav .page-link {
-  color: #1c191b;
+  color: #1e1b1c;
 }
 
 .site-nav .page-link:not(:last-child) {
@@ -494,7 +490,7 @@ logo-container a:hover {
     width: 80%;
     top: 0;
     right: -82%;
-    background: #1c191b;
+    background: #b4b7b9;
     text-align: left;
     -webkit-transition: all .3s ease !important;
     transition: all .3s ease !important;
@@ -513,9 +509,9 @@ logo-container a:hover {
     cursor: pointer;
   }
 
-  .site-nav .page-link {
+  /* .site-nav .page-link {
     color: #fff;
-  }
+  } */
 
   .site-nav .menu-icon {
     display: block;
@@ -531,9 +527,9 @@ logo-container a:hover {
     fill: #424242;
   }
 
-  .nav-trigger:checked ~ label[for="nav-trigger"] span {
+  /* .nav-trigger:checked ~ label[for="nav-trigger"] span {
     background: #fff;
-  }
+  } */
 
   .site-nav .page-link {
     display: block;
@@ -546,8 +542,8 @@ logo-container a:hover {
 
   .nav-trigger:checked ~ .site-nav {
     right: 0;
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
 
   .nav-trigger:checked ~ label[for="nav-trigger"] .bar-2 {
@@ -627,9 +623,6 @@ button:focus {
     bottom: 25px;
     right: 20px;
   }
-  .logo svg {
-    fill: #fff;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -681,7 +674,7 @@ button:focus {
 
 @media screen and (max-width: 600px) {
   .page-content {
-    padding: 100px 0 50px 0;}
+    padding: 120px 0 30px 0;}
 }
 
 .page-heading {
@@ -804,7 +797,7 @@ ul.post-meta {
     content: "";
     width: 0%;
     height: .175rem;
-    background: #1c191b;
+    background: #1e1b1c;
     position: absolute;
     top: 55%;
     left: -2%;
