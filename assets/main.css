@@ -50,7 +50,7 @@ body, body.light-mode {
   background: #fff;
   -webkit-font-smoothing: geometricPrecision !important;
   overflow-y: scroll;
-  color: #000;
+  color: #1c191b;
 }
 
 
@@ -79,7 +79,7 @@ body, body.light-mode {
 
 body.dark-mode {
   color: #fff !important;
-  background: #000 !important;
+  background: #1c191b !important;
 }
 
 .dark-mode .pace .pace-progress {
@@ -105,12 +105,12 @@ body.dark-mode {
 } */
 
 body.dark-mode::-webkit-scrollbar-track {
-	background-color: #000;
+	background-color: #1c191b;
 }
 
 body.dark-mode::-webkit-scrollbar {
 	width: 6px;
-	background-color: #000;
+	background-color: #1c191b;
 }
 
 body.dark-mode::-webkit-scrollbar-thumb {
@@ -126,11 +126,11 @@ body.dark-mode::-webkit-scrollbar-thumb {
   }
 
   .dark-mode .site-nav .page-link {
-    color: #000 !important;
+    color: #1c191b !important;
   }
 
   .dark-mode .logo svg {
-    fill: #000;
+    fill: #1c191b;
   }
 
   .dark-mode .site-header {
@@ -142,7 +142,7 @@ body.dark-mode::-webkit-scrollbar-thumb {
   }
 
   .dark-mode .nav-trigger:checked ~ label[for="nav-trigger"] span {
-    background: #000 !important;
+    background: #1c191b !important;
   }
 }
 
@@ -159,11 +159,11 @@ body.light-mode::-webkit-scrollbar {
 }
 
 body.light-mode::-webkit-scrollbar-thumb {
-	background-color: #000;
+	background-color: #1c191b;
 }
 
 body.light-mode::-moz-selection {
-    color: #000;
+    color: #1c191b;
     background: #999;
 }
 
@@ -183,7 +183,7 @@ body.light-mode::-moz-selection {
 }
 
 .pace .pace-progress {
-  background: #000;
+  background: #1c191b;
   position: fixed;
   z-index: 9999;
   top: 0;
@@ -250,17 +250,17 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #000;
+  color: #1c191b;
   text-decoration: none;
 }
 
 a:visited {
-  color: #000; 
+  color: #1c191b; 
   text-decoration: none;
 }
 
 a:hover {
-  color: #000;
+  color: #1c191b;
   text-decoration: none; 
 }
 
@@ -270,7 +270,7 @@ p a {
 
 p a:hover {
   text-decoration: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #1c191b;
 }
 
 .project-link {
@@ -394,7 +394,7 @@ label[for="nav-trigger"] span {
   width: 16px;
   height: 1px;
   margin-bottom: 3px;
-  background: #000;
+  background: #1c191b;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
@@ -430,7 +430,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
     display: block;
     height: 1px;
     width: 0;
-    background-color: #b8b9b4;
+    background-color: #b4b7b9;
   }
   .site-header a:hover:after {
     width: 100%;
@@ -473,7 +473,7 @@ logo-container a:hover {
 }
 
 .site-nav .page-link {
-  color: #000;
+  color: #1c191b;
 }
 
 .site-nav .page-link:not(:last-child) {
@@ -494,7 +494,7 @@ logo-container a:hover {
     width: 80%;
     top: 0;
     right: -82%;
-    background: #000;
+    background: #1c191b;
     text-align: left;
     -webkit-transition: all .3s ease !important;
     transition: all .3s ease !important;
@@ -662,7 +662,7 @@ button:focus {
 }
 
 .site-footer {
-  color: #b8b9b4;
+  color: #b4b7b9;
   text-align: left;
 }
 
@@ -676,7 +676,7 @@ button:focus {
 .big-text p {
   font-family: "webfont_2", serif;
   letter-spacing: .03em;
-  color: #b8b9b4;
+  color: #b4b7b9;
 }
 
 @media screen and (max-width: 600px) {
@@ -709,7 +709,7 @@ button:focus {
   letter-spacing: .03em;
   margin-bottom: 35px;
   margin-top: 20px;
-  /* color: #b8b9b4; */
+  /* color: #b4b7b9; */
 }
 
 ul.post-meta {
@@ -804,7 +804,7 @@ ul.post-meta {
     content: "";
     width: 0%;
     height: .175rem;
-    background: #000;
+    background: #1c191b;
     position: absolute;
     top: 55%;
     left: -2%;
@@ -914,7 +914,7 @@ ul.post-meta {
       content: "";
       width: 24px;
       height: 24px;
-      border-bottom: 1px solid #b8b9b4;
+      border-bottom: 1px solid #b4b7b9;
       -webkit-transform: rotate(112deg);
       transform: rotate(112deg);
       position: absolute;
