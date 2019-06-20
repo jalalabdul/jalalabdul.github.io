@@ -7,6 +7,6 @@ tags:
     - Identity
     - Prints
 creative-director: Pierre Jacquet
-thumbnail: "01"
+thumbnail: "03"
 ---
 Visual Identity for Crossfit Seminyak.

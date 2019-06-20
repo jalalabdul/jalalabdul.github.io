@@ -3,24 +3,21 @@
  */
 @font-face {
 	font-family: 'webfont_1';
-	src: url('/assets/fonts/webfont_1.eot');
-	src: url('/assets/fonts/webfont_1.eot?#iefix') format('embedded-opentype'),
-		url('/assets/fonts/webfont_1.woff') format('woff'),
-		url('/assets/fonts/webfont_1.ttf') format('truetype'),
-    url('/assets/fonts/webfont_1.svg#webfont_1') format('svg');
-  font-display: fallback;
+	src: url('/assets/fonts/webfont_1.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'webfont_1-medium';
+	src: url('/assets/fonts/webfont_1-medium.woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'webfont_2';
-	src: url('/assets/fonts/webfont_2.eot');
-	src: url('/assets/fonts/webfont_2.eot?#iefix') format('embedded-opentype'),
-		url('/assets/fonts/webfont_2.woff') format('woff'),
-		url('/assets/fonts/webfont_2.ttf') format('truetype'),
-    url('/assets/fonts/webfont_2.svg#webfont_1') format('svg');
-  font-display: fallback;
+	src: url('/assets/fonts/webfont_2.woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -48,7 +45,9 @@ body, body.light-mode {
   font-size: 14px;
   line-height: 23px;
   background: #fff;
-  -webkit-font-smoothing: geometricPrecision !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
   color: #1e1b1c;
 }
@@ -201,7 +200,7 @@ h1 {
   font-size: 42px;
   font-family: "webfont_1", sans-serif;
   line-height: 1.3em;
-  letter-spacing: -0.01em;
+  letter-spacing: -1px;
 }
 
 h1 a:hover {
@@ -410,6 +409,10 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 .site-header {
   width: 100%;
   padding: 70px 0;
+  /* font-family: 'webfont_1-medium', sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px; */
 }
 
 .site-header a {
@@ -446,7 +449,7 @@ logo-container a:hover {
 @media screen and (max-width: 600px) {
   .site-header {
   padding: 20px 0; 
-  background: rgba(255,255,255,.98);
+  background: #fff;
   position: fixed;
   z-index: 8888;
   }
@@ -696,8 +699,8 @@ button:focus {
 }
 
 .post-meta {
-  font-family: "webfont_2", serif;
-  font-size: 12px;
+  font-family: "webfont_2", sans-serif;
+  font-size: 13px;
   line-height: 18px;
   letter-spacing: .03em;
   margin-bottom: 35px;
