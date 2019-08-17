@@ -7,11 +7,13 @@ layout: compress
   {% include head.html %}
   <body id="body" class="light-mode">
     {% include header.html %}
-    <section class="page-content" id="barba-wrapper">
-      <div class="barba-container wrapper">
-        {{ content }}
+    <div class="wrap page-content" id="barba-wrapper">
+      <div class="barba-container grid">
+          <div class="grid__col grid__col--12-of-12 grid__col grid__col--centered">
+            {{ content }}
+          </div>
       </div>
-    </section>
-       {% include footer.html %}
+    </div>
+    {% include footer.html %}
   </body>
 </html>

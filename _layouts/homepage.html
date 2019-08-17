@@ -4,16 +4,25 @@ layout: compress
 
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  {% include head.html %}
-  <body id="body" class="light-mode">
-    {% include header.html %}
-    <section class="page-content" id="barba-wrapper">
-      <div class="barba-container wrapper big-text">
-        {{ content }}
-        <a href="{{ site.url }}/projects" class="project-link">View Projects
-          <svg class="arrow-right" viewBox="0 0 15 10"><g><path d="M10,0,9.294.706,13.086,4.5H0v1H13.086L9.294,9.292,10,10l5-5Z"/></g></svg></a>
+{% include head.html %}
+
+<body id="body" class="light-mode">
+  {% include header.html %}
+  <a href="/projects">
+    <div class="wrap page-content" id="barba-wrapper">
+      <div class="barba-container grid">
+        <div class="grid__col grid__col--12-of-12 grid__col homepage-video">
+          <video loop muted playsinline="true" autoplay="true">
+            <source src="{{ site.url }}/video/homepage_vid.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="grid__col grid__col--12-of-12 grid__col">
+          {{ content }}
+        </div>
       </div>
-    </section>
-       {% include footer.html %}
-  </body>
+    </div>
+  </a>
+  {% include footer.html %}
+</body>
+
 </html>

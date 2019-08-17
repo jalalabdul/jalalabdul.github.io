@@ -1,36 +1,61 @@
 ---
-layout: default
+layout: default2
 ---
-<article class="post" itemscope itemtype="https://schema.org/BlogPosting">
-  <header class="post-header">
+
+<div class="grid__col grid__col--12-of-12 grid__col">
+  <div class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-  </header>
-  <div class="post-content" itemprop="articleBody">
+  </div>
+</div>
+<div class="grid__col grid__col--8-of-12 grid__col">
   <div class="post-description">{{ content }}</div>
+</div>
+<div class="grid__col grid__col--4-of-12 grid__col">
   <ul class="post-meta">
-          <li><span>Tags: </span><span class="post-meta-grey">{{ page.tags | join: ', ' }}</span></li>
-          {% if page.creative-director %}
-          <li><span>Creative director: </span><span class="post-meta-grey">{{ page.creative-director }}</span></li>
-          {% endif %}
-          <li><span>Year: </span><span class="post-meta-grey">{{ page.year }}</span></li>
-        </ul>
-  {% for file in site.static_files %}
-  {% assign pageurl = page.image-dir %}
-  {% if file.path contains pageurl %}
-  {% unless file.path contains 'small' %}
-    {% if file.extname == '.jpg' or '.gif'%}
+    <li><span class="post-meta-title">Scope: </span><span class="post-meta-grey">{{ page.tags | join: ', ' }}</span></li>
+    {% if page.creative-director %}
+    <li><span class="post-meta-title">Creative director: </span><span
+        class="post-meta-grey">{{ page.creative-director }}</span></li>
+    {% endif %}
+    <li><span class="post-meta-title">Year: </span><span class="post-meta-grey">{{ page.year }}</span></li>
+  </ul>
+</div>
+<div class="grid__col grid__col--12-of-12 grid__col">
+  <div class="post-content" itemprop="articleBody">
+    {% for file in site.static_files %}
+    {% assign pageurl = page.image-dir %}
+    {% if file.path contains pageurl %}
+    {% unless file.path contains 'small' or file.path contains 'thumb' %}
+    {% if file.extname == '.jpg' or '.gif' or '.png' %}
     <div class="post-img">
-    <img class="lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII=" data-srcset="{{ site.url }}{{ file.path }} 1280w, {{ site.url }}{{ file.path | replace: ".jpg", "_small.jpg" }} 640w, {{ site.url }}{{ file.path | replace: ".jpg", "_small.jpg" }} 320w" data-sizes="100vw">
+      <img class="lazyload"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII="
+        data-srcset="{{ site.url }}{{ file.path }} 1280w, {{ site.url }}{{ file.path | replace: ".jpg", "_small.jpg" }} 640w, {{ site.url }}{{ file.path | replace: ".jpg", "_small.jpg" }} 320w"
+        data-sizes="100vw">
     </div>
     {% endif %}
     {% endunless %}
-  {% endif %}
-{% endfor %}
-  <div class="post-navigation">
-    <a class="back-button" href="{{ site.url }}/projects">
-    <svg class="arrow-left" viewBox="0 0 15 10"><g><path d="M5,0l0.706,0.706L1.914,4.5H15v1H1.914l3.792,3.792L5,10L0,4.999L5,0z"/></g></svg>Projects</a>
-    <a class="top-button">Top
-    <svg class="arrow-top" viewBox="0 0 15 10"><g><path d="M315.45,407.958l4.432,4.432-.627.626-3.361-3.362v9.3h-.887v-9.3l-3.363,3.362-.626-.626Z" transform="translate(-311.018 -407.958)"/></g></svg></a>
+    {% endif %}
+    {% endfor %}
   </div>
-</div> 
-</article>
+</div>
+<div class="grid__col grid__col--6-of-12 grid__col--s-1-of-2 grid__col post-nav-back">
+  <a class="back-button" href="{{ site.url }}">
+    <svg class="arrow-left" viewBox="0 0 15 10">
+      <g>
+        <path d="M5,0l0.706,0.706L1.914,4.5H15v1H1.914l3.792,3.792L5,10L0,4.999L5,0z" />
+      </g>
+    </svg>Back
+  </a>
+</div>
+{% if page.next.url %}
+<div class="grid__col grid__col--6-of-12 grid__col--s-1-of-2 grid__col post-nav-next">
+  <a class="next-button" href="{{page.next.url}}">Next
+    <svg class="arrow-right" viewBox="0 0 15 10">
+      <g>
+        <path d="M15,5l-5,5L9.3,9.3l3.8-3.8H0l0-1h13.1L9.3,0.7L10,0L15,5z" />
+      </g>
+    </svg>
+  </a>
+</div>
+{% endif %}

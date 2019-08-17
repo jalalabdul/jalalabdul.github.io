@@ -1,0 +1,17 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {% include head.html %}
+  <body id="body" class="light-mode">
+    {% include header.html %}
+    <div class="wrap page-content" id="barba-wrapper">
+      <div class="barba-container grid">
+            {{ content }}
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
