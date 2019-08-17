@@ -15,13 +15,6 @@
   font-weight: 700;
 }
 
-@font-face {
-  font-family: 'webfont_1';
-  src: url('/assets/fonts/webfont_1-light.woff');
-  font-style: normal;
-  font-weight: 300;
-}
-
 /**
  * Reset some basic elements
 */
@@ -560,7 +553,7 @@ button:focus {
 }
 
 .project-thumb-item {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .project-thumb-secondary {
@@ -572,7 +565,6 @@ button:focus {
 
 .project-thumb-subtitle {
   font-size: 12px;
-  font-weight: 300;
   letter-spacing: .03rem;
   color: #999;
 }
@@ -777,7 +769,8 @@ ul.post-meta {
 
   .site-nav .site-nav-link {
     display: block;
-    padding: 15px 50px;
+    padding: 10px 50px;
+    font-size: 18px;
   }
 
   .site-nav .site-nav-link {
