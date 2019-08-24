@@ -15,6 +15,13 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: 'webfont_2';
+  src: url('/assets/fonts/webfont_2-regular.woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
 /**
  * Reset some basic elements
 */
@@ -62,6 +69,10 @@ body.light-mode {
 
 ::selection {
   background: #e5e5e5;
+}
+
+.text-center {
+  text-align: center !important;
 }
 
 video {
@@ -230,8 +241,10 @@ h6 {
 
 h1 {
   font-size: 32px;
-  font-family: "webfont_1", sans-serif;
+  font-family: "webfont_2", serif;
   line-height: 1.3em;
+  letter-spacing: 0;
+  font-weight: 500;
 }
 
 h1 a:hover {
@@ -374,10 +387,14 @@ label[for="nav-trigger"] span:nth-last-child(2) {
   margin: 2vw auto;
 }
 
-.site-header .site-title {
+.site-title {
+  font-family: 'webfont_2', serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
   text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: .1em;
+  text-align: center;
+  width: 100%;
 }
 
 .site-header a {
@@ -388,28 +405,13 @@ label[for="nav-trigger"] span:nth-last-child(2) {
   text-decoration: none;
 }
 
-@media screen and (min-width: 800px) {
-  .site-header a:after {
-    content: '';
-    display: block;
-    height: 1px;
-    width: 0;
-    background-color: #999;
-  }
-
-  .site-header a:hover:after {
-    width: 100%;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-}
-
 logo-container a:hover {
   border-bottom: none;
   padding-bottom: 0;
+}
+
+.site-nav {
+  padding: 30px 0;
 }
 
 .site-nav .nav-trigger {
@@ -424,10 +426,9 @@ logo-container a:hover {
   margin-right: 30px;
 }
 
-@media screen and (min-width: 600px) {
-  .site-title {
-    margin-right: 150px;
-  }
+.site-nav-link-container {
+  display: flex;
+  justify-content: center;
 }
 
 button {
@@ -448,10 +449,12 @@ button:focus {
   outline: 0;
 }
 
-.button-container {
+.dark-mode-button {
+  position: absolute;
   width: 23px;
   height: 11px;
-  float: right;
+  right: 20px;
+  top: 20px;
 }
 
 .logo {
@@ -471,7 +474,7 @@ button:focus {
 }
 
 @media screen and (max-width: 600px) {
-  .button-container {
+  .dark-mode-button {
     position: absolute;
     bottom: 25px;
     right: 20px;
@@ -483,11 +486,12 @@ button:focus {
  */
 
 .site-footer {
-  font-size: 12px;
-  letter-spacing: .03rem;
-  color: #999;
-  text-align: left;
-  margin: 2vw auto;
+  font-size: 21px;
+  font-family: "webfont_2", serif;
+  line-height: 1.3em;
+  letter-spacing: 0;
+  font-weight: 500;
+  text-align: center;
 }
 
 .site-footer .arrow-top {
@@ -517,6 +521,14 @@ button:focus {
   -moz-transform: rotate(-65deg);
 }
 
+.site-footer p {
+  text-align: center;
+}
+
+.footer-content {
+  padding-bottom: 50px;
+}
+
 
 /**
  * Homepage Video
@@ -532,8 +544,8 @@ button:focus {
  */
 
 .page-content {
-  margin-top: 8vw;
-  margin-bottom: 8vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
 }
 
 .post-content {
@@ -547,7 +559,7 @@ button:focus {
 
 .project-thumb {
   display: block;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   transition: opacity .25s;
   -webkit-transition: opacity .25s;
 }
@@ -563,10 +575,20 @@ button:focus {
   left: 0;
 }
 
+.project-thumb-title {
+  font-size: 28px;
+  font-family: "webfont_2", serif;
+  line-height: 1.3em;
+  letter-spacing: 0;
+  font-weight: 500;
+  text-align: center;
+}
+
 .project-thumb-subtitle {
   font-size: 12px;
   letter-spacing: .03rem;
   color: #999;
+  text-align: center;
 }
 
 .project-links:hover .project-thumb-secondary {
@@ -586,6 +608,10 @@ button:focus {
 .post-meta {
   font-family: "webfont_1", sans-serif;
   letter-spacing: .03em;
+}
+
+.post-meta {
+  padding-top: 30px;
 }
 
 .post-meta-title {
@@ -672,41 +698,30 @@ ul.post-meta {
   }
 }
 
-@media screen and (min-width: 800px) {
-  h1 {
-    letter-spacing: .05rem;
-  }
-
-  .post-description {
-    padding-right: 80px;
-  }
-}
-
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 24px;
   }
 
+  .site-title {
+    font-size: 21px;
+  }
+
   .page-content {
-    margin-top: 15vh;
-    margin-bottom: 5vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
   }
 
-  .site-nav-link-container {
-    margin-top: 15vh;
-  }
-
-  .post-content {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+  .dark-mode-button {
+    display: none;
   }
 
   .post-list img {
     margin-bottom: 15px;
   }
 
-  .post-meta {
-    padding-top: 5vh;
+  .project-thumb-title {
+    font-size: 24px;
   }
 
   .post-meta-grey {
@@ -722,82 +737,8 @@ ul.post-meta {
     padding-left: 0;
   }
 
-  .site-nav-link {
-    color: #000;
-  }
-
-  .site-nav {
-    position: fixed;
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-    width: 80%;
-    top: 0;
-    right: -82%;
-    z-index: 5;
-    background: #999;
-    text-align: left;
-    -webkit-transition: all .3s ease !important;
-    transition: all .3s ease !important;
-  }
-
   .arrow-topright {
     display: none;
-  }
-
-  .site-nav label[for="nav-trigger"] {
-    display: block;
-    float: right;
-    width: 36px;
-    height: 36px;
-    z-index: 3;
-    cursor: pointer;
-  }
-
-  .site-nav .menu-icon {
-    display: block;
-    float: right;
-    width: 36px;
-    height: 26px;
-    line-height: 0;
-    padding-top: 10px;
-    text-align: center;
-  }
-
-  .site-nav .menu-icon>svg path {
-    fill: #424242;
-  }
-
-  .site-nav .site-nav-link {
-    display: block;
-    padding: 10px 50px;
-    font-size: 18px;
-  }
-
-  .site-nav .site-nav-link {
-    margin-right: 0;
-  }
-
-  .nav-trigger:checked~.site-nav {
-    right: 0;
-    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  }
-
-  .nav-trigger:checked~label[for="nav-trigger"] .bar-2 {
-    width: 24px;
-  }
-
-  .nav-trigger:checked~label[for="nav-trigger"] .bar-1 {
-    width: 16px;
-  }
-
-  .site-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 8888;
-    margin: 0;
-    background: #fff;
   }
 
   .dark-mode .site-nav .site-nav-link {
@@ -821,11 +762,8 @@ ul.post-meta {
   }
 
   .site-footer {
+    font-size: 16px;
     margin: 0 auto;
-  }
-
-  .footer-content {
-    padding-bottom: 20px;
   }
 
   .site-footer .grid > .grid__col:nth-last-child(-n+2) .footer-content {

@@ -1,34 +1,36 @@
 <header class="site-header" role="banner">
+  <div class="dark-mode-button">
+    <button onclick="toggleDarkLight()" class="logo" title="Dark/Light">
+      <svg class="logo-dark" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 11">
+        <defs></defs>
+        <path class="cls-1"
+          d="M17.71,0H5.289A5.4,5.4,0,0,0,0,5.5,5.4,5.4,0,0,0,5.289,11H17.71A5.4,5.4,0,0,0,23,5.5,5.4,5.4,0,0,0,17.71,0ZM17.5,10A4.5,4.5,0,1,1,22,5.5,4.505,4.505,0,0,1,17.5,10Z" />
+      </svg>
+      <!-- <svg class="logo-hover" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 11"><defs></defs><path class="cls-1" d="M17.71,0H5.289A5.4,5.4,0,0,0,0,5.5,5.4,5.4,0,0,0,5.289,11H17.71A5.4,5.4,0,0,0,23,5.5,5.4,5.4,0,0,0,17.71,0Zm0,10H8.652a5.486,5.486,0,0,0,0-9H17.71A4.4,4.4,0,0,1,22,5.5,4.4,4.4,0,0,1,17.71,10Z"/></svg> -->
+      <svg class="logo-light" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 11">
+        <defs></defs>
+        <path class="cls-1"
+          d="M17.71,0H5.289A5.4,5.4,0,0,0,0,5.5,5.4,5.4,0,0,0,5.289,11H17.71A5.4,5.4,0,0,0,23,5.5,5.4,5.4,0,0,0,17.71,0ZM1,5.5A4.5,4.5,0,1,1,5.5,10,4.505,4.505,0,0,1,1,5.5Z" />
+      </svg>
+    </button>
+  </div>
   <div class="wrap">
     <div class="grid">
-      <div class="grid__col grid__col--6-of-12 grid__col--s-1-of-2 grid__col ">
+      <div class="grid__col grid__col--12-of-12 grid__col ">
         <div class="site-title-container">
-          <a class="site-title" href="{{ "/" | relative_url }}">Jalal</a>
+          <a class="site-title" href="{{ "/" | relative_url }}">Jalal Abdul Aziz<br>Branding & Digital</a>
         </div>
       </div>
       {% assign default_paths = site.pages | map: "path" %}
       {% assign page_paths = site.header_pages | default: default_paths %}
       {% if page_paths %}
-      <div class="grid__col grid__col--6-of-12 grid__col--s-1-of-2 grid__col">
-
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="bar-1"></span>
-          <span class="bar-2"></span>
-        </label>
+      <div class="grid__col grid__col--12-of-12 grid__col">
         <nav class="site-nav">
           <div class="site-nav-link-container">
             <!-- <a class="site-nav-link" href="{{ site.url }}">Home</a> -->
             <a class="site-nav-link" href="{{ site.url }}">Projects</a>
             <a class="site-nav-link" href="{{ site.url }}/about">About</a>
             <a class="site-nav-link" href="{{ site.url }}/contact">Contact</a>
-            <div class="button-container">
-              <button onclick="toggleDarkLight()" class="logo" title="Dark/Light">
-                <svg class="logo-dark" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 11"><defs></defs><path class="cls-1" d="M17.71,0H5.289A5.4,5.4,0,0,0,0,5.5,5.4,5.4,0,0,0,5.289,11H17.71A5.4,5.4,0,0,0,23,5.5,5.4,5.4,0,0,0,17.71,0ZM17.5,10A4.5,4.5,0,1,1,22,5.5,4.505,4.505,0,0,1,17.5,10Z"/></svg>
-                <!-- <svg class="logo-hover" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 11"><defs></defs><path class="cls-1" d="M17.71,0H5.289A5.4,5.4,0,0,0,0,5.5,5.4,5.4,0,0,0,5.289,11H17.71A5.4,5.4,0,0,0,23,5.5,5.4,5.4,0,0,0,17.71,0Zm0,10H8.652a5.486,5.486,0,0,0,0-9H17.71A4.4,4.4,0,0,1,22,5.5,4.4,4.4,0,0,1,17.71,10Z"/></svg> -->
-                <svg class="logo-light" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 11"><defs></defs><path class="cls-1" d="M17.71,0H5.289A5.4,5.4,0,0,0,0,5.5,5.4,5.4,0,0,0,5.289,11H17.71A5.4,5.4,0,0,0,23,5.5,5.4,5.4,0,0,0,17.71,0ZM1,5.5A4.5,4.5,0,1,1,5.5,10,4.505,4.505,0,0,1,1,5.5Z"/></svg>
-              </button>
-            </div>
           </div>
         </nav>
         {% endif %}

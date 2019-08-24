@@ -2,15 +2,15 @@
 layout: default2
 ---
 
-<div class="grid__col grid__col--12-of-12 grid__col">
-  <div class="post-header">
+<div class="grid__col grid__col--12-of-12 grid__col text-center">
+  <div class="post-header ">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
   </div>
 </div>
-<div class="grid__col grid__col--8-of-12 grid__col">
+<div class="grid__col grid__col--8-of-12 grid__col--centered text-center">
   <div class="post-description">{{ content }}</div>
 </div>
-<div class="grid__col grid__col--4-of-12 grid__col">
+<div class="grid__col grid__col--4-of-12 grid__col--centered text-center">
   <ul class="post-meta">
     <li><span class="post-meta-title">Scope: </span><span class="post-meta-grey">{{ page.tags | join: ', ' }}</span></li>
     {% if page.creative-director %}
