@@ -296,9 +296,17 @@ p a:hover {
 }
 
 .top-button {
-  float: right;
-  text-align: right;
+  display: block;
+  width: 40px;
+  height: 20px;
+  margin: 0 auto;
+  padding-bottom: 50px;
   cursor: pointer;
+}
+
+.top-button svg {
+  width: 40px;
+  height: auto;
 }
 
 .arrow-right {
@@ -765,7 +773,7 @@ ul.post-meta {
   }
 
   .site-header, .site-footer {
-    padding: 8vw 0;
+    padding: 10vw 0;
   }
 
   .site-footer {
