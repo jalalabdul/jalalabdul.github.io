@@ -153,9 +153,14 @@ body.dark-mode {
 .dark-mode .switch svg,
 .dark-mode .back-button svg,
 .dark-mode .next-button svg,
+.dark-mode .arrow-top,
 .dark-mode .arrow-topright,
 .dark-mode .project-link svg {
-  fill: #fff;
+  fill: #fff !important;
+}
+
+.dark-mode .logo-stamp svg {
+  fill: #cd8b40 !important;
 }
 
 body.dark-mode::-webkit-scrollbar-track {
@@ -515,10 +520,6 @@ button:focus {
   padding: 3vw 0;
 }
 
-.site-footer .arrow-top {
-  fill: #999;
-}
-
 .site-footer-line {
   width: 20px;
 }
@@ -590,7 +591,6 @@ button:focus {
 
 .project-thumb-subtitle {
   font-size: 12px;
-  letter-spacing: .03rem;
   color: #999;
   text-align: center;
 }
