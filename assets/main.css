@@ -383,16 +383,36 @@ label[for="nav-trigger"] span:nth-last-child(2) {
   width: 100%;
   font-family: 'webfont_1', sans-serif;
   color: #999;
-  margin: 2vw auto;
+  margin: 0 auto;
+  padding: 3vw 0;
 }
 
 .site-title {
   font-family: 'webfont_2', serif;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
   width: 100%;
+}
+
+.logo-stamp-container {
+  position: relative;
+  max-width: 1210px;
+  margin: 0 auto;
+  z-index: -999;
+}
+
+.logo-stamp {
+  position: absolute;
+  height: 125px;
+  width:125px;
+  right: 0;
+  top: -15px;
+}
+
+.logo-stamp svg {
+  fill: #ec1c24;
 }
 
 .site-header a {
@@ -409,7 +429,7 @@ logo-container a:hover {
 }
 
 .site-nav {
-  padding: 30px 0;
+  padding-top: 30px;
 }
 
 .site-nav .nav-trigger {
@@ -489,6 +509,7 @@ button:focus {
   line-height: 1.3em;
   letter-spacing: 0;
   text-align: center;
+  padding: 3vw 0;
 }
 
 .site-footer .arrow-top {
@@ -522,10 +543,6 @@ button:focus {
   text-align: center;
 }
 
-.footer-content {
-  padding-bottom: 50px;
-}
-
 
 /**
  * Homepage Video
@@ -540,13 +557,8 @@ button:focus {
  * Page content
  */
 
-.page-content {
-  margin-top: 5vw;
-  margin-bottom: 5vw;
-}
-
 .post-content {
-  margin-top: 5vw;
+  margin-top: 3vw;
 }
 
 .project-thumb-container {
@@ -681,7 +693,7 @@ ul.post-meta {
 }
 
 .post-title {
-  font-size: 42px;
+  font-size: 36px;
 }
 
 @media screen and (max-width: 800px) {
@@ -699,13 +711,22 @@ ul.post-meta {
     font-size: 24px;
   }
 
-  .site-title {
-    font-size: 21px;
+  .logo-stamp {
+    right: 20px;
+    height: 85px;
+    width: 85px;
   }
 
-  .page-content {
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+  .site-title {
+    font-size: 24px;
+  }
+
+  .site-nav-link {
+    font-size: 12px;
+  }
+
+  .post-content {
+    margin-top: 50px;
   }
 
   .dark-mode-button {
@@ -755,6 +776,10 @@ ul.post-meta {
 
   .dark-mode .nav-trigger:checked~label[for="nav-trigger"] span {
     background: #000 !important;
+  }
+
+  .site-header, .site-footer {
+    padding: 8vw 0;
   }
 
   .site-footer {
