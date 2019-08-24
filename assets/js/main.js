@@ -36,15 +36,6 @@ Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container
       scrollTop: 0
     }, 600);
   });
-  // Toggle sidebar menu
-  $('.site-nav-link').on('click', function () {
-    $('.nav-trigger').prop('checked', false);
-  });
-  if ($(window).width() < 769) {
-    $('button.logo').on('click', function () {
-      $('.nav-trigger').prop('checked', false);
-    });
-  };
 });
 
 Barba.Dispatcher.on('initStateChange', function () {
