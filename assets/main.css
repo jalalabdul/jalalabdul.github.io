@@ -276,12 +276,11 @@ a:hover {
 }
 
 p a {
-  border-bottom: 1px solid #c9dae2;
+  text-decoration: none;
 }
 
 p a:hover {
   text-decoration: none;
-  border-bottom: 1px solid #000;
 }
 
 /**
@@ -491,14 +490,6 @@ button:focus {
   padding: 0 !important;
 }
 
-@media screen and (max-width: 600px) {
-  .dark-mode-button {
-    position: absolute;
-    bottom: 25px;
-    right: 20px;
-  }
-}
-
 /**
  * Site footer
  */
@@ -514,13 +505,6 @@ button:focus {
 
 .site-footer .arrow-top {
   fill: #999;
-}
-
-.site-footer a,
-.site-footer a:hover,
-.site-footer a:visited {
-  display: block;
-  color: #999;
 }
 
 .site-footer-line {
@@ -696,6 +680,16 @@ ul.post-meta {
   font-size: 36px;
 }
 
+@media screen and (max-width: 1024px) {
+  .logo-stamp {
+    right: 20px;
+  }
+
+  .dark-mode-button {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .post-content h2 {
     font-size: 28px;
@@ -717,6 +711,10 @@ ul.post-meta {
     width: 85px;
   }
 
+  .dark-mode-button {
+    display: none;
+  }
+
   .site-title {
     font-size: 24px;
   }
@@ -727,10 +725,6 @@ ul.post-meta {
 
   .post-content {
     margin-top: 50px;
-  }
-
-  .dark-mode-button {
-    display: none;
   }
 
   .post-list img {
