@@ -57,6 +57,7 @@ body.light-mode {
   font-family: "webfont_1", sans-serif;
   font-weight: normal;
   font-size: 14px;
+  font-feature-settings: 'lnum' on; 
   line-height: 1.6;
   letter-spacing: .03em;
   background: #fff;
@@ -141,15 +142,15 @@ body.dark-mode {
   color: #999 !important;
 }
 
-.dark-mode .logo-light {
+.dark-mode .switch-light {
   opacity: 0 !important;
 }
 
-.dark-mode .logo-dark {
+.dark-mode .switch-dark {
   opacity: 1 !important;
 }
 
-.dark-mode .logo svg,
+.dark-mode .switch svg,
 .dark-mode .back-button svg,
 .dark-mode .next-button svg,
 .dark-mode .arrow-topright,
@@ -219,7 +220,6 @@ body.light-mode::-moz-selection {
 /**
  * Images
  */
-
 .post-img img,
 .project-thumb-container img {
   max-width: 100%;
@@ -466,26 +466,30 @@ button:focus {
   outline: 0;
 }
 
-.dark-mode-button {
+.dark-mode-switch {
   position: absolute;
-  width: 23px;
-  height: 11px;
+  width: 18px;
+  height: 8px;
   right: 20px;
   top: 20px;
 }
 
-.logo {
-  width: 23px;
-  height: 11px;
-  position: relative;
+.switch {
+  display: flex;
+  justify-content: center;
 }
 
-.logo .logo-dark {
+.switch svg {
+  width: 18px;
+  height: 8px;
+}
+
+.switch .switch-dark {
   opacity: 0;
   position: absolute;
 }
 
-.logo:hover {
+.switch:hover {
   border: none !important;
   padding: 0 !important;
 }
@@ -552,7 +556,6 @@ button:focus {
 
 .project-thumb {
   display: block;
-  padding-bottom: 20px;
   transition: opacity .25s;
   -webkit-transition: opacity .25s;
 }
@@ -574,6 +577,7 @@ button:focus {
   line-height: 1.3em;
   letter-spacing: 0;
   text-align: center;
+  padding-top: 15px;
 }
 
 .project-thumb-subtitle {
@@ -684,10 +688,6 @@ ul.post-meta {
   .logo-stamp {
     right: 20px;
   }
-
-  .dark-mode-button {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 800px) {
@@ -711,8 +711,8 @@ ul.post-meta {
     width: 85px;
   }
 
-  .dark-mode-button {
-    display: none;
+  .dark-mode-switch {
+    left: 20px;
   }
 
   .site-title {
@@ -752,16 +752,8 @@ ul.post-meta {
     display: none;
   }
 
-  .dark-mode .site-nav .site-nav-link {
-    color: #000 !important;
-  }
-
   .dark-mode .logo svg {
     fill: #000;
-  }
-
-  .dark-mode .site-header {
-    background: #000 !important;
   }
 
   .dark-mode label[for="nav-trigger"] span {
@@ -777,7 +769,7 @@ ul.post-meta {
   }
 
   .site-footer {
-    font-size: 16px;
+    font-size: 12px;
     margin: 0 auto;
   }
 

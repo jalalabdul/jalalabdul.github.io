@@ -14,4 +14,4 @@ weight: 2
 # Brand Identity Design
 # Brand Communication
 # Art Direction
-# Website Design & Development
+# Web Design & Development
