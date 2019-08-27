@@ -57,7 +57,7 @@ body.light-mode {
   font-family: "webfont_1", sans-serif;
   font-weight: normal;
   font-size: 14px;
-  font-feature-settings: 'lnum' on; 
+  font-feature-settings: 'lnum'on;
   line-height: 1.6;
   letter-spacing: .03em;
   background: #fff;
@@ -79,6 +79,7 @@ body.light-mode {
 video {
   width: 100%;
 }
+
 /**
  * Wrapper
  */
@@ -160,7 +161,7 @@ body.dark-mode {
 }
 
 .dark-mode .logo-stamp svg {
-  fill: #cd8b40 !important;
+  fill: #ec4e24 !important;
 }
 
 body.dark-mode::-webkit-scrollbar-track {
@@ -418,7 +419,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 .logo-stamp {
   position: absolute;
   height: 125px;
-  width:125px;
+  width: 125px;
   right: 0;
   top: -15px;
 }
@@ -483,7 +484,7 @@ button:focus {
   position: absolute;
   width: 18px;
   height: 8px;
-  right: 20px;
+  left: 20px;
   top: 20px;
 }
 
@@ -719,10 +720,6 @@ ul.post-meta {
     width: 85px;
   }
 
-  .dark-mode-switch {
-    left: 20px;
-  }
-
   .site-title {
     font-size: 24px;
   }
@@ -772,7 +769,8 @@ ul.post-meta {
     background: #000 !important;
   }
 
-  .site-header, .site-footer {
+  .site-header,
+  .site-footer {
     padding: 10vw 0;
   }
 
@@ -781,7 +779,7 @@ ul.post-meta {
     margin: 0 auto;
   }
 
-  .site-footer .grid > .grid__col:nth-last-child(-n+2) .footer-content {
+  .site-footer .grid>.grid__col:nth-last-child(-n+2) .footer-content {
     padding-bottom: 0 !important;
   }
 
