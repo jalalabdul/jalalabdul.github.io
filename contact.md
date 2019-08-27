@@ -11,4 +11,4 @@ weight: 3
 <br>
 <br>
 ##### SOCIAL
-# [Behance](https://behance.net/jalalabdulaziz){:target="_blank"} / [Pinterest](https://www.pinterest.com/jalalabdulaziz/){:target="_blank"} / [Instagram](https://instagram.com/jllabdl/){:target="_blank"}
+# [Behance](https://behance.net/jalalabdulaziz){:target="_blank"} / [Instagram](https://instagram.com/jllabdl/){:target="_blank"}
