@@ -3,6 +3,7 @@ this.toggleDarkLight = function () {
   $("body").toggleClass("dark-mode light-mode");
 };
 
+// Barba.js
 document.addEventListener("DOMContentLoaded", function () {
   var FadeTransition = Barba.BaseTransition.extend({
     start: function () {
@@ -49,6 +50,7 @@ Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, containe
   });
 });
 
+// Google Analytics
 Barba.Dispatcher.on('initStateChange', function () {
   if (typeof ga === 'function') {
     ga('send', 'pageview', location.pathname);

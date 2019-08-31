@@ -630,7 +630,7 @@ ul.post-meta {
 .post-img .lazyload,
 .post-img .lazyloading {
   opacity: 0;
-  -webkit-transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0, 15%, 0);
   transform: translate3d(0, 15%, 0);
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -642,7 +642,7 @@ ul.post-meta {
 .project-thumb-primary.lazyload,
 .project-thumb-primary.lazyloading {
   opacity: 0;
-  -webkit-transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0, 2%, 0);
   transform: translate3d(0, 2%, 0);
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -661,6 +661,11 @@ ul.post-meta {
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
+}
+
+.project-thumb-secondary.lazyload,
+.project-thumb-secondary.lazyloading {
+  opacity: 0 !important;
 }
 
 .post-header {
