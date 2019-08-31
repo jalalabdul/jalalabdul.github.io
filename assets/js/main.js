@@ -4,28 +4,34 @@ this.toggleDarkLight = function () {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-  Barba.Pjax.init();
-  var transEffect = Barba.BaseTransition.extend({
+  var FadeTransition = Barba.BaseTransition.extend({
     start: function () {
-      this.newContainerLoading.then(val => this.fadeInNewcontent($(this.newContainer)));
+      Promise
+        .all([this.newContainerLoading, this.fadeOut()])
+        .then(this.fadeIn.bind(this));
     },
-    fadeInNewcontent: function (nc) {
-      $("html, body").stop(true, false).animate({
-        scrollTop: 0
-      }, 600);
-      nc.hide();
-      var _this = this;
-      $(this.oldContainer).fadeOut(100).promise().done(() => {
-        nc.css('visibility', 'visible');
-        nc.fadeIn(200, function () {
-          _this.done();
-        })
+  
+    fadeOut: function () {
+      $(this.oldContainer).removeClass("anim-in");
+      $(this.oldContainer).fadeOut(200);
+
+      return new Promise(function(resolve, reject) {
+        window.setTimeout(function() {
+          resolve();
+        }, 400);
       });
+    },
+  
+    fadeIn: function() {
+      $(this.newContainer).addClass("anim-in");
+      this.done();
     }
   });
+  
   Barba.Pjax.getTransition = function () {
-    return transEffect;
-  }
+    return FadeTransition;
+  };
+  
   Barba.Pjax.start();
 });
 
