@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     fadeOut: function () {
-      $(this.oldContainer).removeClass("anim-in");
-      $(this.oldContainer).fadeOut(200);
+      $(this.oldContainer).removeClass("anim-in").fadeOut(200);
       $("footer").fadeOut(200);
 
       $("html, body").stop(true, false).animate({
