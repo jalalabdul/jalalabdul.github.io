@@ -12,7 +12,8 @@ layout: default2
 </div>
 <div class="grid__col grid__col--4-of-12 grid__col--centered text-center">
   <ul class="post-meta">
-    <li><span class="post-meta-title">Scope: </span><span class="post-meta-grey">{{ page.tags | join: ', ' }}</span></li>
+    <li><span class="post-meta-title">Scope: </span><span class="post-meta-grey">{{ page.tags | join: ', ' }}</span>
+    </li>
     {% if page.creative-director %}
     <li><span class="post-meta-title">Creative director: </span><span
         class="post-meta-grey">{{ page.creative-director }}</span></li>
@@ -39,23 +40,18 @@ layout: default2
     {% endfor %}
   </div>
 </div>
-<div class="grid__col grid__col--6-of-12 grid__col--s-1-of-2 grid__col post-nav-back">
-  <a class="back-button" href="{{ site.url }}">
-    <svg class="arrow-left" viewBox="0 0 15 10">
-      <g>
-        <path d="M5,0l0.706,0.706L1.914,4.5H15v1H1.914l3.792,3.792L5,10L0,4.999L5,0z" />
-      </g>
-    </svg>Back
-  </a>
+<div class="post-nav">
+  <div class="grid__col grid__col--4-of-12 grid__col--s-1-of-4 grid__col post-nav-back">
+    {% if page.previous.url %}
+    <a class="back-button" href="{{ page.previous.url }}">Prev</a>
+    {% endif %}
+  </div>
+  <div class="grid__col grid__col--4-of-12 grid__col--s-2-of-4 grid__col post-nav-projects">
+    <a class="project-button" href="/">Back to Projects</a>
+  </div>
+  <div class="grid__col grid__col--4-of-12 grid__col--s-1-of-4 grid__col post-nav-next">
+    {% if page.next.url %}
+    <a class="next-button" href="{{ page.next.url }}">Next</a>
+    {% endif %}
+  </div>
 </div>
-{% if page.next.url %}
-<div class="grid__col grid__col--6-of-12 grid__col--s-1-of-2 grid__col post-nav-next">
-  <a class="next-button" href="{{page.next.url}}">Next
-    <svg class="arrow-right" viewBox="0 0 15 10">
-      <g>
-        <path d="M15,5l-5,5L9.3,9.3l3.8-3.8H0l0-1h13.1L9.3,0.7L10,0L15,5z" />
-      </g>
-    </svg>
-  </a>
-</div>
-{% endif %}
