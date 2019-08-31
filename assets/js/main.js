@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
       $(this.oldContainer).removeClass("anim-in");
       $(this.oldContainer).fadeOut(200);
 
+      $("html, body").stop(true, false).animate({
+        scrollTop: 0
+      }, 600);
+
       return new Promise(function(resolve, reject) {
         window.setTimeout(function() {
           resolve();
