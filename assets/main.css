@@ -681,17 +681,12 @@ ul.post-meta {
   .post-header {
     margin-bottom: 30px;
   }
-}
-
-.post-title {
-  font-size: 36px;
-}
-
-@media screen and (max-width: 1024px) {
-  .logo-stamp {
-    right: 20px;
+  
+  .post-title {
+    font-size: 36px;
   }
 }
+
 
 @media screen and (max-width: 800px) {
   .post-content h2 {

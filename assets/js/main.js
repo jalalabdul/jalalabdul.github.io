@@ -46,7 +46,7 @@ Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, containe
   $('.top-button').on('click', function () {
     $("html, body").stop(true, false).animate({
       scrollTop: 0
-    }, 600);
+    }, 600, 'swing');
   });
 });
 
