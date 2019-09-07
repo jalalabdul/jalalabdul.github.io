@@ -5,7 +5,7 @@ this.toggleDarkLight = function () {
 
 // Scroll to top
 this.srollToTop = function () {
-    TweenLite.to(window, .9, {
+    TweenLite.to(window, .8, {
       scrollTo: {
           y: 0,
           autoKill: !1
@@ -28,6 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
       $("footer").fadeOut(200);
 
       srollToTop();
+
+      return new Promise(function (resolve, reject) {
+        window.setTimeout(function () {
+          resolve();
+        }, 600);
+      });
     },
 
     fadeIn: function () {
