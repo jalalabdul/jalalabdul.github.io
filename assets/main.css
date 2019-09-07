@@ -364,45 +364,6 @@ p a:hover {
   color: #999;
 }
 
-@media screen and (min-width: 600px) {
-  label[for="nav-trigger"] {
-    display: none;
-  }
-}
-
-label[for="nav-trigger"] {
-  padding: 5px;
-  width: 25px;
-  position: absolute;
-  right: 15px;
-  top: 20px;
-  z-index: 6;
-  padding-top: 5px;
-}
-
-label[for="nav-trigger"] span {
-  float: right;
-  display: block;
-  width: 16px;
-  height: 1px;
-  margin-bottom: 3px;
-  background: #000;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-label[for="nav-trigger"] span:nth-last-child(2) {
-  width: 24px;
-  margin-top: 4px;
-}
-
-.nav-trigger {
-  display: none;
-}
-
 .site-header {
   width: 100%;
   font-family: 'webfont_1', sans-serif;
@@ -539,6 +500,26 @@ button:focus {
 .site-footer p {
   text-align: center;
 }
+
+.site-footer .footer-link {
+  position: relative;
+}
+
+.site-footer .footer-link:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  bottom: -2px;
+  left: 0;
+  border-top: 1px solid;
+  -webkit-transition: all .4s cubic-bezier(.25,.46,.45,.94);
+  transition: all .4s cubic-bezier(.25,.46,.45,.94);
+}
+
+.site-footer .footer-link:hover:after {
+  width: 100%;
+}
+
 
 /**
  * Page content

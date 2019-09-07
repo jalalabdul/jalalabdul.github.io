@@ -3,6 +3,17 @@ this.toggleDarkLight = function () {
   $("body").toggleClass("dark-mode light-mode");
 };
 
+// Scroll to top
+this.srollToTop = function () {
+    TweenLite.to(window, .9, {
+      scrollTo: {
+          y: 0,
+          autoKill: !1
+      },
+      ease: Expo.easeInOut
+  })
+};
+
 // Barba.js
 document.addEventListener("DOMContentLoaded", function () {
   var FadeTransition = Barba.BaseTransition.extend({
@@ -16,15 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       $(this.oldContainer).removeClass("anim-in").fadeOut(200);
       $("footer").fadeOut(200);
 
-      $("html, body").stop(true, false).animate({
-        scrollTop: 0
-      }, 600);
-
-      return new Promise(function (resolve, reject) {
-        window.setTimeout(function () {
-          resolve();
-        }, 400);
-      });
+      srollToTop();
     },
 
     fadeIn: function () {
@@ -44,9 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, container, rawHTML) {
   window.lazySizes.init();
   $('.top-button').on('click', function () {
-    $("html, body").stop(true, false).animate({
-      scrollTop: 0
-    }, 600, 'swing');
+    srollToTop();
   });
 });
 
