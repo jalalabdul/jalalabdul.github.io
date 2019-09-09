@@ -5,13 +5,24 @@ this.toggleDarkLight = function () {
 
 // Scroll to top
 this.srollToTop = function () {
-    TweenLite.to(window, .8, {
+  var dist = jQuery(window).scrollTop();
+  if (dist => 1800) {
+    TweenLite.to(window, 1, {
       scrollTo: {
           y: 0,
           autoKill: !1
       },
       ease: Expo.easeInOut
   })
+  } else {
+    TweenLite.to(window, .5, {
+      scrollTo: {
+          y: 0,
+          autoKill: !1
+      },
+      ease: Expo.easeInOut
+  })
+  }
 };
 
 // Barba.js
@@ -28,11 +39,11 @@ document.addEventListener("DOMContentLoaded", function () {
       $("footer").fadeOut(200);
 
       srollToTop();
-
+      
       return new Promise(function (resolve, reject) {
         window.setTimeout(function () {
           resolve();
-        }, 600);
+        }, 800);
       });
     },
 
