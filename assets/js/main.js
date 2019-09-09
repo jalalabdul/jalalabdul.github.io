@@ -6,7 +6,7 @@ this.toggleDarkLight = function () {
 // Scroll to top
 this.srollToTop = function () {
   var dist = jQuery(window).scrollTop();
-  if (dist => 1800) {
+  if (dist > 1800) {
     TweenLite.to(window, 1, {
       scrollTo: {
           y: 0,
@@ -15,12 +15,12 @@ this.srollToTop = function () {
       ease: Expo.easeInOut
   })
   } else {
-    TweenLite.to(window, .5, {
+    TweenLite.to(window, .8, {
       scrollTo: {
           y: 0,
           autoKill: !1
       },
-      ease: Expo.easeInOut
+      ease: Power2.easeOut
   })
   }
 };
