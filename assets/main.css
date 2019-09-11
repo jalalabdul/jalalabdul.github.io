@@ -690,7 +690,7 @@ ul.post-meta {
   }
 
   .site-title {
-    font-size: 24px;
+    font-size: 21px;
   }
 
   .site-nav-link {
@@ -723,7 +723,7 @@ ul.post-meta {
 
   .site-header,
   .site-footer {
-    padding: 10vw 0;
+    padding: 20px 0;
   }
 
   .site-footer {

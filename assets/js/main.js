@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, container, rawHTML) {
   window.lazySizes.init();
+  history.scrollRestoration = 'manual';
   $('.top-button').on('click', function () {
     srollToTop();
   });
