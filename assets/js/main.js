@@ -10,7 +10,7 @@ this.srollToTop = function () {
     TweenLite.to(window, 1, {
       scrollTo: {
           y: 0,
-          autoKill: !1
+          autoKill: false
       },
       ease: Expo.easeInOut
   })
@@ -18,7 +18,7 @@ this.srollToTop = function () {
     TweenLite.to(window, .8, {
       scrollTo: {
           y: 0,
-          autoKill: !1
+          autoKill: false
       },
       ease: Power2.easeOut
   })
@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     fadeOut: function () {
-      $(this.oldContainer).removeClass("anim-in").fadeOut(200);
-      $("footer").fadeOut(200);
+      $(this.oldContainer).removeClass("anim-in").fadeOut(300);
+      $("footer").fadeOut(300);
 
       srollToTop();
       
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
 
     fadeIn: function () {
-      $("footer").fadeIn(200);
+      $("footer").fadeIn(300);
       $(this.newContainer).addClass("anim-in");
       this.done();
     }
