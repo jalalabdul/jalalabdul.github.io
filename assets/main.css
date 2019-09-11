@@ -252,7 +252,7 @@ body.light-mode::-moz-selection {
 }
 
 .anim-in {
-  animation: anim-in 0.4s ease;
+  animation: anim-in 0.4s ease forwards;
 }
 
 /**
@@ -369,12 +369,12 @@ p a:hover {
   font-family: 'webfont_1', sans-serif;
   color: #b4b4b4;
   margin: 0 auto;
-  padding: 3vw 0;
+  padding: 2vw 0;
 }
 
 .site-title {
   font-family: 'webfont_2', serif;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
