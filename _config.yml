@@ -8,7 +8,6 @@ url: "https://jalal.id"
 permalink: /projects/:title
 google_analytics: UA-101729051-1
 markdown: kramdown
-theme: minima
 exclude:
   - Gemfile
   - Gemfile.lock
