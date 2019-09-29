@@ -158,7 +158,7 @@ body.dark-mode {
   opacity: 1 !important;
 }
 
-.dark-mode .arrow-top {
+.dark-mode .arrow-top, .dark-mode .switch svg {
   fill: #fff !important;
 }
 
@@ -462,7 +462,7 @@ button:focus {
 .switch svg {
   width: 18px;
   height: 8px;
-  fill: #b4b4b4;
+  fill: #000;
 }
 
 .switch .switch-dark {
