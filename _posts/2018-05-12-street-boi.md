@@ -2,7 +2,7 @@
 layout: project
 image-dir: streetboi
 categories: Identity
-subtitle: Between Chuck and Bruce
+subtitle: East meets West
 year: 2018
 tags: 
     - Brand Identity
