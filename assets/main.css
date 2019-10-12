@@ -452,12 +452,10 @@ button:focus {
   height: 8px;
   left: 20px;
   top: 20px;
-  opacity: .3;
   display: none !important;
 }
 
 .dark-mode-switch:hover {
-  opacity: 1;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -ms-transition: all .5s ease;
