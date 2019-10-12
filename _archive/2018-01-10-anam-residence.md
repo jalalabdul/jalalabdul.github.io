@@ -4,7 +4,7 @@ image-dir: anam
 categories: Identity
 subtitle: Private Villa in Canggu
 year: 2017
-tags:
+scope:
     - Brand Identity
     - Digital
 ---

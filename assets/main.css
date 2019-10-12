@@ -683,10 +683,6 @@ ul.post-meta {
   .post-header {
     margin-bottom: 30px;
   }
-  
-  .post-title {
-    font-size: 36px;
-  }
 }
 
 
@@ -749,7 +745,7 @@ ul.post-meta {
   }
 
   .site-footer {
-    font-size: 12px;
+    font-size: 10px;
     margin: 0 auto;
   }
 }

@@ -4,7 +4,7 @@ image-dir: crossfit
 categories: Identity
 subtitle: Crossfit Box in Seminyak
 year: 2018
-tags: 
+scope: 
     - Brand Identity
 creative-director: Pierre Jacquet
 ---

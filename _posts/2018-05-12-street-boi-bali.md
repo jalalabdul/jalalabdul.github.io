@@ -4,7 +4,7 @@ image-dir: streetboi
 categories: Identity
 subtitle: East meets West
 year: 2018
-tags: 
+scope: 
     - Brand Identity
 creative-director: Pierre Jacquet
 ---
