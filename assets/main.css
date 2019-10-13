@@ -566,15 +566,8 @@ button:focus {
   margin-bottom: 40px;
 }
 
-.project-thumb-secondary {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .project-thumb-title {
-  font-size: 28px;
+  font-size: 18px;
   font-family: "webfont_2", serif;
   line-height: 1.3em;
   letter-spacing: 0;
@@ -585,10 +578,6 @@ button:focus {
 .project-thumb-subtitle {
   color: #b4b4b4;
   text-align: center;
-}
-
-.project-links:hover .project-thumb-secondary {
-  opacity: 1;
 }
 
 .page-heading {
@@ -665,11 +654,6 @@ ul.post-meta {
   transition: all 1s ease;
 }
 
-.project-thumb-secondary.lazyload,
-.project-thumb-secondary.lazyloading {
-  opacity: 0 !important;
-}
-
 .post-header {
   margin-bottom: 20px;
 }
@@ -689,10 +673,6 @@ ul.post-meta {
 @media screen and (max-width: 800px) {
   .post-content h2 {
     font-size: 28px;
-  }
-
-  .post-title {
-    font-size: 24px;
   }
 }
 

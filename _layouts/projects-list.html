@@ -4,11 +4,10 @@ layout: default2
 
 {% for post in site.posts %}
 {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-  <div class="grid__col grid__col--6-of-12 project-thumb-item">
+  <div class="grid__col grid__col--4-of-12 project-thumb-item">
     <a class="project-links" href="{{ site.url }}{{ post.url }}">
       <div class="project-thumb-container">
-        <img class="lazyload project-thumb project-thumb-primary" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII=" data-srcset="{{ site.url }}/img/{{ post.image-dir }}/jalal_{{ post.image-dir }}_thumb.jpg 1280w, {{ site.url }}/img/{{ post.image-dir }}/jalal_{{ post.image-dir }}_thumb.jpg 640w, {{ site.url }}/img/{{ post.image-dir }}/jalal_{{ post.image-dir }}_thumb.jpg 320w" data-sizes="100vw">
-        <img class="lazyload project-thumb project-thumb-secondary" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII=" data-srcset="{{ site.url }}/img/{{ post.image-dir }}/jalal_{{ post.image-dir }}_thumb_second.jpg 1280w, {{ site.url }}/img/{{ post.image-dir }}/jalal_{{ post.image-dir }}_thumb_second.jpg 640w, {{ site.url }}/img/{{ post.image-dir }}/jalal_{{ post.image-dir }}_thumb_second.jpg 320w" data-sizes="100vw">
+        <img class="lazyload project-thumb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII=" data-srcset="{{ site.url }}/img/{{ post.image-dir }}/jalal_{{ post.image-dir }}_thumb.jpg 1280w, {{ site.url }}/img/{{ post.image-dir }}/jalal_{{ post.image-dir }}_thumb.jpg 640w, {{ site.url }}/img/{{ post.image-dir }}/jalal_{{ post.image-dir }}_thumb.jpg 320w" data-sizes="100vw">
           <h3 class="project-thumb-title">{{ post.title | escape }}</h3>
           <h4 class="project-thumb-subtitle">{{ post.subtitle | escape }}</h4>
       </div>
