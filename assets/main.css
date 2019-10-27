@@ -1,23 +1,26 @@
 /**
  * Font
  */
-@font-face {
-  font-family: 'webfont_1';
-  src: url('/assets/fonts/webfont_1-regular.woff');
+ @font-face {
+  font-family: 'Phantom Sans0.5_Medium';
+  src:    url('/assets/fonts/PhantomSans0.5-Medium.woff') format('woff'),
+          url('/assets/fonts/PhantomSans0.5-Medium.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
 }
 
 @font-face {
-  font-family: 'webfont_1';
-  src: url('/assets/fonts/webfont_1-medium.woff');
+  font-family: 'Phantom Sans0.5_Regular';
+  src:    url('/assets/fonts/PhantomSans-Regular.woff') format('woff'),
+          url('/assets/fonts/PhantomSans-Regular.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 700;
 }
 
 @font-face {
-  font-family: 'webfont_1';
-  src: url('/assets/fonts/webfont_1-regular.woff');
+  font-family: 'Phantom Sans0.5_Book';
+  src:    url('/assets/fonts/PhantomSans0.5-Book.woff') format('woff'),
+          url('/assets/fonts/PhantomSans0.5-Book.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -56,13 +59,12 @@ figure {
  */
 body,
 body.light-mode {
-  font-family: "webfont_1", sans-serif;
+  font-family: "Phantom Sans0.5_Regular", sans-serif;
   font-weight: normal;
-  font-size: 15px;
-  font-feature-settings: 'lnum'on;
+  font-size: 19px;
+  font-feature-settings: "ss01";
   line-height: 1.5;
-  letter-spacing: .02em;
-  color: #232323;
+  color: #333;
   background: #fff;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -303,9 +305,9 @@ h6 {
 }
 
 h1 {
-  font-family: "webfont_1", sans-serif;
-  font-size: 15px;
-  font-weight: 700;
+  font-family: "Phantom Sans0.5_Book", sans-serif;
+  font-size: 19px;
+  font-weight: normal;
   line-height: 1.3em;
 }
 
@@ -314,11 +316,10 @@ h1 a:hover {
 }
 
 h5 {
-  font-family: "webfont_1", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.2em;
+  font-family: "Phantom Sans0.5_Book", sans-serif;
+  font-weight: normal;
   margin-bottom: 15px;
+  letter-spacing: .15em;
 }
 
 
@@ -384,14 +385,14 @@ p a:hover {
 
 .site-header {
   width: 100%;
-  font-family: 'webfont_1', sans-serif;
+  font-family: 'Phantom Sans0.5_Regular', sans-serif;
   color: #b4b4b4;
   margin: 0 auto;
   padding: 3vw 0;
 }
 
 .site-title {
-  font-family: 'webfont_1', serif;
+  font-family: 'Phantom Sans0.5_Regular', serif;
   line-height: 1;
   width: 100%;
 }
@@ -564,16 +565,17 @@ button:focus {
 }
 
 .project-thumb-title {
-  font-family: "webfont_1", serif;
-  font-weight: 700;
-  font-size: 15px;
+  font-family: "Phantom Sans0.5_Book", serif;
+  font-weight: normal;
+  font-size: 19px;
   line-height: 1.3em;
   padding-top: 15px;
 }
 
 .project-thumb-subtitle {
+  font-family: "Phantom Sans0.5_Regular", serif;
   color: #b4b4b4;
-  font-weight: 500;
+  font-weight: normal;
 }
 
 .project-links:hover .project-thumb-secondary {
@@ -591,8 +593,7 @@ button:focus {
 }
 
 .post-meta {
-  font-family: "webfont_1", sans-serif;
-  letter-spacing: .03em;
+  font-family: "Phantom Sans0.5_Regular", sans-serif;
   padding-top: 30px;
 }
 
@@ -603,7 +604,8 @@ ul.post-meta {
 }
 
 .post-meta-title {
-  font-weight: 700;
+  font-family: "Phantom Sans0.5_Book", sans-serif;  
+  font-weight: normal;
 }
 
 .post img {
