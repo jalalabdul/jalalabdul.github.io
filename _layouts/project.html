@@ -2,27 +2,29 @@
 layout: default2
 ---
 
-<div class="grid__col grid__col--12-of-12 grid__col text-center">
+<div class="grid__col grid__col--6-of-12">
   <div class="post-header ">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
   </div>
 </div>
-<div class="grid__col grid__col--8-of-12 grid__col--centered text-center">
+<div class="grid__col grid__col--6-of-12">
   <div class="post-description">{{ content }}</div>
-</div>
-<div class="grid__col grid__col--8-of-12 grid__col--centered text-center">
   <ul class="post-meta">
-    {% if page.scope %}
-    <li><span class="post-meta-title">Scope: </span><span
-      class="post-meta-grey">{{ page.scope | join: ', ' }}</span>
-    </li>
-    {% endif %}
-    {% if page.creative-director %}
-    <li><span class="post-meta-title">Creative director: </span><span
-        class="post-meta-grey">{{ page.creative-director }}</span></li>
-    {% endif %}
-    <li><span class="post-meta-title">Year: </span><span class="post-meta-grey">{{ page.year }}</span></li>
-  </ul>
+      {% if page.scope %}
+      <li><span class="post-meta-title">Scope: </span><span
+        class="post-meta-grey">{{ page.scope | join: ', ' }}</span>
+      </li>
+      {% endif %}
+      {% if page.agency %}
+      <li><span class="post-meta-title">Agency: </span><span
+          class="post-meta-grey">{{ page.agency }}</span></li>
+      {% endif %}
+      {% if page.creative-director %}
+      <li><span class="post-meta-title">Creative director: </span><span
+          class="post-meta-grey">{{ page.creative-director }}</span></li>
+      {% endif %}
+      <li><span class="post-meta-title">Year: </span><span class="post-meta-grey">{{ page.year }}</span></li>
+    </ul>
 </div>
 <div class="grid__col grid__col--12-of-12 grid__col">
   <div class="post-content" itemprop="articleBody">

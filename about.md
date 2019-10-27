@@ -5,13 +5,17 @@ permalink: /about
 weight: 2
 ---
 
-##### ABOUT
-# Jalal is a graphic designer working & living in Bali. Etiam hendrerit lectus ante, ut consequat velit tincidunt sit amet. Morbi augue augue, pretium vitae mauris feugiat, aliquet vulputate felis. Fusce ut purus vitae leo iaculis finibus. Nullam sit amet volutpat sapien. Donec viverra posuere ex, eget porttitor diam gravida vitae. Sed fermentum orci ut vehicula maximus. In finibus dui eget orci hendrerit, id malesuada elit tristique. Donec congue quam quis orci pharetra, vitae ornare tortor auctor.
+##### PROFILE
+Jalal is a graphic designer working & living in Bali. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id consequat lacus. Morbi elit arcu lobortis in egestas viverra, pellentesque semper dui. Vestibulum quis mi justo. Maecenas sit amet risus ut libero egestas ultrices. Sed dapibus bibendum enim, vitae euismod sapien semper et. Proin et orci mi. Fusce non sem id erat faucibus rhoncus. Nullam eu facilisis augue. Nunc interdum egestas ultrices. Maecenas laoreet sagittis rutrum. Etiam lectus purus, ultricies a tincidunt eu, bibendum a eros.
+<br>
+<br>
+Donec faucibus placerat lorem, et varius mi mattis nec. Duis mollis, quam in tempor auctor, arcu lorem hendrerit dolor, sed consequat tellus libero ac ligula. Aenean tellus enim, viverra ac dapibus a, sagittis a tortor. Sed egestas massa id velit accumsan, at dictum elit imperdiet. Suspendisse eget magna non nisl iaculis consectetur. Cras hendrerit libero et turpis blandit, lacinia gravida ante rhoncus. Nullam eget gravida arcu, nec auctor enim. Nunc gravida quam quis metus rutrum, vel fringilla mi consequat. Nullam tincidunt ex eu augue volutpat, non dictum justo dictum.
 <br>
 <br>
 <br>
+<hr class="separator">
 ##### CAPABILITIES
-# Brand Identity Design
-# Brand Communication
-# Art Direction
-# Web Design & Development
+* Brand Identity Design
+* Brand Communication
+* Art Direction
+* Web Design & Development
