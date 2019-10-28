@@ -67,6 +67,15 @@ Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, containe
   $('.top-button').on('click', function () {
     srollToTop();
   });
+  // Toggle sidebar menu
+	$('.site-nav-link').on('click',function(){
+		$('.nav-trigger').prop('checked',false);
+	});
+	if ( $(window).width() < 769) {
+		$('.switch').on('click',function(){
+			$('.nav-trigger').prop('checked',false);
+		});
+	};
 });
 
 // Google Analytics
