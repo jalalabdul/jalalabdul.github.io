@@ -53,7 +53,7 @@ body,
 body.light-mode {
   font-family: "Phantom Sans0.5_Regular", sans-serif;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 19px;
   font-feature-settings: "ss01";
   line-height: 1.5;
   color: #333;
@@ -170,6 +170,10 @@ body.dark-mode {
 
 .dark-mode .switch-dark {
   opacity: 1 !important;
+}
+
+.dark-mode .switch-icon {
+  fill: 1 !important;
 }
 
 .dark-mode .logo-stamp svg {
@@ -304,7 +308,7 @@ h6 {
 
 h1 {
   font-family: "Phantom Sans0.5_Medium", sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: normal;
   line-height: 1.3em;
 }
@@ -377,16 +381,16 @@ p a:hover {
  * Site header
  */
 
-.site-nav-link {
-  color: #b4b4b4;
-}
-
 .site-header {
   width: 100%;
   font-family: 'Phantom Sans0.5_Regular', sans-serif;
   color: #b4b4b4;
   margin: 0 auto;
   padding: 3vw 0;
+}
+
+.site-nav-link {
+  color: #b4b4b4;
 }
 
 label[for="nav-trigger"] {
@@ -491,15 +495,12 @@ button:focus {
   align-items: center;
 }
 
-.switch svg {
-  width: 18px;
-  height: 8px;
+.switch-icon {
+  width: 14px;
+  height: 14px;
   fill: #333;
-}
-
-.switch .switch-dark {
-  opacity: 0;
-  position: absolute;
+  -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .switch:hover {
@@ -598,7 +599,7 @@ button:focus {
 .project-thumb-title {
   font-family: "Phantom Sans0.5_Medium", serif;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.3em;
   padding-top: 15px;
 }
@@ -710,6 +711,10 @@ ul.post-meta {
   .top-button {
     text-align: right;
   }
+
+  .dark-mode .switch-icon {
+    fill: #fff;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -782,7 +787,7 @@ ul.post-meta {
   .site-nav-link {
     color: #333;
     display: block !important;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 2;
   }
 
