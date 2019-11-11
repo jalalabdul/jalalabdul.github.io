@@ -203,6 +203,16 @@ body.dark-mode::-webkit-scrollbar-thumb {
 
 
 /**
+ * Masonry
+ */
+#masonry-container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+/**
  * Scrollbar
  */
 body.light-mode::-webkit-scrollbar-track {
@@ -311,7 +321,7 @@ h6 {
 }
 
 h1 {
-  font-family: "Phantom Sans0.5_Medium", sans-serif;
+  font-family: "Phantom Sans0.5_Regular", sans-serif;
   font-size: 19px;
   font-weight: normal;
   line-height: 1.3em;
@@ -573,39 +583,32 @@ button:focus {
   margin-top: 3vw;
 }
 
-.project-thumb-container {
-  position: relative;
-  width: 100%;
-}
-
 .project-thumb {
   display: block;
   transition: opacity .25s;
   -webkit-transition: opacity .25s;
 }
 
-.project-thumb-secondary {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
+.project-thumb-item {
+  margin-bottom: 30px;
+  width: 50%;
 }
 
-.project-thumb-item {
-  margin-bottom: 40px;
+.grid-sizer {
+  width: 50%;
 }
 
 .project-thumb-title {
-  font-family: "Phantom Sans0.5_Medium", serif;
+  font-family: "Phantom Sans0.5_Regular", serif;
   font-weight: normal;
   font-size: 19px;
   line-height: 1.3em;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .project-thumb-subtitle {
   font-family: "Phantom Sans0.5_Regular", serif;
-  /* color: #b4b4b4; */
+  color: #b4b4b4;
   font-weight: normal;
 }
 
@@ -635,7 +638,7 @@ ul.post-meta {
 }
 
 .post-meta-title {
-  font-family: "Phantom Sans0.5_Medium", sans-serif;
+  font-family: "Phantom Sans0.5_Regular", sans-serif;
   font-weight: normal;
 }
 
@@ -726,6 +729,10 @@ ul.post-meta {
 
   .page-content {
     padding-top: 120px;
+  }
+
+  .project-thumb-item {
+    width: 100%;
   }
 
   .site-header {

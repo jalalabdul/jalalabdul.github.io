@@ -63,10 +63,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, container, rawHTML) {
   window.lazySizes.init();
+  
+  $(document).on('lazyloaded', function(e){
+    $('.thumb-item-container').masonry({
+      itemSelector: '.project-thumb-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
+  });
+
   history.scrollRestoration = 'manual';
   $('.top-button').on('click', function () {
     srollToTop();
   });
+
   // Toggle sidebar menu
 	$('.site-nav-link').on('click',function(){
 		$('.nav-trigger').prop('checked',false);
@@ -75,7 +85,7 @@ Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, containe
 		$('.switch').on('click',function(){
 			$('.nav-trigger').prop('checked',false);
 		});
-	};
+  };
 });
 
 // Google Analytics
