@@ -823,7 +823,7 @@ ul.post-meta {
     fill: #000;
   }
 
-  .top-button-container {
+  .top-button-container, .footer-contact-container {
     margin-top: 20px;
     text-align: left;
   }
