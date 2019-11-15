@@ -512,7 +512,7 @@ button:focus {
   height: 14px;
   fill: #000;
   -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .switch:hover {
@@ -598,18 +598,18 @@ button:focus {
   pointer-events: none;
 }
 
-.thumb-item-container > * {
+.thumb-item-container>* {
   pointer-events: auto;
   transition: opacity 0.3s ease;
 
 }
 
-.thumb-item-container:hover > * {
+.thumb-item-container:hover>* {
   opacity: 0.3;
   transition: opacity 0.3s ease;
 }
 
-.thumb-item-container:hover > *:hover {
+.thumb-item-container:hover>*:hover {
   opacity: 1;
 }
 
@@ -742,6 +742,7 @@ ul.post-meta {
 
   body,
   body.light-mode,
+  .project-thumb-title,
   h1 {
     font-size: 16px;
   }
@@ -812,7 +813,7 @@ ul.post-meta {
   .site-nav-link {
     color: #000;
     display: block !important;
-    font-size: 19px;
+    font-size: 16px;
     line-height: 2.5;
   }
 
@@ -842,7 +843,8 @@ ul.post-meta {
     fill: #000;
   }
 
-  .top-button-container, .footer-contact-container {
+  .top-button-container,
+  .footer-contact-container {
     margin-top: 20px;
     text-align: left;
   }
