@@ -140,7 +140,7 @@ ol li {
 
 body.dark-mode {
   color: #fff !important;
-  background: #000 !important;
+  background: #101010 !important;
 }
 
 .dark-mode .pace .pace-progress {
@@ -592,6 +592,25 @@ button:focus {
 .project-thumb-item {
   margin-bottom: 25px;
   width: 50%;
+}
+
+.thumb-item-container {
+  pointer-events: none;
+}
+
+.thumb-item-container > * {
+  pointer-events: auto;
+  transition: opacity 0.3s ease;
+
+}
+
+.thumb-item-container:hover > * {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.thumb-item-container:hover > *:hover {
+  opacity: 1;
 }
 
 .grid-sizer {
