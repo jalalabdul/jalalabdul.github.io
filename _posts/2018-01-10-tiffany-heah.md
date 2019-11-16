@@ -2,7 +2,7 @@
 layout: project
 image-dir: tiffany
 categories: Identity
-subtitle: Lawyer
+subtitle: Coming Soon
 year: 2019
 scope: 
     - Brand Identity

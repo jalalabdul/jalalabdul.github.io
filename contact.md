@@ -13,5 +13,5 @@ Starting a new project or want to collaborate?
 <br>
 <hr class="separator">
 ##### SOCIAL
-* [Behance](https://behance.net/jalalabdulaziz){:target="_blank"}
-* [Pinterest](https://www.pinterest.com/jalalabdulaziz/){:target="_blank"}
+* [Behance ︎](https://behance.net/jalalabdulaziz){:target="_blank"}
+* [Pinterest ︎](https://www.pinterest.com/jalalabdulaziz/){:target="_blank"}
