@@ -61,6 +61,8 @@ body.light-mode {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   overflow-y: scroll;
 }
 
@@ -189,12 +191,12 @@ body.dark-mode {
 }
 
 body.dark-mode::-webkit-scrollbar-track {
-  background-color: #000;
+  background-color: #101010;
 }
 
 body.dark-mode::-webkit-scrollbar {
   width: 6px;
-  background-color: #000;
+  background-color: #101010;
 }
 
 body.dark-mode::-webkit-scrollbar-thumb {
@@ -604,12 +606,14 @@ button:focus {
 
 }
 
-.thumb-item-container:hover>* {
+.thumb-item-container:hover>*,
+.thumb-item-container:focus-within>* {
   opacity: 0.1;
   transition: opacity 0.3s ease;
 }
 
-.thumb-item-container:hover>*:hover {
+.thumb-item-container:hover>*:hover,
+.thumb-item-container:focus-within>*:focus {
   opacity: 1;
 }
 
@@ -763,7 +767,7 @@ ul.post-meta {
   }
 
   .dark-mode .site-header {
-    background: #000;
+    background: #101010;
   }
 
   .site-nav {
