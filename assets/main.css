@@ -53,7 +53,7 @@ body,
 body.light-mode {
   font-family: "Phantom Sans0.5_Regular", sans-serif;
   font-weight: normal;
-  font-size: 19px;
+  font-size: 16px;
   font-feature-settings: "ss01";
   line-height: 1.5;
   color: #000;
@@ -328,7 +328,7 @@ h6 {
 
 h1 {
   font-family: "Phantom Sans0.5_Regular", sans-serif;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1.3em;
 }
@@ -637,9 +637,9 @@ button:focus {
 .project-thumb-title {
   font-family: "Phantom Sans0.5_Regular", serif;
   font-weight: normal;
-  font-size: 19px;
+  font-size: 16px;
   line-height: 1.3em;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .project-thumb-subtitle {
