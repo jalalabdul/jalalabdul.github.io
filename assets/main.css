@@ -162,20 +162,8 @@ body.dark-mode {
   color: #fff;
 }
 
-.dark-mode .switch-light {
-  opacity: 0 !important;
-}
-
-.dark-mode .switch-dark {
-  opacity: 1 !important;
-}
-
-.dark-mode .switch-icon {
-  fill: 1 !important;
-}
-
-.dark-mode .logo-stamp svg {
-  fill: #2B2728 !important;
+.dark-mode .arrow-top {
+  fill: #fff !important;
 }
 
 .dark-mode .separator {
@@ -397,6 +385,11 @@ p a:hover {
 
 .top-button {
   cursor: pointer;
+}
+
+.arrow-top {
+  height: 10px;
+  margin-left: 5px;
 }
 
 
