@@ -4,6 +4,7 @@ image-dir: tiffany
 categories: Identity
 subtitle: Coming Soon
 year: 2019
+status: soon
 scope: 
     - Brand Identity
 agency: Brave Factor
