@@ -31,8 +31,8 @@ layout: default2
     {% for file in site.static_files %}
     {% assign pageurl = page.image-dir %}
     {% if file.path contains pageurl %}
-    {% unless file.path contains 'small' or file.path contains 'thumb' or file.path contains 'mp4' %}
-    {% if file.extname == '.jpg' or '.gif' or '.png' %}
+    {% unless file.path contains 'small' or file.path contains 'thumb' or file.path contains 'mp4' or file.path contains 'gif' %}
+    {% if file.extname == '.jpg' or '.png' %}
     <div class="post-img">
       <img class="lazyload"
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII="
@@ -41,6 +41,14 @@ layout: default2
     </div>
     {% endif %}
     {% endunless %}
+    {% if file.extname == '.gif' %}
+    <div class="post-img">
+      <img class="lazyload"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII="
+        data-srcset="{{ site.url }}{{ file.path }} 1280w, {{ site.url }}{{ file.path }} 640w,{{ site.url }}{{ file.path }} 320w"
+        data-sizes="100vw">
+    </div>
+    {% endif %}
     {% if file.extname == '.mp4' %}
     <div class="post-img">
       <video autoplay loop muted playsinline controlslist="nodownload"><source src="{{ site.url }}{{ file.path }}" type="video/mp4">Your browser does not support the video tag.</video>
