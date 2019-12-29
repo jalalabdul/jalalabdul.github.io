@@ -510,8 +510,8 @@ button:focus {
   width: 14px;
   height: 14px;
   fill: #000;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  /* -webkit-transform: rotate(45deg); */
+  /* transform: rotate(45deg); */
 }
 
 .switch:hover {
