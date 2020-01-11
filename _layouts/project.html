@@ -32,11 +32,19 @@ layout: default2
     {% assign pageurl = page.image-dir %}
     {% if file.path contains pageurl %}
     {% unless file.path contains 'small' or file.path contains 'thumb' or file.path contains 'mp4' or file.path contains 'gif' %}
-    {% if file.extname == '.jpg' or '.png' %}
+    {% if file.extname == '.jpg' %}
     <div class="post-img">
       <img class="lazyload"
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII="
         data-srcset="{{ site.url }}{{ file.path }} 1280w, {{ site.url }}{{ file.path | replace: ".jpg", "_small.jpg" }} 640w, {{ site.url }}{{ file.path | replace: ".jpg", "_small.jpg" }} 320w"
+        data-sizes="100vw">
+    </div>
+    {% endif %}
+    {% if file.extname == '.png' %}
+    <div class="post-img">
+      <img class="lazyload"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII="
+        data-srcset="{{ site.url }}{{ file.path }} 1280w, {{ site.url }}{{ file.path | replace: ".png", "_small.png" }} 640w, {{ site.url }}{{ file.path | replace: ".png", "_small.png" }} 320w"
         data-sizes="100vw">
     </div>
     {% endif %}

@@ -53,7 +53,7 @@ body,
 body.light-mode {
   font-family: "Phantom Sans0.5_Regular", sans-serif;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   font-feature-settings: "ss01";
   line-height: 1.5;
   color: #000;
@@ -316,7 +316,7 @@ h6 {
 
 h1 {
   font-family: "Phantom Sans0.5_Regular", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
   line-height: 1.3em;
 }
@@ -630,7 +630,7 @@ button:focus {
 .project-thumb-title {
   font-family: "Phantom Sans0.5_Regular", serif;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.3em;
   padding-top: 10px;
 }
@@ -775,7 +775,7 @@ ul.post-meta {
   body.light-mode,
   .project-thumb-title,
   h1 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .page-content {
@@ -847,7 +847,7 @@ ul.post-meta {
   .site-nav-link {
     color: #000;
     display: block !important;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 2.5;
   }
 
