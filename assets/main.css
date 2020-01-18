@@ -92,7 +92,7 @@ video {
   border: 0;
   border-top: 1px solid #ecebea;
   margin: 0;
-  padding: 20px 0;
+  padding: 10px 0;
   clear: both;
 }
 
@@ -422,7 +422,7 @@ p a:hover {
   width: 100%;
   font-family: 'Phantom Sans0.5_Regular', sans-serif;
   margin: 0 auto;
-  padding: 3vw 0;
+  padding: 2.5vw 0;
 }
 
 label[for="nav-trigger"] {
