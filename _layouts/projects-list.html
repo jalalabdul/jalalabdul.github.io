@@ -9,7 +9,7 @@ layout: default2
   <div class="project-thumb-item grid__col grid__col--3-of-12">
     <a class="project-links" {% unless post.status %} href="{{ site.url }}{{ post.url }} {% endunless %}">
       <div class="project-thumb-container">
-        <img class="lazyload project-thumb project-thumb-primary" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII=" data-srcset="{{ site.url }}/img/{{ post.image-dir }}/jalal_{{ post.image-dir }}_thumb.jpg 1280w, {{ site.url }}/img/{{ post.image-dir }}/jalal_{{ post.image-dir }}_thumb.jpg 640w, {{ site.url }}/img/{{ post.image-dir }}/jalal_{{ post.image-dir }}_thumb.jpg 320w" data-sizes="100vw">
+        <img class="lazyload project-thumb project-thumb-primary" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII=" data-srcset="{{ site.url }}/img/{{ post.image-dir }}/jalal_{{ post.image-dir }}_thumb.jpg 1x, {{ site.url }}/img/{{ post.image-dir }}/jalal_{{ post.image-dir }}_thumb_2x.jpg 2x" data-sizes="auto">
           <div class="project-thumb-title-container"><h3 class="project-thumb-title">{{ post.title | escape }}<span class="project-thumb-subtitle"> &mdash; {{ post.scope | join: ', ' }}</span></h3></div>
       </div>
     </a>
