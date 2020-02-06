@@ -19,17 +19,18 @@
       {% assign page_paths = site.header_pages | default: default_paths %}
       {% if page_paths %}
       <div class="grid__col grid__col--6-of-12 grid__col">
-          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-          <label for="nav-trigger">
-            <span class="bar-1"></span>
-            <span class="bar-2"></span>
-          </label>
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="bar-1"></span>
+          <span class="bar-2"></span>
+        </label>
         <nav class="site-nav">
           <div class="site-nav-link-container">
             <!-- <a class="site-nav-link" href="{{ site.url }}">Home</a> -->
             <a class="site-nav-link" href="{{ site.url }}">Projects</a>
             <a class="site-nav-link" href="{{ site.url }}/about">About</a>
             <a class="site-nav-link" href="{{ site.url }}/contact">Contact</a>
+            <div class="site-nav-link clock-container"><span class="clock">00:00:00 00</span></div>
             <!-- <div class="dark-mode-switch">
               <button onclick="toggleDarkLight()" class="switch">
                 <svg class="switch-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.4 23.401"><path class="cls-1" d="M12,.3A11.7,11.7,0,1,0,23.7,12,11.714,11.714,0,0,0,12,.3ZM1.7,12A10.312,10.312,0,0,1,12,1.7V22.3A10.312,10.312,0,0,1,1.7,12Z" transform="translate(-0.3 -0.3)"/></svg>

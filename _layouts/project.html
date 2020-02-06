@@ -31,13 +31,13 @@ layout: default2
     {% for file in site.static_files %}
     {% assign pageurl = page.image-dir %}
     {% if file.path contains pageurl %}
-    {% unless file.path contains 'small' or file.path contains 'thumb' or file.path contains 'mp4' or file.path contains 'gif' %}
+    {% unless file.path contains 'small' or file.path contains 'thumb' or file.path contains '2x' or file.path contains 'mp4' or file.path contains 'gif' %}
     {% if file.extname == '.jpg' %}
     <div class="post-img">
       <img class="lazyload"
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAJCAYAAAA7KqwyAAAAF0lEQVR42mP8/efvfwYKAOOoAaMGAAEA1qsjlXZ8d1UAAAAASUVORK5CYII="
         data-srcset="{{ site.url }}{{ file.path }} 1280w, {{ site.url }}{{ file.path | replace: ".jpg", "_small.jpg" }} 640w, {{ site.url }}{{ file.path | replace: ".jpg", "_small.jpg" }} 320w"
-        data-sizes="100vw">
+        data-sizes="auto">
     </div>
     {% endif %}
     {% if file.extname == '.png' %}
@@ -67,15 +67,12 @@ layout: default2
   </div>
 </div>
 <div class="post-nav">
-  <div class="grid__col grid__col--4-of-12 grid__col--s-1-of-4 grid__col post-nav-back">
+  <div class="grid__col grid__col--6-of-12 grid__col--s-1-of-2 grid__col post-nav-back">
     {% if page.previous.url %}
     <a class="back-button" href="{{ page.previous.url }}">Prev</a>
     {% endif %}
   </div>
-  <div class="grid__col grid__col--4-of-12 grid__col--s-2-of-4 grid__col post-nav-projects">
-    <a class="project-button" href="/">Back to Projects</a>
-  </div>
-  <div class="grid__col grid__col--4-of-12 grid__col--s-1-of-4 grid__col post-nav-next">
+  <div class="grid__col grid__col--6-of-12 grid__col--s-1-of-2 grid__col post-nav-next">
     {% if page.next.url %}
     <a class="next-button" href="{{ page.next.url }}">Next</a>
     {% endif %}
