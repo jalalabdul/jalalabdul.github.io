@@ -88,24 +88,6 @@ Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, containe
     });
   };
 
-  // Timezone
-  function updateClock() {
-    var e = new Date,
-      t = e.getHours(),
-      n = e.getMinutes(),
-      o = e.getSeconds();
-    n = (n < 10 ? "0" : "") + n, o = (o < 10 ? "0" : "") + o;
-    var u = t < 12 ? "AM" : "PM";
-    t = t > 12 ? t - 12 : t, t = 0 == t ? 12 : t;
-    var c = t + ":" + n + ":" + o + " " + u;
-    $(".clock").text(toTimeZone(c, "Asia/Makassar"));
-  }
-
-  function toTimeZone(e, t) {
-    var n = "hh:mm:ss A";
-    return moment(e, n).tz(t).format(n)
-  }
-
   if ($(window).width() > 769) {
     setInterval(function(){ 
       updateClock();  

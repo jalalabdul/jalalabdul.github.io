@@ -476,11 +476,6 @@ logo-container a:hover {
   margin-right: 30px;
 }
 
-.clock-container {
-  float: right;
-  pointer-events: none !important;
-}
-
 button {
   display: inline-block;
   border: none;
@@ -862,10 +857,6 @@ ul.post-meta {
     display: block !important;
     font-size: 18px;
     line-height: 2.5;
-  }
-
-  .site-nav-link.clock-container {
-    display: none !important;
   }
 
   .dark-mode-switch {
