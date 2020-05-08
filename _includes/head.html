@@ -5,6 +5,7 @@
   <title>{% if page.layout == 'homepage' %}{{ site.title | escape }} — Graphic Design{% else %}{{ site.title | escape }} — {{ page.title | escape }} {% endif %}</title>
   <meta name="description" conte nt="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <meta name="google-site-verification" content="WuGIIXpTPq0HSAiG0RQWcyWlUrcjWyjs919f1WoZh9I" />
+  <link rel="shortcut icon" type="image/ico" href="{{ site.url }}/favicon.png">
   <link rel="stylesheet" href="{{ site.url }}/assets/grid.css">
   <link rel="stylesheet" href="{{ site.url }}/assets/main.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">

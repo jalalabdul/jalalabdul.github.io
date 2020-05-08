@@ -1,6 +1,20 @@
-// Dark mode function
-this.toggleDarkLight = function () {
-  $("body").toggleClass("dark-mode light-mode");
+// Project Tooltip
+this.projectTooltip = function(){	
+  xOffset = 5;
+  yOffset = 5;
+// $(".project-links").hover(function(e){						 
+//   $(this).siblings()
+//     .css("opacity","1");
+//   },
+// function(){
+//   $(this).siblings()
+//     .css("opacity","0");
+//   });	
+$(document).mousemove(function(e){
+  $(".project-links > .project-thumb-container > .project-thumb-title-container")
+    .css("top",(e.pageY + xOffset) + "px")
+    .css("left",(e.pageX + yOffset) + "px");
+});			
 };
 
 // Scroll to top
@@ -67,7 +81,7 @@ Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, containe
 
   $(document).on('lazyloaded', function (e) {
     $('.thumb-item-container').masonry({
-      itemSelector: '.project-thumb-item',
+      itemSelector: '.grid-item',
       columnWidth: '.grid-sizer',
       percentPosition: true
     });
@@ -87,12 +101,9 @@ Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, containe
       $('.nav-trigger').prop('checked', false);
     });
   };
-
-  if ($(window).width() > 769) {
-    setInterval(function(){ 
-      updateClock();  
-  }, 1000);
-  };
+  // if ($(window).width() > 1280) {
+  //   projectTooltip();
+  // };
 });
 
 // Google Analytics

@@ -42,7 +42,7 @@
 \*-----------------------------------*/
 .grid {
   list-style: none;
-  margin-left: -40px; }
+  margin-left: -30px; }
 
 .grid__col--2-of-2, .grid__col--3-of-3, .grid__col--4-of-4, .grid__col--5-of-5, .grid__col--6-of-6, .grid__col--8-of-8, .grid__col--12-of-12 {
   width: 100%; }
@@ -247,7 +247,7 @@
   display: inline-block;
   margin-right: -.25em;
   min-height: 1px;
-  padding-left: 40px;
+  padding-left: 30px;
   vertical-align: top; }
   @media (max-width: 700px) {
     .grid__col {

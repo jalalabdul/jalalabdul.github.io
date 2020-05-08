@@ -8,3 +8,5 @@ layout: projects-list
 title: Projects
 weight: 1
 ---
+
+# Jalal is a graphic designer working & living in Bali. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id consequat lacus.
