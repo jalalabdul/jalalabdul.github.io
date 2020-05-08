@@ -4,16 +4,14 @@
 
 @font-face {
   font-family: 'PhantomSans0.7_Regular';
-  src: url('/assets/fonts/PhantomSans0.7-Reg.woff') format('woff'),
-    url('/assets/fonts/PhantomSans0.7-Reg.woff2') format('woff2');
+  src: url('/assets/fonts/PhantomSans0.7-Reg.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PhantomSans0.7_Semibold';
-  src: url('/assets/fonts/PhantomSans0.7-Semibold.woff') format('woff'),
-    url('/assets/fonts/PhantomSans0.7-Semibold.woff2') format('woff2');
+  src: url('/assets/fonts/PhantomSans0.7-SemiBold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
