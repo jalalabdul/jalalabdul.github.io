@@ -5,14 +5,17 @@ permalink: /about
 weight: 2
 ---
 
-##### PROFILE
-Jalal is a graphic designer working & living in Bali. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id consequat lacus. Morbi elit arcu lobortis in egestas viverra, pellentesque semper dui. Vestibulum quis mi justo. Maecenas sit amet risus ut libero egestas ultrices. Sed dapibus bibendum enim, vitae euismod sapien semper et. Proin et orci mi. Fusce non sem id erat faucibus rhoncus. Nullam eu facilisis augue. Nunc interdum egestas ultrices. Maecenas laoreet sagittis rutrum. Etiam lectus purus, ultricies a tincidunt eu, bibendum a eros
+<hr class="separator-first">
+Profile
 <br>
 <br>
-<br>
+Grand Central opened in 2010 in downtown Stockholm. This year, Scandic decided to transform it in to a signature hotel, which required a unique brand identity. With an international and cosmopolitan feel, the hotel merges the big city life, with its art, design, theatre, film and music scenes. The hotel is located in Stockholm’s old printing district and is one of few buildings that survived the modernisation of the area. We drew inspiration from this and created an identity centered around newsprint typography. Our work included everything from logotype, signage and stationary to posters, wayfinding and packaging.
 <hr class="separator">
-##### CAPABILITIES
+Capabilities
+<br>
+<br>
 * Brand Identity Design
 * Brand Communication
 * Art Direction
 * Web Design & Development
+<hr class="separator">

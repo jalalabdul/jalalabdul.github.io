@@ -1,20 +1,15 @@
-// Project Tooltip
-this.projectTooltip = function(){	
-  xOffset = 5;
-  yOffset = 5;
-// $(".project-links").hover(function(e){						 
-//   $(this).siblings()
-//     .css("opacity","1");
-//   },
-// function(){
-//   $(this).siblings()
-//     .css("opacity","0");
-//   });	
-$(document).mousemove(function(e){
-  $(".project-links > .project-thumb-container > .project-thumb-title-container")
-    .css("top",(e.pageY + xOffset) + "px")
-    .css("left",(e.pageX + yOffset) + "px");
-});			
+// Screensaver
+this.screensaver = function () {
+var s_saver;
+$('body').mousemove(function() {
+    clearTimeout(s_saver);
+    
+    s_saver = setTimeout(function(){
+        $('#screensaver').fadeIn(900);
+    }, 30000);
+    
+    $('#screensaver').fadeOut(500);
+});
 };
 
 // Scroll to top
@@ -38,7 +33,6 @@ this.srollToTop = function () {
     })
   }
 };
-
 
 // Barba.js
 document.addEventListener("DOMContentLoaded", function () {
@@ -101,9 +95,11 @@ Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, containe
       $('.nav-trigger').prop('checked', false);
     });
   };
-  // if ($(window).width() > 1280) {
-  //   projectTooltip();
-  // };
+
+  // Screensaver
+  if ($(window).width() > 1280) {
+  screensaver();
+  };
 });
 
 // Google Analytics
