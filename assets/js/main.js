@@ -73,14 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
 Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, container, rawHTML) {
   window.lazySizes.init();
 
-  $(document).on('lazyloaded', function (e) {
-    $('.thumb-item-container').masonry({
-      itemSelector: '.grid-item',
-      columnWidth: '.grid-sizer',
-      percentPosition: true
-    });
-  });
-
   history.scrollRestoration = 'manual';
   $('.top-button').on('click', function () {
     srollToTop();
