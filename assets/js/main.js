@@ -1,16 +1,34 @@
 // Screensaver
 this.screensaver = function () {
-var s_saver;
-$('body').mousemove(function() {
+  var s_saver;
+  $('body').mousemove(function () {
     clearTimeout(s_saver);
-    
-    s_saver = setTimeout(function(){
-        $('#screensaver').fadeIn(900);
-    }, 30000);
-    
+
+    s_saver = setTimeout(function () {
+      $('#screensaver').fadeIn(900);
+    }, 15000);
+
     $('#screensaver').fadeOut(500);
-});
+  });
 };
+
+// Time
+function updateClock() {
+  var e = new Date,
+    t = e.getHours(),
+    n = e.getMinutes(),
+    o = e.getSeconds();
+  n = (n < 10 ? "0" : "") + n, o = (o < 10 ? "0" : "") + o;
+  var u = t < 12 ? "AM" : "PM";
+  t = t > 12 ? t - 12 : t, t = 0 == t ? 12 : t;
+  var c = t + ":" + n + ":" + o + " " + u;
+  $(".time").text(toTimeZone(c, "Asia/Makassar"));
+}
+
+function toTimeZone(e, t) {
+  var n = "hh:mm A";
+  return moment(e, n).tz(t).format(n)
+}
 
 // Scroll to top
 this.srollToTop = function () {
@@ -89,9 +107,11 @@ Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, containe
   };
 
   // Screensaver
-  if ($(window).width() > 1280) {
   screensaver();
-  };
+
+  window.setInterval(function () {
+    updateClock();
+  }, 10000);
 });
 
 // Google Analytics

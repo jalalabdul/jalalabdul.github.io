@@ -5,7 +5,9 @@ layout: compress
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {% include head.html %}
-  <div id="screensaver"></div>
+  <div id="screensaver">
+    <span class="time">00:00:00 00</span>
+  </div>
   <body id="body" class="light-mode">
     {% include header.html %}
     <div class="wrap page-content" id="barba-wrapper" data-barba="wrapper">
