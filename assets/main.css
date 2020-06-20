@@ -3,8 +3,8 @@
  */
 
 @font-face {
-  font-family: 'PhantomSans0.7_Regular';
-  src: url('/assets/fonts/PhantomSans0.7-Reg.woff2') format('woff2');
+  font-family: 'Webfont';
+  src: url('/assets/fonts/Webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -41,10 +41,9 @@ figure {
  * Basic styling
  */
 body {
-  font-family: "PhantomSans0.7_Regular", sans-serif;
+  font-family: "Webfont", sans-serif;
   font-weight: normal;
-  font-size: 24px;
-  /* font-feature-settings: "ss01"; */
+  font-size: 20px;
   line-height: 1.35;
   color: #000;
   background: #fff;
@@ -252,7 +251,7 @@ h6 {
 }
 
 h1 {
-  /* font-size: 24px; */
+  /* font-size: 20px; */
   font-weight: normal;
   line-height: 1.3em;
 }
@@ -332,7 +331,7 @@ p a:hover {
 .site-header {
   width: 100%;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -471,7 +470,7 @@ button:focus {
  */
 .site-footer {
   padding: 2vw 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .arrow-top {
@@ -518,7 +517,7 @@ button:focus {
 
 .project-thumb-title {
   font-weight: normal;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.3em;
   padding-top: 10px;
 }
@@ -529,7 +528,7 @@ button:focus {
 }
 
 .post-title {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .post-list {
@@ -540,7 +539,7 @@ button:focus {
 
 .post-meta {
   padding-top: 30px;
-  font-size: 18px;
+  font-size: 16px;
   color: #989898;
 }
 
