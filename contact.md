@@ -1,5 +1,5 @@
 ---
-layout: contact
+layout: inner-page
 title: Contact
 permalink: /contact
 weight: 3
@@ -10,7 +10,7 @@ Contact
 <br>
 <br>
 Starting a new project or want to collaborate?
-<br>Get in touch on [jalalabdulaziz@gmail.com](mailto:jalalabdulaziz@gmail.com){:target="_blank"}
+<br>Get in touch via [email](mailto:jalalabdulaziz@gmail.com){:target="_blank"}
 <hr class="separator">
 Social
 <br>

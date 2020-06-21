@@ -1,5 +1,5 @@
 ---
-layout: contact
+layout: inner-page
 title: About
 permalink: /about
 weight: 2

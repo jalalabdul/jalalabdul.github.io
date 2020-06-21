@@ -12,6 +12,21 @@ this.screensaver = function () {
   });
 };
 
+
+// Header Animation
+this.headerAnimation = function () {
+  var header = document.querySelector(".site-header");
+  var headroom = new Headroom(header, {
+      tolerance: {
+          down : 10,
+          up : 20
+      },
+      offset : 15,
+  });
+  headroom.init();
+};
+
+
 // Time
 function updateClock() {
   var e = new Date,
@@ -105,6 +120,8 @@ Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, containe
       $('.nav-trigger').prop('checked', false);
     });
   };
+
+  headerAnimation();
 
   if ($(window).width() > 769) {
     // Screensaver

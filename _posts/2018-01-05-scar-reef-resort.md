@@ -9,8 +9,7 @@ scope:
     - Brand Identity
     - Digital
 collaborator: 
-    - Photography by Silvio
-    - Videography by
+    - Silvio
 status: soon
 ---
 
