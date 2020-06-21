@@ -1,31 +1,40 @@
 ---
 layout: default-alt
 ---
-
-<div class="grid__col grid__col--6-of-12">
+<div class="grid__col grid__col--6-of-12 grid__col--push-6-of-12">
+  <hr class="separator-first">
 </div>
-<div class="grid__col grid__col--6-of-12">
+<div class="grid__col grid__col--6-of-12 grid__col--push-6-of-12">
   <div class="post-description">{{ content }}</div>
-  <ul class="post-meta">
-      {% if page.scope %}
-      <li><span class="post-meta-title">Scope: </span><span
-        class="post-meta-grey">{{ page.scope | join: ', ' }}</span>
-      </li>
-      {% endif %}
-      {% if page.agency %}
-      <li><span class="post-meta-title">Agency: </span><span
-          class="post-meta-grey">{{ page.agency }}</span></li>
-      {% endif %}
-      {% if page.creative-director %}
-      <li><span class="post-meta-title">Creative director: </span><span
-          class="post-meta-grey">{{ page.creative-director }}</span></li>
-      {% endif %}
-      {% if page.collaborator %}
-      <li><span class="post-meta-collaborator">Collaborator: </span><span
-        class="post-meta-grey">{{ page.collaborator | join: ', ' }}</span>
-      </li>
-      {% endif %}
-    </ul>
+</div>
+<div class="grid__col grid__col--6-of-12 grid__col--push-6-of-12">
+  <table class="post-meta">
+    {% if page.scope %}
+    <tr>
+      <td><span class="post-meta-title">Scope</span></td>
+      <td><span class="post-meta-grey">{{ page.scope | join: ' / ' }}</span></td>
+    </tr>
+    {% endif %}
+    {% if page.agency %}
+    <tr>
+      <td><span class="post-meta-title">Agency</span></td>
+      <td><span class="post-meta-grey">{{ page.agency }}</span></td>
+    </tr>
+    {% endif %}
+    {% if page.creative-director %}
+    <tr>
+      <td><span class="post-meta-title">Creative Director</span></td>
+      <td><span class="post-meta-grey">{{ page.creative-director }}</span></td>
+    </tr>
+    {% endif %}
+    {% if page.collaborator %}
+    <tr>
+      <td><span class="post-meta-collaborator">Collaborator</span></td>
+      <td><span class="post-meta-grey">{{ page.collaborator | join: ', ' }}</span>
+    </tr>
+    </tr>
+    {% endif %}
+  </table>
 </div>
 <div class="grid__col grid__col--12-of-12 grid__col">
   <div class="post-content" itemprop="articleBody">
@@ -60,7 +69,9 @@ layout: default-alt
     {% endif %}
     {% if file.extname == '.mp4' %}
     <div class="post-img">
-      <video autoplay loop muted playsinline controlslist="nodownload"><source src="{{ site.url }}{{ file.path }}" type="video/mp4">Your browser does not support the video tag.</video>
+      <video autoplay loop muted playsinline controlslist="nodownload">
+        <source src="{{ site.url }}{{ file.path }}" type="video/mp4">Your browser does not support the video
+        tag.</video>
     </div>
     {% endif %}
     {% endif %}
