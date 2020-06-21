@@ -186,7 +186,7 @@ ol li {
   top: 0;
   right: 100%;
   width: 100%;
-  height: 2px;
+  height: 3px;
 }
 
 
@@ -515,7 +515,7 @@ button:focus {
  * Page content
  */
 .page-content {
-  margin-top: 87px;
+  margin-top: 67px;
 }
 
 .post-content {
@@ -653,12 +653,17 @@ ul.post-meta {
     font-size: 18vw;
   }
 
+  .site-header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .site-title:hover {
     color: #000;
   }
 
   .page-content {
-    margin-top: 78px;
+    margin-top: 45px;
   }
 
   .separator-first {
