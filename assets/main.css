@@ -295,26 +295,6 @@ p a:hover {
 /**
  * Post Nagigation
  */
-.post-nav {
-  margin-top: 20px;
-}
-
-.post-nav a:hover {
-  color: #989898;
-}
-
-.post-nav-next {
-  text-align: right;
-}
-
-.post-nav-projects {
-  text-align: center;
-}
-
-.post-nav-back {
-  text-align: left;
-}
-
 .top-button-container {
   text-align: right;
 }
@@ -463,30 +443,6 @@ button:focus {
 
 
 /**
- * Stamp
- */
-.logo-stamp-container {
-  position: relative;
-  max-width: 1170px;
-  margin: 0 auto;
-  z-index: -999;
-  display: none;
-}
-
-.logo-stamp {
-  position: absolute;
-  height: 110px;
-  width: 110px;
-  right: 0;
-  top: -14px;
-}
-
-.logo-stamp svg {
-  fill: #D7D5B9;
-}
-
-
-/**
  * Site footer
  */
 .site-footer {
@@ -526,10 +482,6 @@ button:focus {
   margin-bottom: 30px;
 }
 
-.project-thumb-subtitle-desktop {
-  display: none;
-}
-
 .project-thumb-separator {
   display: block;
   height: 1px;
@@ -547,19 +499,8 @@ button:focus {
   padding-top: 10px;
 }
 
-.project-thumb-subtitle {
-  color: #b4b4b4;
-  font-weight: normal;
-}
-
 .post-title {
   font-size: 20px;
-}
-
-.post-list {
-  margin-left: 0;
-  list-style: none;
-  line-height: 1.2;
 }
 
 .post-meta {
@@ -618,7 +559,7 @@ td {
 
 .post-img .lazyloaded,
 .project-thumb-primary.lazyloaded {
-  animation: fade-in .3s ease;
+  animation: fade-in .2s ease;
 }
 
 .post-header {
