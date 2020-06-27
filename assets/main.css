@@ -685,7 +685,7 @@ td {
   }
 
   .post-content {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .post-list img {
@@ -703,6 +703,5 @@ td {
   .top-button-container,
   .footer-contact-container {
     margin-top: 20px;
-    text-align: left;
   }
 }
