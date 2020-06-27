@@ -608,7 +608,7 @@ td {
     padding-bottom: 0;
   }
 
-  .site-title:hover {
+  .site-title:hover, .footer-link:hover {
     color: #000;
   }
 
