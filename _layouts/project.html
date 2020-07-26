@@ -69,9 +69,9 @@ layout: default-alt
     {% endif %}
     {% if file.extname == '.mp4' %}
     <div class="post-img">
-      <video autoplay loop muted playsinline controlslist="nodownload">
-        <source src="{{ site.url }}{{ file.path }}" type="video/mp4">Your browser does not support the video
-        tag.</video>
+        <video disableRemotePlayback playsinline autoplay muted loop>
+          <source src="{{ site.url }}{{ file.path }}" type="video/mp4">
+        </video>
     </div>
     {% endif %}
     {% endif %}
