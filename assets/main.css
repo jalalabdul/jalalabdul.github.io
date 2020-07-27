@@ -348,8 +348,8 @@ label[for="nav-trigger"] span {
   float: right;
   display: block;
   width: 20px;
-  height: 1px;
-  margin-bottom: 4px;
+  height: 2px;
+  margin-bottom: 3px;
   background: #1c1b1c;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -359,7 +359,7 @@ label[for="nav-trigger"] span {
 }
 
 label[for="nav-trigger"] span:nth-last-child(2) {
-  width: 28px;
+  width: 27px;
   margin-top: 4px;
 }
 
@@ -538,7 +538,11 @@ th, td {
 
 td {
   padding: 5px 0;
-  width: 50%;
+  width: 60%;
+}
+
+td:first-child {
+  width: 40%;
 }
 
 .post-meta-title {
@@ -672,7 +676,7 @@ td {
   }
 
   .nav-trigger:checked~label[for="nav-trigger"] .bar-2 {
-    width: 28px;
+    width: 27px;
     background: #fff;
   }
 
