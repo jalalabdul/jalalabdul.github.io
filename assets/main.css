@@ -387,6 +387,16 @@ logo-container a:hover {
   transition: color .25s ease;
 }
 
+.mobile-nav-overlay {
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
 button {
   display: inline-block;
   border: none;
@@ -595,6 +605,9 @@ td:first-child {
   label[for="nav-trigger"] {
     display: none;
   }
+  .home-link {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -648,27 +661,26 @@ td:first-child {
     width: 80%;
     top: 0;
     right: -85%;
-    background: #1c1b1c;
+    background: #e5e5e5;
     text-align: left;
     -webkit-transition: all .3s ease !important;
     transition: all .3s ease !important;
-    -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.15);
   }
 
   .nav-trigger:checked~.site-nav {
     right: 0;
   }
 
+  .nav-trigger:checked~.mobile-nav-overlay  {
+    display: block;
+  }
+
   .nav-trigger:checked~label[for="nav-trigger"] .bar-2 {
     width: 27px;
-    background: #fff;
   }
 
   .nav-trigger:checked~label[for="nav-trigger"] .bar-1 {
     width: 20px;
-    background: #fff;
   }
 
   .logo-stamp {
@@ -686,9 +698,8 @@ td:first-child {
   }
 
   .site-nav-link {
-    color: #fff;
     display: block !important;
-    line-height: 2.5;
+    line-height: 1.75;
   }
 
   .post-content {

@@ -123,13 +123,13 @@ Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, containe
 
   headerAnimation();
 
-  // if ($(window).width() > 769) {
-  //   // Screensaver
-  //   screensaver();
-  //   window.setInterval(function () {
-  //     updateClock();
-  //   }, 1000);
-  // };
+  if ($(window).width() > 769) {
+    // Screensaver
+    screensaver();
+    window.setInterval(function () {
+      updateClock();
+    }, 1000);
+  };
 });
 
 // Google Analytics
