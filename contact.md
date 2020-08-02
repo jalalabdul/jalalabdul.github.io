@@ -16,5 +16,5 @@ Social
 <br>
 <br>
 * [Behance](https://behance.net/jalalabdulaziz){:target="_blank"}
-* [Pinterest](https://www.pinterest.com/jalalabdulaziz/){:target="_blank"}
+* [Github](https://github.com/jalalabdulaziz){:target="_blank"}
 <hr class="separator">
