@@ -6,7 +6,7 @@ this.screensaver = function () {
 
     s_saver = setTimeout(function () {
       $('#screensaver').fadeIn(900);
-    }, 15000);
+    }, 30000);
 
     $('#screensaver').fadeOut(500);
   });

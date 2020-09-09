@@ -9,8 +9,7 @@ weight: 3
 Contact
 <br>
 <br>
-Starting a new project or want to collaborate?
-<br>Get in touch via [email](mailto:jalalabdulaziz@gmail.com){:target="_blank"}
+For business inquiries, collaborations or questions please get in touch: [jalalabdulaziz@gmail.com](mailto:jalalabdulaziz@gmail.com){:target="_blank"}
 <hr class="separator">
 Social
 <br>
