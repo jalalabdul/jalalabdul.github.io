@@ -9,10 +9,10 @@ weight: 2
 Profile
 <br>
 <br>
-Jalal is a Bali-based designer specialized in branding and creative direction. Her design practice is profoundly based on strategic thinking but also always lead by a hint of intuition. Her aesthetic ranges from sleek minimalism to bright maximalism and leans on nuanced typography and arresting imagery.
+Jalal is a Bali-based designer specialized in branding and creative direction. Etiam faucibus tempus ex id commodo. In vehicula accumsan elementum. Pellentesque mollis, risus quis faucibus euismod, erat ante condimentum felis, eget laoreet leo mi quis ipsum. Aliquam erat volutpat. Cras pharetra lectus vitae mauris gravida ullamcorper vel id diam. Nulla tincidunt quis dui eu mollis. Nam lobortis, nunc vitae luctus viverra, justo nulla ultricies eros, sit amet posuere sapien mi accumsan nunc.
 <br>
 <br>
-Marina’s methodical approach involves deeply understanding the brand’s essence and creating bold visual solutions which challenge the norm, while aligning with the brand’s values and tonality.
+Duis varius enim nibh, at molestie libero feugiat sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque a pellentesque ex. Praesent in tristique nunc.
 <br>
 <hr class="separator">
 Capabilities
