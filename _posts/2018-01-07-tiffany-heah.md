@@ -5,7 +5,6 @@ categories: Identity
 subtitle: Where the Mountain Meets the Sea
 year: 2019
 scope: 
-    - Art Direction
     - Brand Identity
 agency: Brave Factor
 collaborator: 
