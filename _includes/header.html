@@ -1,7 +1,7 @@
 <header class="site-header site-header--fixed" role="banner">
   <div class="wrap">
     <div class="grid">
-      <div class="grid__col grid__col--6-of-12">
+      <div class="grid__col grid__col--6-of-12 grid__col--s-1-of-2">
         <div class="site-title-container">
           <a class="site-title" href="{{ "/" | relative_url }}">Jalal</a>
         </div>
@@ -9,11 +9,11 @@
       {% assign default_paths = site.pages | map: "path" %}
       {% assign page_paths = site.header_pages | default: default_paths %}
       {% if page_paths %}
-      <div class="grid__col grid__col--6-of-12 grid__col">
+      <div class="grid__col grid__col--6-of-12 grid__col--s-1-of-2">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
-          <span class="bar-1"></span>
-          <span class="bar-2"></span>
+          <span class="open">Menu</span>
+          <span class="close">Close</span>
         </label>
         <div class="mobile-nav-overlay"></div>
         <nav class="site-nav">

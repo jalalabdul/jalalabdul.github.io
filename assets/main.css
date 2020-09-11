@@ -69,6 +69,7 @@ body {
 
 video {
   width: 100%;
+  display: block;
 }
 
 #screensaver {
@@ -321,20 +322,18 @@ p a:hover {
 }
 
 label[for="nav-trigger"] {
-  width: 28px;
+  width: 26px;
   position: absolute;
   right: 15px;
-  top: 20px;
+  top: 15px;
   z-index: 3;
 }
 
 label[for="nav-trigger"] span {
   float: right;
   display: block;
-  width: 20px;
-  height: 2px;
-  margin-bottom: 3px;
-  background: #1c1b1c;
+  position: absolute;
+  right: 0;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
@@ -342,9 +341,8 @@ label[for="nav-trigger"] span {
   transition: all 0.4s ease;
 }
 
-label[for="nav-trigger"] span:nth-last-child(2) {
-  width: 27px;
-  margin-top: 4px;
+.close {
+  opacity: 0;
 }
 
 .nav-trigger {
@@ -379,7 +377,7 @@ label[for="nav-trigger"] span:nth-last-child(2) {
 }
 
 .mobile-nav-overlay {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, .5);
   position: fixed;
   right: 0;
   top: 0;
@@ -611,7 +609,7 @@ td:first-child {
   body,
   .project-thumb-title,
   h1 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .time {
@@ -643,7 +641,7 @@ td:first-child {
 
   .project-thumb-item {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 
   .project-thumb-title-container {
@@ -671,12 +669,12 @@ td:first-child {
     display: block;
   }
 
-  .nav-trigger:checked~label[for="nav-trigger"] .bar-2 {
-    width: 27px;
+  .nav-trigger:checked~label[for="nav-trigger"] .open {
+    opacity: 0;
   }
 
-  .nav-trigger:checked~label[for="nav-trigger"] .bar-1 {
-    width: 20px;
+  .nav-trigger:checked~label[for="nav-trigger"] .close {
+    opacity: 1;
   }
 
   .logo-stamp {
@@ -686,7 +684,12 @@ td:first-child {
   }
 
   .site-nav-link-container {
-    padding: 105px 50px 50px 50px;
+    padding: 88px 50px 50px 50px;
+  }
+
+  .site-footer {
+    padding: 0;
+    font-size: 14px;
   }
 
   .site-nav .site-nav-link:not(:last-child) {
@@ -695,7 +698,7 @@ td:first-child {
 
   .site-nav-link {
     display: block !important;
-    line-height: 1.75;
+    line-height: 2;
   }
 
   .post-content {
@@ -707,11 +710,11 @@ td:first-child {
   }
 
   .post-img {
-    margin: 0 auto 15px auto;
+    margin: 0 auto 5px auto;
   }
 
   .top-button-container,
   .footer-contact-container {
-    margin-top: 20px;
+    margin-top: 5px;
   }
 }
