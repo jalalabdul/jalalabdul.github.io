@@ -67,12 +67,19 @@ layout: default-alt
         data-sizes="100vw">
     </div>
     {% endif %}
-    {% if file.extname == '.mp4' %}
+    {% if file.extname == '.mp4' and page.autoplay == 'disabled' %}
     <div class="post-img">
-        <video disableRemotePlayback playsinline autoplay muted loop>
-          <source src="{{ site.url }}{{ file.path }}" type="video/mp4">
-        </video>
-    </div>
+      <video disableRemotePlayback controls>
+        <source src="{{ site.url }}{{ file.path }}" type="video/mp4">
+      </video>
+  </div>
+  {% endif %}
+  {% if file.extname == '.mp4' and page.autoplay == 'enabled' %}
+  <div class="post-img">
+    <video disableRemotePlayback playsinline autoplay muted loop>
+      <source src="{{ site.url }}{{ file.path }}" type="video/mp4">
+    </video>
+</div>
     {% endif %}
     {% endif %}
     {% endfor %}
