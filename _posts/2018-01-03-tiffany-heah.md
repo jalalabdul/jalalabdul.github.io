@@ -2,7 +2,7 @@
 layout: project
 image-dir: tiffany
 categories: Identity
-subtitle: Where the Mountain Meets the Sea
+subtitle: Lorem ipsum dolor
 year: 2019
 scope: 
     - Brand Identity

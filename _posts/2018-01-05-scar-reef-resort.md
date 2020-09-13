@@ -2,7 +2,7 @@
 layout: project
 image-dir: scarreef
 categories: Identity
-subtitle: Where the Mountain Meets the Sea
+subtitle: Meeting point of mountain and sea
 year: 2019
 scope: 
     - Art Direction
@@ -10,7 +10,8 @@ scope:
     - Digital
 collaborator: 
     - Silvio
-status: soon
+status:
+autoplay: disable
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor pellentesque justo. Praesent blandit dolor sem, sed pellentesque lectus ornare at. Proin elementum sem diam, et elementum ipsum aliquam venenatis. Donec tristique odio sit amet sapien fermentum mattis. Donec vel egestas risus, quis lacinia nisi.
