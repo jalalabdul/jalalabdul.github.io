@@ -41,7 +41,7 @@ layout: default-alt
     {% for file in site.static_files %}
     {% assign pageurl = page.image-dir %}
     {% if file.path contains pageurl %}
-    {% unless file.path contains 'small' or file.path contains 'thumb' or file.path contains '2x' or file.path contains 'mp4' or file.path contains 'gif' %}
+    {% unless file.path contains 'small' or file.path contains 'thumb' or file.path contains 'poster' or file.path contains 'mp4' or file.path contains 'gif' %}
     {% if file.extname == '.jpg' %}
     <div class="post-img">
       <img class="lazyload"
@@ -69,7 +69,7 @@ layout: default-alt
     {% endif %}
     {% if file.extname == '.mp4' and page.autoplay == 'disabled' %}
     <div class="post-img">
-      <video disableRemotePlayback controls>
+      <video controls poster="{{ site.url }}{{ file.path | replace: ".mp4", "_poster.jpg" }}">
         <source src="{{ site.url }}{{ file.path }}" type="video/mp4">
       </video>
   </div>
