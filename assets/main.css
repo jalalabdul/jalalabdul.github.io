@@ -143,9 +143,9 @@ ol li {
 
 @media screen and (max-width: 800px) {
   .wrap {
-    max-width: -webkit-calc(800px - (30px));
-    max-width: calc(800px - (30px));
-    padding: 15px;
+    max-width: -webkit-calc(800px - (20px));
+    max-width: calc(800px - (20px));
+    padding: 10px;
   }
 }
 
@@ -343,8 +343,8 @@ p a:hover {
 label[for="nav-trigger"] {
   width: 26px;
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 10px;
+  top: 10px;
   z-index: 3;
 }
 
@@ -672,7 +672,7 @@ td:first-child {
 
   .project-thumb-item {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .project-thumb-title-container {
