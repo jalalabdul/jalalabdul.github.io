@@ -633,6 +633,19 @@ td:first-child {
   .home-link {
     display: none !important;
   }
+
+  .post-img .left  {
+    float: left;
+  }
+  
+  .post-img .right  {
+    float: right;
+  }
+
+  .post-img .left, .post-img .right {
+    width: calc( 50% - 5px);
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 600px) {
