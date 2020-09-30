@@ -1,7 +1,7 @@
 ---
 layout: inner-page
-title: About
-permalink: /about
+title: Profile
+permalink: /profile
 weight: 2
 ---
 
@@ -25,19 +25,4 @@ Capabilities
 * Motion Graphic
 * Web Design & Development
 <br>
-<hr class="separator">
-Experiences
-<br>
-<br>
-2018 — Current<br>
-Léon Design Agency (Bali, INA)<br>
-Creative<br>
-<br>
-2017<br>
-Kesato (Bali, INA)<br>
-Creative<br>
-<br>
-2015 — 2016<br>
-Orkha Creative (Malang, INA)<br>
-Creative<br>
 <hr class="separator">
