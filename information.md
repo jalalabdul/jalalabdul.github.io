@@ -1,14 +1,11 @@
 ---
 layout: inner-page
-title: Profile
-permalink: /profile
+title: Information
+permalink: /information
 weight: 2
 ---
 
 <hr class="separator-first">
-Profile
-<br>
-<br>
 Jalal is a Bali-based designer specialized in branding and creative direction. Etiam faucibus tempus ex id commodo. In vehicula accumsan elementum. Pellentesque mollis, risus quis faucibus euismod, erat ante condimentum felis, eget laoreet leo mi quis ipsum. Aliquam erat volutpat. Cras pharetra lectus vitae mauris gravida ullamcorper vel id diam. Nulla tincidunt quis dui eu mollis. Nam lobortis, nunc vitae luctus viverra, justo nulla ultricies eros, sit amet posuere sapien mi accumsan nunc.
 <br>
 <br>
@@ -25,4 +22,9 @@ Capabilities
 * Motion Graphic
 * Web Design & Development
 <br>
+<hr class="separator">
+Contact
+<br>
+<br>
+For business inquiries, collaborations or questions please get in touch: [jalalabdulaziz@gmail.com](mailto:jalalabdulaziz@gmail.com){:target="_blank"}
 <hr class="separator">
