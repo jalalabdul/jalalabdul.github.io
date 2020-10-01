@@ -17,15 +17,27 @@ this.screensaver = function () {
 this.headerAnimation = function () {
   var header = document.querySelector(".site-header");
   var headroom = new Headroom(header, {
-      tolerance: {
-          down : 10,
-          up : 20
-      },
-      offset : 15,
+    tolerance: {
+      down: 10,
+      up: 20
+    },
+    offset: 15,
   });
   headroom.init();
 };
 
+// Mobile menu toggle
+this.mobileToggle = function () {
+  $('.nav-trigger').change(function () {
+    var c = this.checked ? 'Close' : 'Menu';
+    $('.open').text(c);
+  });
+  $('.site-nav-link').on('click', function () {
+    $('label[for="nav-trigger"]').click();
+    $('.nav-trigger').prop('checked', false);
+    $('.open').attr('value', doc_val_check);
+  });
+};
 
 // Time
 function updateClock() {
@@ -111,17 +123,10 @@ Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, containe
     srollToTop();
   });
 
-  // Toggle sidebar menu
-  $('.site-nav-link').on('click', function () {
-    $('.nav-trigger').prop('checked', false);
-  });
-  if ($(window).width() < 769) {
-    $('.switch').on('click', function () {
-      $('.nav-trigger').prop('checked', false);
-    });
-  };
 
   headerAnimation();
+  mobileToggle();
+
 
   if ($(window).width() > 769) {
     // Screensaver
