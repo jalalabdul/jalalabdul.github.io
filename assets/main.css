@@ -680,6 +680,10 @@ td:first-child {
     margin-top: 36px;
   }
 
+  table.post-meta {
+    margin-top: 20px;
+  }
+
   .separator-first {
     padding-bottom: 30px;
   }
