@@ -1,0 +1,12 @@
+---
+#
+# You don't need to edit this file, it's empty on purpose.
+# Edit minima's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+#
+layout: homepage
+title: Home
+weight: 1
+---
+
+Jalal is a Bali-based designer specialized in branding and creative direction. Etiam faucibus tempus ex id commodo. In vehicula accumsan elementum. Pellentesque mollis, risus quis faucibus euismod, erat ante condimentum felis, eget laoreet leo mi quis ipsum. Aliquam erat volutpat.

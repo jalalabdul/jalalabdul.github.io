@@ -6,12 +6,27 @@ this.screensaver = function () {
 
     s_saver = setTimeout(function () {
       $('#screensaver').fadeIn(900);
-    }, 30000);
+    }, 40000);
 
     $('#screensaver').fadeOut(500);
   });
 };
 
+
+// Swiper
+this.swiper = function () {
+var swiper = new Swiper('.swiper-container', {
+  autoHeight: true,
+  loop: true,
+  autoplay: {
+    delay: 4000,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+};
 
 // Header Animation
 this.headerAnimation = function () {
@@ -126,6 +141,7 @@ Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, containe
 
   headerAnimation();
   mobileToggle();
+  // swiper();
 
 
   if ($(window).width() > 769) {
