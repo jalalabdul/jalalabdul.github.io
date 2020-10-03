@@ -683,7 +683,7 @@ td:first-child {
   }
 
   table.post-meta {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   .separator-first {
@@ -691,8 +691,8 @@ td:first-child {
   }
 
   .separator {
-    padding-bottom: 25px;
-    margin-top: 25px;
+    padding-bottom: 15px;
+    margin-top: 15px;
   }
 
   .project-thumb-item {
@@ -758,7 +758,7 @@ td:first-child {
   }
 
   .post-content {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .post-meta-grey {
