@@ -32,4 +32,3 @@ For business inquiries, collaborations or questions please get in touch:
 [Email](mailto:jalalabdulaziz@gmail.com){:target="_blank"}<br>
 [Behance](https://www.behance.net/jalalabdulaziz){:target="_blank"}<br>
 [Github](https://github.com/jalalabdulaziz){:target="_blank"}
-<hr class="separator">

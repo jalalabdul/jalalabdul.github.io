@@ -259,6 +259,11 @@ ol li {
 .post-img .left, .post-img .right {
   width: calc( 50% - 5px);
   margin-bottom: 10px;
+  clear: both;
+}
+
+.post-img .half {
+  clear: none;
 }
 
 
@@ -436,7 +441,6 @@ button:focus {
  * Site footer
  */
 .site-footer {
-  padding: 2vw 0;
   font-size: 13px;
 }
 
@@ -462,10 +466,6 @@ button:focus {
  */
 .page-content {
   margin-top: 40px;
-}
-
-.post-content {
-  margin-top: 30px;
 }
 
 .project-thumb-container {
@@ -546,9 +546,13 @@ button:focus {
   font-size: 15px;
 }
 
+.post-info {
+  margin-top: 20px;
+}
+
 .post-meta {
-  padding-top: 30px;
-  font-size: 13px;
+  margin-top: 30px;
+  font-size: 12px;
 }
 
 table.post-meta {
@@ -749,16 +753,17 @@ td:first-child {
     font-size: 11px;
   }
 
+  .post-title {
+    margin-bottom: 10px;
+  }
+
   .post-meta {
+    margin-top: 20px;
     font-size: 11px;
   }
 
   .site-nav .site-nav-link:not(:last-child) {
     margin-right: 0;
-  }
-
-  .post-content {
-    margin-top: 20px;
   }
 
   .post-meta-grey {
