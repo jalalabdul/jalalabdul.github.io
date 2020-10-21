@@ -4,7 +4,7 @@ email: jalalabdulaziz@gmail.com
 description: Jalal is a graphic designer working and living in Bali.
 environment: production
 baseurl: ""
-url: "https://jalal.id"
+url: "https://jalal.works"
 permalink: /:title
 google_analytics: UA-101729051-1
 markdown: kramdown
