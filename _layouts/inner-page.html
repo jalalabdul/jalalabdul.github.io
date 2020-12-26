@@ -4,17 +4,18 @@ layout: compress
 
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  {% include head.html %}
-  {% include screensaver.html %}
-  <body id="body" class="light-mode">
-    {% include header.html %}
-    <div class="wrap page-content" id="barba-wrapper" data-barba="wrapper">
-        <div class="barba-container grid" data-barba="container">
-            <div class="grid__col grid__col--6-of-12 grid__col--push-6-of-12">
-              {{ content }}
-            </div>
-        </div>
+{% include head.html %}
+{% include screensaver.html %}
+<body id="body" class="light-mode">
+  {% include header.html %}
+  <div class="wrap page-content" id="barba-wrapper" data-barba="wrapper">
+    <div class="barba-container grid" data-barba="container">
+      <div class="grid__col grid__col--6-of-12 grid__col--push-6-of-12">
+        {{ content }}
       </div>
-       {% include footer.html %}
-  </body>
+    </div>
+  </div>
+  {% include footer.html %}
+</body>
+
 </html>

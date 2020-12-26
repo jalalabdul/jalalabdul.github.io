@@ -126,6 +126,16 @@ video {
   clear: both;
 }
 
+.separator-fullwidth {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #1c1b1c;
+  margin: 0;
+  padding-bottom: 20px;
+  clear: both;
+}
+
 ul li,
 ol li {
   list-style: none;
@@ -198,7 +208,7 @@ ol li {
   top: 0;
   right: 100%;
   width: 100%;
-  height: 2px;
+  height: 1px;
 }
 
 
@@ -408,7 +418,7 @@ p a:hover {
 }
 
 .site-nav .site-nav-link:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 .site-nav-link:hover,
@@ -673,6 +683,10 @@ td:first-child {
     background: #f5f5f3;
   }
 
+  .site-nav {
+    text-align: right;
+  }
+
   .site-title:hover,
   .footer-link:hover {
     color: #1c1b1c;
@@ -708,36 +722,6 @@ td:first-child {
     padding: 20px;
   }
 
-  .site-nav {
-    position: fixed;
-    z-index: -1 !important;
-    width: 100%;
-    top: 0;
-    left: 0;
-    max-height: 0;
-    background: #f5f5f3;
-    text-align: left;
-    -webkit-transition: all .3s ease !important;
-    transition: all .3s ease !important;
-    overflow: hidden;
-  }
-
-  .site-nav-link-container {
-    padding: 80px 10px 20px 10px;
-  }
-
-  .nav-trigger:checked~.site-nav {
-    top: 0;
-    max-height: 800px;
-  }
-
-  .site-nav-link {
-    display: block !important;
-    line-height: 1.5;
-    font-size: 18px;
-  }
-
-
   .site-info {
     font-size: 12px;
     margin-top: 20px;
@@ -749,7 +733,7 @@ td:first-child {
   }
 
   .site-footer {
-    padding: 0;
+    padding-top: 30px;
     font-size: 11px;
   }
 
@@ -763,7 +747,7 @@ td:first-child {
   }
 
   .site-nav .site-nav-link:not(:last-child) {
-    margin-right: 0;
+    margin-right: 10px;
   }
 
   .post-meta-grey {

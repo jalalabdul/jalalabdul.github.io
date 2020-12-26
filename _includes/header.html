@@ -10,21 +10,10 @@
       {% assign page_paths = site.header_pages | default: default_paths %}
       {% if page_paths %}
       <div class="grid__col grid__col--6-of-12 grid__col--s-1-of-2 menu">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="open">Menu</span>
-          <!-- <span class="close">Close</span> -->
-        </label>
         <nav class="site-nav">
           <div class="site-nav-link-container">
-            <a class="site-nav-link home-link" href="{{ site.url }}">Home</a>
-            <a class="site-nav-link" href="{{ site.url }}">Projects</a>
+            <a class="site-nav-link" href="{{ site.url }}">Work</a>
             <a class="site-nav-link" href="{{ site.url }}/information">Information</a>
-            <div class="site-info hide-on-mobile">
-              <span>Based in Bali</span>
-              <a class="" href="mailto:jalalabdulaziz@gmail.com" target="_blank">Email jalalabdulaziz@gmail.com</a>
-              <a class="" href="https://wa.me/6281298546411" target="_blank">Wa +6281298546411</a>
-            </div>
           </div>
         </nav>
         {% endif %}
