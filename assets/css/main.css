@@ -673,10 +673,6 @@ td:first-child {
     font-size: 13vw;
   }
 
-  .separator-first {
-    display: none;
-  }
-
   .site-header {
     padding-top: 0;
     padding-bottom: 0;
@@ -705,7 +701,7 @@ td:first-child {
   }
 
   .separator-first {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
 
   .separator {
