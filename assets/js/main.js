@@ -15,17 +15,17 @@ this.screensaver = function () {
 
 // Swiper
 this.swiper = function () {
-var swiper = new Swiper('.swiper-container', {
-  autoHeight: true,
-  loop: true,
-  autoplay: {
-    delay: 4000,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+  var swiper = new Swiper('.swiper-container', {
+    autoHeight: true,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 };
 
 // Header Animation
@@ -138,11 +138,8 @@ Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, containe
     srollToTop();
   });
 
-
   headerAnimation();
   mobileToggle();
-  // swiper();
-
 
   if ($(window).width() > 769) {
     // Screensaver
