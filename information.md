@@ -31,8 +31,12 @@ Contact
 <br>
 For business inquiries, collaborations or questions please get in touch:
 <br>
+[jalalabdulaziz@gmail.com](mailto:jalalabdulaziz@gmail.com){:target="_blank"}<br>
+<hr class="separator">
+Follow
 <br>
-[Email](mailto:jalalabdulaziz@gmail.com){:target="_blank"}<br>
+<br>
+[Pinterest](https://www.pinterest.com/jalalabdulaziz){:target="_blank"}<br>
 [Behance](https://www.behance.net/jalalabdulaziz){:target="_blank"}<br>
 [Github](https://github.com/jalalabdulaziz){:target="_blank"}
 <br>
