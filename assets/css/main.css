@@ -76,6 +76,10 @@ video {
   --plyr-color-main: #000 !important;
 }
 
+.plyr-hide-control {
+  pointer-events: none !important;
+}
+
 .plyr-hide-control .plyr__controls {
   display: none;
 }
