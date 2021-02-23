@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Webfont';
-  src: url('/assets/fonts/web_font.woff2') format('woff2');
+  src: url('/assets/fonts/webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -70,6 +70,14 @@ body {
 video {
   width: 100%;
   display: block;
+}
+
+:root {
+  --plyr-color-main: #000 !important;
+}
+
+.plyr-hide-control .plyr__controls {
+  display: none;
 }
 
 #screensaver {
@@ -389,14 +397,6 @@ p a:hover {
   transform: translateY(-100%);
 }
 
-.close {
-  opacity: 0;
-}
-
-.nav-trigger {
-  display: none;
-}
-
 .site-title {
   line-height: 1;
 }
@@ -413,10 +413,6 @@ p a:hover {
   text-align: left;
 }
 
-.site-nav .nav-trigger {
-  display: none;
-}
-
 .site-nav .site-nav-link:not(:last-child) {
   margin-right: 30px;
 }
@@ -428,24 +424,6 @@ p a:hover {
   transition: color .25s ease;
 }
 
-button {
-  display: inline-block;
-  border: none;
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  background: none;
-  color: none;
-  cursor: pointer;
-  text-align: center;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-button:focus {
-  outline: 0;
-}
-
 
 /**
  * Site footer
@@ -454,7 +432,7 @@ button:focus {
   font-size: 13px;
 }
 
-.arrow-top {
+.site-footer .arrow-top {
   height: 10px;
   margin-left: 5px;
 }
@@ -547,10 +525,6 @@ button:focus {
   transform: translateY(0);
   opacity: 1;
 }
-
-/* .project-links:hover .project-thumb-overlay{
-  opacity: .15;
-} */
 
 .post-title {
   font-size: 15px;

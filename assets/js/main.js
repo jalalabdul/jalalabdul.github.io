@@ -141,6 +141,8 @@ Barba.Dispatcher.on('newPageReady', function (currentStatus, oldStatus, containe
   headerAnimation();
   mobileToggle();
 
+  const player = new Plyr('#player');
+
   if ($(window).width() > 769) {
     // Screensaver
     screensaver();

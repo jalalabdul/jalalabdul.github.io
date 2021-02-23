@@ -1,5 +1,5 @@
 ---
-layout: default-alt
+layout: default-alternative
 ---
 <div class="grid__col grid__col--12-of-12 grid__col">
   <div class="post-content" itemprop="articleBody">
@@ -35,14 +35,14 @@ layout: default-alt
     {% endif %}
     {% if file.extname == '.mp4' and page.autoplay == 'disabled' %}
     <div class="post-img">
-      <video controls poster="{{ site.url }}{{ file.path | replace: ".mp4", "_poster.jpg" }}">
+      <video id="player" controls poster="{{ site.url }}{{ file.path | replace: ".mp4", "_poster.jpg" }}">
         <source src="{{ site.url }}{{ file.path }}" type="video/mp4">
       </video>
     </div>
     {% endif %}
     {% if file.extname == '.mp4' and page.autoplay == 'enabled' %}
-    <div class="post-img">
-      <video disableRemotePlayback playsinline autoplay muted loop>
+    <div class="post-img plyr-hide-control">
+      <video id="player" disableRemotePlayback playsinline autoplay muted loop data-plyr-config='{ clickToPlay: False }'>
         <source src="{{ site.url }}{{ file.path }}" type="video/mp4">
       </video>
     </div>
