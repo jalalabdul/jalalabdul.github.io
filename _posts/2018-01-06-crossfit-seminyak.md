@@ -2,7 +2,7 @@
 layout: project
 image-dir: crossfit
 categories: Identity
-subtitle: Crossfit Box in Seminyak
+subtitle: In Progress
 year: 2018
 scope: 
     - Brand Identity

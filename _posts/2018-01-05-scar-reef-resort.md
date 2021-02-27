@@ -2,7 +2,7 @@
 layout: project
 image-dir: scarreef
 categories: Identity
-subtitle: Meeting point of mountain and sea
+subtitle: The Meeting Point of Mountain and Sea
 year: 2019
 scope: 
     - Art Direction

@@ -2,7 +2,7 @@
 layout: project
 image-dir: tiffany
 categories: Identity
-subtitle: Lorem ipsum dolor
+subtitle:
 year: 2019
 scope: 
     - Brand Identity
