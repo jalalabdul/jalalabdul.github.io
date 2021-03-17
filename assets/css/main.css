@@ -59,7 +59,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
-  /* scroll-padding-top: 75px; */
 }
 
 ::selection {
@@ -79,20 +78,44 @@ video {
   display: block;
 }
 
-:root {
-  --plyr-color-main: #000 !important;
+.video-popup {
+  position: relative;
 }
 
-.plyr-hide-control {
-  pointer-events: none !important;
+.video-popup .post-img {
+  display: inline-block;
 }
 
-.plyr-hide-control .plyr__controls {
-  display: none;
+.video-popup img {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
-.plyr__video-wrapper {
-  background: #E8E8E3 !important;
+.video-popup:hover img {
+  opacity: .85;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.video-play-button {
+  top: 50%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #ffffff;
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: .3em;
 }
 
 #screensaver {
@@ -199,14 +222,6 @@ ol li {
     max-width: calc(800px - (20px));
     padding: 10px;
   }
-}
-
-.light-mode {
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
 }
 
 
@@ -391,7 +406,7 @@ p a:hover {
 
 .site-header--fixed {
   position: fixed;
-  z-index: 8888;
+  z-index: 10;
   right: 0;
   left: 0;
   top: 0
