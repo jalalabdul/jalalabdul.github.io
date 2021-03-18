@@ -2,7 +2,7 @@
 layout: project
 image-dir: tiffany
 categories: Identity
-subtitle:
+subtitle: Identity for Law Firm Based in California
 year: 2019
 scope: 
     - Brand Identity

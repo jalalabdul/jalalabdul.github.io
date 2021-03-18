@@ -156,11 +156,11 @@ button::-moz-focus-inner {
   top: 0;
   text-decoration: none;
   text-align: center;
-  opacity: 0.65;
+  opacity: 0.75;
   padding: 0 0 18px 10px;
   color: #FFF;
   font-style: normal;
-  font-size: 28px;
+  font-size: 20px;
   font-family: "Webfont", sans-serif;
 }
 

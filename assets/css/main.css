@@ -95,7 +95,7 @@ video {
 }
 
 .video-popup:hover img {
-  opacity: .85;
+  filter: brightness(60%);
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
@@ -552,11 +552,12 @@ p a:hover {
 .project-thumb-project-subtitle {
   position: relative;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1;
   color: #fff;
   font-style: italic;
   margin-top: 5px;
+  letter-spacing: .02em;
 }
 
 .project-thumb-title-container {
