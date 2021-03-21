@@ -352,6 +352,10 @@ h5 {
 a {
   color: #1c1b1c;
   text-decoration: none;
+  -webkit-transition: all 0.3s 0s ease;
+  -moz-transition: all 0.3s 0s ease;
+  -o-transition: all 0.3s 0s ease;
+  transition: all 0.3s 0s ease;
 }
 
 a:visited {
@@ -634,6 +638,10 @@ td:first-child {
 
 .post-img {
   margin: 0 auto 10px auto;
+}
+
+.inner-page a:hover {
+  color: #989898;
 }
 
 @-webkit-keyframes fade-in {
