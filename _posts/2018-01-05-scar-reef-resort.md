@@ -1,6 +1,6 @@
 ---
-layout: project
-image-dir: scarreef
+layout: project-page
+image-dir: scarreefresort
 categories: Identity
 subtitle: The Meeting Point of Mountain and Sea
 year: 2019
@@ -9,7 +9,8 @@ scope:
     - Brand Identity
     - Digital
 collaborator: 
-    - Silvio, Erick Regnard
+    - Silvio
+    - Erick Regnard
 status:
 autoplay: disabled
 featured:

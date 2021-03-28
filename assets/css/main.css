@@ -50,7 +50,7 @@ figure {
 body {
   font-family: "Webfont", sans-serif;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.35;
   color: #1c1b1c;
   background: #ffffff;
@@ -330,7 +330,7 @@ h6 {
 }
 
 h1 {
-  /* font-size: 15px; */
+  /* font-size: 14px; */
   font-weight: normal;
   line-height: 1.3em;
 }
@@ -466,6 +466,7 @@ p a:hover {
  */
 .site-footer {
   font-size: 13px;
+  letter-spacing: .01em;
 }
 
 .site-footer .arrow-top {
@@ -528,7 +529,7 @@ p a:hover {
   display: block;
   opacity: 0;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1;
   color: #fff;
   -webkit-transition: all .3s cubic-bezier(.215, .6, .355, 1) 150ms;
@@ -543,7 +544,7 @@ p a:hover {
 .project-thumb-project-title {
   position: relative;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1;
   color: #fff;
   display: inline-block;
@@ -556,12 +557,10 @@ p a:hover {
 .project-thumb-project-subtitle {
   position: relative;
   font-weight: normal;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1;
   color: #fff;
-  font-style: italic;
   margin-top: 5px;
-  letter-spacing: .02em;
 }
 
 .project-thumb-title-container {
@@ -594,7 +593,7 @@ p a:hover {
 }
 
 .post-title {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .post-info {
@@ -604,6 +603,7 @@ p a:hover {
 .post-meta {
   margin-top: 30px;
   font-size: 12px;
+  letter-spacing: .01em;
 }
 
 table.post-meta {

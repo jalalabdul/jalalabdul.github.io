@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: project-page
 image-dir: tiffany
 categories: Identity
 subtitle: Identity for Law Firm Based in California

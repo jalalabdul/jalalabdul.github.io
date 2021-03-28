@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: project-page
 image-dir: crossfit
 categories: Identity
 subtitle: In Progress
