@@ -5,7 +5,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: projects-list
-title: Work
+title: Graphic Design & Art Direction
 weight: 1
 ---
 

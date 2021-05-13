@@ -1,5 +1,5 @@
 ---
-layout: project-page
+layout: projects-page
 image-dir: scarreefresort
 categories: Identity
 subtitle: The Meeting Point of Mountain and Sea
@@ -13,8 +13,7 @@ collaborator:
     - Erick Regnard
 status:
 autoplay: disabled
-featured:
-video1: 326535597
+featured: featured
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor pellentesque justo. Praesent blandit dolor sem, sed pellentesque lectus ornare at. Proin elementum sem diam, et elementum ipsum aliquam venenatis. Donec tristique odio sit amet sapien fermentum mattis. Donec vel egestas risus, quis lacinia nisi.

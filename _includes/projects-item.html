@@ -1,0 +1,15 @@
+<div class="project-thumb-container">
+  <img class="lazyload project-thumb project-thumb-primary"
+    src="{% include placeholder.html %}"
+    data-srcset="{{ site.url }}/img/{{ post.image-dir }}/{{ post.image-dir }}_thumb.jpg 1280w, {{ site.url }}/img/{{ post.image-dir }}/{{ post.image-dir }}_thumb_small.jpg 640w, {{ site.url }}/img/{{ post.image-dir }}/{{ post.image-dir }}_thumb_small.jpg 320w"
+    data-sizes="auto">
+  <div class="project-thumb-overlay"></div>
+  <div class="project-thumb-title-container">
+    <div class="project-thumb-title">
+      <h3 class="project-thumb-project-title"><span>{{ post.title | escape }}<span></h3>
+      {% if post.subtitle %}
+      <p class="project-thumb-project-subtitle"><span>{{ post.subtitle | escape }}</span></p>
+      {% endif %}
+    </div>
+  </div>
+</div>
