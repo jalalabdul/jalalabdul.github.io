@@ -8,6 +8,9 @@ scope:
     - Brand Identity
     - Digital
 agency: Léon Design Agency
+collaborator: 
+credit:
+    - Interior Design by Mahallati
 creative-director:
 status:
 autoplay: enabled

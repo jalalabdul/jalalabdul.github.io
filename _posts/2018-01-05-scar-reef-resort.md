@@ -7,10 +7,12 @@ year: 2019
 scope: 
     - Art Direction
     - Brand Identity
-    - Digital
+    - Website
+agency: Brave Factor
 collaborator: 
     - Silvio
     - Erick Regnard
+credit:
 status:
 autoplay: disabled
 featured: featured

@@ -8,6 +8,7 @@ scope:
     - Brand Identity
 agency: Brave Factor
 collaborator: 
+credit: 
 status:
 autoplay: enabled
 featured: featured

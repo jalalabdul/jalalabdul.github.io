@@ -73,7 +73,7 @@ layout: default-alternative
   </div>
   <div class="grid__col grid__col--6-of-12 grid__col--push-6-of-12">
     <div class="post-meta">
-      {% if page.scope %}<span class="post-meta-title">Scope: {{ page.scope | join: ' / ' }}</span><br>
+      {% if page.scope %}<span class="post-meta-title">Scope: {{ page.scope | join: ', ' }}</span><br>
       {% endif %}
       {% if page.agency %}<span class="post-meta-title">Agency: {{ page.agency }}</span><br>
       {% endif %}
@@ -81,7 +81,10 @@ layout: default-alternative
         {{ page.creative-director }}</span><br>
       {% endif %}
       {% if page.collaborator %}<span class="post-meta-collaborator">Collaborator:
-        {{ page.collaborator | join: ' / ' }}</span><br>
+        {{ page.collaborator | join: ', ' }}</span><br>
+      {% endif %}
+      {% if page.credit %}<span class="post-meta-credit">Credit:
+        {{ page.credit | join: ', ' }}</span><br>
       {% endif %}
     </div>
   </div>

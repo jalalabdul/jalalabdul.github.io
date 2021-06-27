@@ -21,6 +21,7 @@ Duis varius enim nibh, at molestie libero feugiat sed. Interdum et malesuada fam
 * Art Direction
 * Packaging Design
 * Motion Graphic
+* 3D Visualization
 * Web Design & Development
 <br>
 <hr class="separator">
