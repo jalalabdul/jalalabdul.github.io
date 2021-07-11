@@ -17,11 +17,9 @@ Duis varius enim nibh, at molestie libero feugiat sed. Interdum et malesuada fam
 ### Capabilities
 <br>
 * Brand Identity Design
-* Brand Communication
 * Art Direction
 * Packaging Design
 * Motion Graphic
-* 3D Visualization
 * Web Design & Development
 <br>
 <hr class="separator">
